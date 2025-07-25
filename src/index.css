@@ -1,3 +1,15 @@
+:root {
+  /* Light theme colors */
+  --bg-primary: #ffffff;
+  --text-primary: #1d1d1f;
+  --text-secondary: #86868b;
+  
+  /* Dark theme colors */
+  --bg-primary-dark: #000000;
+  --text-primary-dark: #f5f5f7;
+  --text-secondary-dark: #a1a1a6;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -10,9 +22,26 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: var(--bg-primary-dark);
+  color: var(--text-primary-dark);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Light theme overrides */
+body.light-theme {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
 }
 
 #root {
   width: 100%;
   min-height: 100vh;
+}
+
+/* Respect system preference for users who haven't manually toggled */
+@media (prefers-color-scheme: light) {
+  body:not(.theme-manually-set) {
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+  }
 } 

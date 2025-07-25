@@ -3,10 +3,10 @@
   top: 0;
   left: 0;
   right: 0;
-  background: rgba(255, 255, 255, 0.8);
+  background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   z-index: 1000;
   padding: 0;
 }
@@ -24,7 +24,7 @@
 .navbar-brand span {
   font-size: 1.25rem;
   font-weight: 600;
-  color: #1d1d1f;
+  color: rgba(255, 255, 255, 0.95);
   letter-spacing: -0.01em;
 }
 
@@ -42,7 +42,7 @@
 
 .navbar-link {
   text-decoration: none;
-  color: #1d1d1f;
+  color: rgba(255, 255, 255, 0.8);
   font-size: 0.95rem;
   font-weight: 400;
   padding: 0.5rem 0;
@@ -53,11 +53,12 @@
 }
 
 .navbar-link:hover {
-  color: #2b9de0;
+  color: rgba(255, 255, 255, 1);
+  text-shadow: 0 0 8px rgba(255, 255, 255, 0.3);
 }
 
 .navbar-link.active {
-  color: #2b9de0;
+  color: rgba(255, 255, 255, 1);
   font-weight: 500;
 }
 
@@ -68,8 +69,37 @@
   left: 0;
   right: 0;
   height: 2px;
-  background: #2b9de0;
+  background: rgba(255, 255, 255, 0.9);
   border-radius: 1px;
+  box-shadow: 0 0 8px rgba(255, 255, 255, 0.4);
+}
+
+/* Light theme navbar styles */
+body.light-theme .navbar {
+  background: rgba(255, 255, 255, 0.8);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+body.light-theme .navbar-brand span {
+  color: #1d1d1f;
+}
+
+body.light-theme .navbar-link {
+  color: #1d1d1f;
+}
+
+body.light-theme .navbar-link:hover {
+  color: #2b9de0;
+  text-shadow: none;
+}
+
+body.light-theme .navbar-link.active {
+  color: #2b9de0;
+}
+
+body.light-theme .navbar-link.active::after {
+  background: #2b9de0;
+  box-shadow: 0 0 8px rgba(43, 157, 224, 0.4);
 }
 
 /* Tablet (768px and below) */

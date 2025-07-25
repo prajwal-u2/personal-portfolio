@@ -1,4 +1,5 @@
 import React from 'react';
+import ThemeToggle from './ThemeToggle';
 import './Navbar.css';
 
 function Navbar() {
@@ -22,6 +23,7 @@ function Navbar() {
             </li>
           ))}
         </ul>
+        <ThemeToggle />
       </div>
     </nav>
   );
