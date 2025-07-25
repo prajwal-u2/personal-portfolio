@@ -1,14 +1,80 @@
+/* Base navbar styles */
 .navbar {
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
-  background: rgba(255, 255, 255, 0.8);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   z-index: 1000;
   padding: 0;
+  transition: all 0.3s ease;
+}
+
+/* Blue theme - for blue sections */
+.navbar-blue {
+  background: rgba(70, 130, 180, 0.4);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.navbar-blue .navbar-brand span,
+.navbar-blue .navbar-link {
+  color: rgba(255, 255, 255, 0.9);
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+.navbar-blue .navbar-link:hover,
+.navbar-blue .navbar-link.active {
+  color: #ffffff;
+}
+
+.navbar-blue .navbar-link.active::after {
+  background: #ffffff;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+/* Black theme - for black sections */
+.navbar-black {
+  background: rgba(40, 40, 40, 0.4);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.navbar-black .navbar-brand span,
+.navbar-black .navbar-link {
+  color: rgba(255, 255, 255, 0.9);
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.navbar-black .navbar-link:hover,
+.navbar-black .navbar-link.active {
+  color: #ffffff;
+}
+
+.navbar-black .navbar-link.active::after {
+  background: #ffffff;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+/* White theme - for white sections */
+.navbar-white {
+  background: rgba(255, 255, 255, 0.4);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.navbar-white .navbar-brand span,
+.navbar-white .navbar-link {
+  color: rgba(0, 0, 0, 0.8);
+  text-shadow: 0 1px 3px rgba(255, 255, 255, 0.5);
+}
+
+.navbar-white .navbar-link:hover,
+.navbar-white .navbar-link.active {
+  color: #000000;
+}
+
+.navbar-white .navbar-link.active::after {
+  background: #000000;
+  box-shadow: 0 1px 3px rgba(255, 255, 255, 0.5);
 }
 
 .navbar-container {
@@ -24,8 +90,8 @@
 .navbar-brand span {
   font-size: 1.25rem;
   font-weight: 600;
-  color: #1d1d1f;
   letter-spacing: -0.01em;
+  transition: all 0.3s ease;
 }
 
 .navbar-menu {
@@ -42,23 +108,13 @@
 
 .navbar-link {
   text-decoration: none;
-  color: #1d1d1f;
   font-size: 0.95rem;
   font-weight: 400;
   padding: 0.5rem 0;
-  transition: all 0.2s ease;
+  transition: all 0.3s ease;
   position: relative;
   letter-spacing: -0.005em;
   white-space: nowrap;
-}
-
-.navbar-link:hover {
-  color: #2b9de0;
-}
-
-.navbar-link.active {
-  color: #2b9de0;
-  font-weight: 500;
 }
 
 .navbar-link.active::after {
@@ -68,8 +124,8 @@
   left: 0;
   right: 0;
   height: 2px;
-  background: #2b9de0;
   border-radius: 1px;
+  transition: all 0.3s ease;
 }
 
 /* Tablet (768px and below) */

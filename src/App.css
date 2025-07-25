@@ -1,20 +1,62 @@
 .App {
   text-align: center;
   min-height: 100vh;
+  background-color: #000000;
 }
 
 .main-content {
   padding-top: 60px; /* Account for fixed navbar */
 }
 
-.home-section {
+/* Blue sections - Home, Education & Skills */
+.home-section,
+.education-section,
+.skills-section {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(135deg, #4facfe 0%, #2980b9 100%);
+  background: linear-gradient(135deg, hsl(204, 85%, 64%) 0%, #307fd4 100%);
   color: white;
+  padding: 2rem;
+  position: relative;
+}
+
+/* White background strip behind navbar for home section only */
+.home-section::before {
+  content: '';
+  position: absolute;
+  top: -60px;
+  left: 0;
+  right: 0;
+  height: 60px;
+  background: #ffffff;
+  z-index: 1;
+}
+
+/* Black sections - About & Projects */
+.about-section,
+.projects-section {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #000000;
+  color: white;
+  padding: 2rem;
+}
+
+/* White sections - Experience */
+.experience-section {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff;
+  color: #000000;
   padding: 2rem;
 }
 
@@ -31,21 +73,48 @@
   line-height: 1.5;
 }
 
+.section-header h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
+  line-height: 1.2;
+}
+
+.section-header p {
+  font-size: 1.2rem;
+  opacity: 0.8;
+  line-height: 1.5;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
 /* Tablet (768px and below) */
 @media (max-width: 768px) {
   .main-content {
     padding-top: 55px;
   }
   
-  .home-section {
+  .home-section::before {
+    top: -55px;
+    height: 55px;
+  }
+  
+  .home-section,
+  .about-section,
+  .education-section,
+  .experience-section,
+  .skills-section,
+  .projects-section {
     padding: 1.5rem;
   }
   
-  .App-header h1 {
+  .App-header h1,
+  .section-header h2 {
     font-size: 2.5rem;
   }
   
-  .App-header p {
+  .App-header p,
+  .section-header p {
     font-size: 1.1rem;
   }
 }
@@ -56,47 +125,73 @@
     padding-top: 50px;
   }
   
-  .home-section {
+  .home-section::before {
+    top: -50px;
+    height: 50px;
+  }
+  
+  .home-section,
+  .about-section,
+  .education-section,
+  .experience-section,
+  .skills-section,
+  .projects-section {
     padding: 1rem;
   }
   
-  .App-header h1 {
+  .App-header h1,
+  .section-header h2 {
     font-size: 2rem;
     margin-bottom: 0.75rem;
   }
   
-  .App-header p {
+  .App-header p,
+  .section-header p {
     font-size: 1rem;
   }
 }
 
 /* Mobile phones (480px and below) */
 @media (max-width: 480px) {
-  .home-section {
+  .home-section,
+  .about-section,
+  .education-section,
+  .experience-section,
+  .skills-section,
+  .projects-section {
     padding: 0.75rem;
   }
   
-  .App-header h1 {
+  .App-header h1,
+  .section-header h2 {
     font-size: 1.75rem;
     margin-bottom: 0.5rem;
   }
   
-  .App-header p {
+  .App-header p,
+  .section-header p {
     font-size: 0.95rem;
   }
 }
 
 /* Very small phones (360px and below) */
 @media (max-width: 360px) {
-  .home-section {
+  .home-section,
+  .about-section,
+  .education-section,
+  .experience-section,
+  .skills-section,
+  .projects-section {
     padding: 0.5rem;
   }
   
-  .App-header h1 {
+  .App-header h1,
+  .section-header h2 {
     font-size: 1.5rem;
   }
   
-  .App-header p {
+  .App-header p,
+  .section-header p {
     font-size: 0.9rem;
   }
 } 
