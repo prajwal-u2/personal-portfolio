@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import myPhoto from '../assets/images/my_photo.png';
 import './Navbar.css';
 
 function Navbar() {
@@ -61,6 +62,7 @@ function Navbar() {
     <nav className={`navbar navbar-${navbarTheme}`}>
       <div className="navbar-container">
         <div className="navbar-brand">
+          <img src={myPhoto} alt="Prajwal" className="navbar-photo" />
           <span>Portfolio</span>
         </div>
         <ul className="navbar-menu">

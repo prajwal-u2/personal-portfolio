@@ -87,6 +87,19 @@
   height: 60px;
 }
 
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.navbar-photo {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
 .navbar-brand span {
   font-size: 1.25rem;
   font-weight: 600;
