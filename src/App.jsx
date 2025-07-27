@@ -73,6 +73,8 @@ function App() {
                 <div className="education-icon">
                   {/* University of Minnesota icon placeholder */}
                   <div className="university-icon"></div>
+                  <p className="university-name"><span className="no-break">University of</span> Minnesota</p>
+                  <p className="university-location"><span className="no-break">Twin Cities</span>,<br />Minneapolis</p>
                 </div>
                 <div className="education-details">
                   <h3 className="degree">Master of Science in Computer Science</h3>
@@ -106,6 +108,8 @@ function App() {
                 <div className="education-icon">
                   {/* REVA University icon placeholder */}
                   <div className="university-icon"></div>
+                  <p className="university-name">REVA University</p>
+                  <p className="university-location">Bengaluru</p>
                 </div>
                 <div className="education-details">
                   <h3 className="degree">Bachelor of Technology in Computer Science</h3>
