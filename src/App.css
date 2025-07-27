@@ -77,12 +77,23 @@
   font-weight: bold;
   color: white;
   margin-bottom: 0.5rem;
+  overflow: hidden;
+}
+
+.university-logo {
+  width: 80%;
+  height: 80%;
+  object-fit: contain;
+}
+
+.umn-logo {
+  transform: translateX(4%) scale(1.1);
 }
 
 .university-name {
   font-size: 0.8rem;
-  font-weight: 600;
-  color: rgba(255, 255, 255, 0.9);
+  font-weight: 700;
+  color: rgba(255, 255, 255, 1);
   text-align: center;
   line-height: 1.1;
   margin: 0 0 0.25rem 0;
@@ -94,8 +105,8 @@
 
 .university-location {
   font-size: 0.7rem;
-  font-weight: 400;
-  color: rgba(255, 255, 255, 0.7);
+  font-weight: 600;
+  color: rgba(255, 255, 255, 1);
   text-align: center;
   line-height: 1.1;
   margin: 0;
@@ -108,6 +119,10 @@
 
 .no-break {
   white-space: nowrap;
+}
+
+.reva-text {
+  transform: translateX(5px);
 }
 
 .education-details {

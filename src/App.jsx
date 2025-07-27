@@ -2,6 +2,7 @@ import React from 'react';
 import Navbar from './components/Navbar';
 import AnimatedText from './components/AnimatedText';
 import homePageIllustration from './assets/images/home_page_illustration.png';
+import umnLogo from './assets/images/umn_logo.png';
 import './App.css';
 
 function App() {
@@ -71,8 +72,10 @@ function App() {
             <div className="education-content">
               <div className="education-item">
                 <div className="education-icon">
-                  {/* University of Minnesota icon placeholder */}
-                  <div className="university-icon"></div>
+                  {/* University of Minnesota icon */}
+                  <div className="university-icon">
+                    <img src={umnLogo} alt="University of Minnesota" className="university-logo umn-logo" />
+                  </div>
                   <p className="university-name"><span className="no-break">University of</span> Minnesota</p>
                   <p className="university-location"><span className="no-break">Twin Cities</span>,<br />Minneapolis</p>
                 </div>
@@ -106,8 +109,10 @@ function App() {
               
               <div className="education-item">
                 <div className="education-icon">
-                  {/* REVA University icon placeholder */}
-                  <div className="university-icon"></div>
+                  {/* REVA University icon */}
+                  <div className="university-icon">
+                    <img src="https://cdn.brandfetch.io/idOToV47gT/theme/light/logo.svg?c=1bxid64Mup7aczewSAYMX&t=1750782212661" alt="REVA University" className="university-logo" />
+                  </div>
                   <p className="university-name">REVA University</p>
                   <p className="university-location">Bengaluru</p>
                 </div>
