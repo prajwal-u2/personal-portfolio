@@ -68,11 +68,67 @@ function App() {
         <section id="education" className="education-section">
           <header className="section-header">
             <h2>Education</h2>
-            <p>
-              My educational journey has equipped me with a solid foundation in computer science principles, 
-              algorithms, and software engineering best practices. I continue to learn and adapt to new technologies 
-              to stay current in this rapidly evolving field.
-            </p>
+            <div className="education-content">
+              <div className="education-item">
+                <div className="education-icon">
+                  {/* University of Minnesota icon placeholder */}
+                  <div className="university-icon"></div>
+                </div>
+                <div className="education-details">
+                  <h3 className="degree">Master of Science in Computer Science</h3>
+                  <p className="university">University of Minnesota, Twin Cities, Minneapolis</p>
+                  <div className="courses">
+                    <div className="semester">
+                      <h4 className="semester-title">Fall 2024 Courses:</h4>
+                      <ul className="course-list">
+                        <li>CS 5511 - Artificial Intelligence I</li>
+                        <li>CS 5211 - Data Communications and Computer Networks</li>
+                        <li>CS 5801 - Software Engineering I</li>
+                      </ul>
+                    </div>
+                    <div className="semester">
+                      <h4 className="semester-title">Spring 2025 Courses:</h4>
+                      <ul className="course-list">
+                        <li>CS 5105 - Introduction to Distributed Systems</li>
+                        <li>CS 5521 - Machine Learning Fundamentals</li>
+                        <li>SE 5709 - Event-Driven Architecture & Real-time Data Processing</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div className="education-meta">
+                    <span className="gpa">CGPA: 4/4</span>
+                    <span className="duration">Sep 2024 – May 2026</span>
+                  </div>
+                </div>
+              </div>
+              
+              <div className="education-item">
+                <div className="education-icon">
+                  {/* REVA University icon placeholder */}
+                  <div className="university-icon"></div>
+                </div>
+                <div className="education-details">
+                  <h3 className="degree">Bachelor of Technology in Computer Science</h3>
+                  <p className="university">REVA University, Bengaluru</p>
+                  <div className="courses">
+                    <div className="semester">
+                      <h4 className="semester-title">Key Courses:</h4>
+                      <ul className="course-list">
+                        <li>Data Structure and Algorithms</li>
+                        <li>Cloud Computing and Big Data</li>
+                        <li>Data Mining and Warehousing</li>
+                        <li>Cryptography and Network Security</li>
+                        <li>Web Application Development</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div className="education-meta">
+                    <span className="gpa">CGPA: 9.6/10</span>
+                    <span className="duration">Aug 2018 – Jan 2022</span>
+                  </div>
+                </div>
+              </div>
+            </div>
           </header>
         </section>
 
