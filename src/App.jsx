@@ -1,6 +1,7 @@
 import React from 'react';
 import Navbar from './components/Navbar';
 import AnimatedText from './components/AnimatedText';
+import ExperienceSection from './components/ExperienceSection';
 import homePageIllustration from './assets/images/home_page_illustration.png';
 import umnLogo from './assets/images/umn_logo.png';
 import revaLogo from './assets/images/reva_logo.png';
@@ -145,11 +146,7 @@ function App() {
         <section id="experience" className="experience-section">
           <header className="section-header">
             <h2>Experience</h2>
-            <p>
-              Through various projects and professional experiences, I've developed expertise in full-stack development, 
-              problem-solving, and delivering high-quality software solutions. I thrive in collaborative environments 
-              and am always eager to take on new challenges.
-            </p>
+            <ExperienceSection />
           </header>
         </section>
 
