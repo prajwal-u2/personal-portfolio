@@ -58,10 +58,10 @@ function App() {
         <section id="about" className="about-section">
           <header className="section-header">
             <h2>About Me</h2>
-            <p>
+            <p className="about">
               As a Cloud, Data, and Software Engineer, I specialize in building scalable, high-impact systems that bridge infrastructure, data, and intelligent automation. With industry experience at Mercedes-Benz R&D and IDeaS, I've architected cloud-native platforms across AWS and Azure, automated DevOps with GitHub Actions and Terraform, and delivered real-time data pipelines using Kafka, Databricks, and Spark. My work combines pragmatic engineering with clean design—whether deploying AI-assisted developer tools or standardizing ETL pipelines that serve 100+ workflows daily.
             </p>
-            <p>
+            <p className="about">
               Driven by curiosity and precision, I've also explored the frontier of LLM-powered systems—developing tools like FASTER for semantic data modeling and building distributed systems for federated learning and fault-tolerant storage. I approach every project with a systems thinker's mindset: clean APIs, reliable automation, and data that moves with purpose. If you're looking for an engineer who blends reliability with innovation—and turns complexity into clarity—<b>Let's connect!</b>  and explore how we can turn challenges into opportunities.
             </p>
           </header>
@@ -78,8 +78,10 @@ function App() {
                   <div className="university-icon umn-icon">
                     <img src={umnLogo} alt="University of Minnesota" className="university-logo umn-logo" />
                   </div>
+                  <div className="university-name-location">
                   <p className="university-name"><span className="no-break">University of</span> Minnesota, <span className="no-break">Twin Cities</span></p>
                   <p className="university-location">Minneapolis, Minnesota, USA</p>
+                  </div>
                 </div>
                 <div className="education-details">
                   <h3 className="degree">Master of Science in Computer Science</h3>
@@ -115,8 +117,10 @@ function App() {
                     {/* <img src="https://cdn.brandfetch.io/idOToV47gT/theme/light/logo.svg?c=1bxid64Mup7aczewSAYMX&t=1750782212661" alt="REVA University" className="university-logo" /> */}
                                          <img src={revaLogo} alt="REVA University" className="university-logo reva-logo" />
                   </div>
+                  <div className="university-name-location">
                   <p className="university-name">REVA University</p>
                   <p className="university-location">Bengaluru, Karnataka, India</p>
+                  </div>
                 </div>
                 <div className="education-details">
                   <h3 className="degree">Bachelor of Technology in Computer Science</h3>

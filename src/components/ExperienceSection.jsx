@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
 function ExperienceSection() {
-  const [activeExperience, setActiveExperience] = useState('mercedes');
+  const [activeExperience, setActiveExperience] = useState('umn');
 
   const experiences = [
     {
@@ -60,6 +60,7 @@ function ExperienceSection() {
   ];
 
   const activeExp = experiences.find(exp => exp.id === activeExperience);
+  const activeIndex = experiences.findIndex(exp => exp.id === activeExperience);
 
   return (
     <div className="experience-content">
@@ -70,6 +71,9 @@ function ExperienceSection() {
             className={`experience-item ${activeExperience === exp.id ? 'active' : ''}`}
             onClick={() => setActiveExperience(exp.id)}
           >
+            <div className="experience-icon">
+              <span>{exp.icon}</span>
+            </div>
             <div className="experience-header">
               <h3 className="experience-title">{exp.title}</h3>
               <p className="experience-company">{exp.company}</p>
