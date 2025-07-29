@@ -562,6 +562,10 @@
   padding: 1.8rem;
 }
 
+.experience-section .section-header h2 {
+  color: #333;
+}
+
 .App-header h1 {
   font-size: 3rem;
   margin-bottom: 1rem;
@@ -580,7 +584,6 @@
   margin-bottom: 1rem;
   font-weight: bold;
   line-height: 1.2;
-  color: #333;
 }
 
 .section-header .detail-description {
