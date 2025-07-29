@@ -9,6 +9,7 @@ function ExperienceSection() {
       title: 'Consultant',
       company: 'Mercedes-Benz Research and Development India',
       duration: 'Aug 2022 - Aug 2024',
+      icon: '🚗',
       softwareEngineering: [
         'Pioneered a scalable Big Data Analytics platform by designing microservices for Azure and AWS infrastructure deployment using Python, Terraform, and Azure DevOps, reducing deployment time from 2 days to half a day.',
         'Created backend microservices using Python Azure SDK, FastAPI, and Docker to programmatically build and provision data pipelines, enabling self-service deployment and reducing turnaround time by 70%.',
@@ -27,6 +28,7 @@ function ExperienceSection() {
       title: 'Cloud Engineer Intern',
       company: 'IDeaS',
       duration: 'May 2025 - Aug 2025',
+      icon: '☁️',
       description: 'Focused on cloud infrastructure automation and CI/CD pipeline optimization. Developed containerized solutions and implemented DevOps best practices to improve deployment efficiency and system reliability.',
       achievements: [
         'Standardized Dev Containers using Docker and Shell scripts to embed reusable tools, tripling setup speed and amplifying automation with production.',
@@ -40,6 +42,7 @@ function ExperienceSection() {
       title: 'Research Assistant',
       company: 'University of Minnesota',
       duration: 'Jan 2025 - May 2025',
+      icon: '🎓',
       description: 'Developed ML-powered systems and data pipelines. Created FASTER, an LLM-powered system using Python, OpenAI APIs, and NLP to identify column semantics and generate reusable metadata. Built data engineering solutions and real-world ontology systems.',
       achievements: [
         'Created FASTER, an LLM-powered system using Python, OpenAI APIs, and NLP to identify column semantics and generate reusable metadata Semantic Types (RSTs), cutting deployment by 40% and boosting column consistency by 35%.',
@@ -51,6 +54,7 @@ function ExperienceSection() {
       title: 'Software Engineer Intern',
       company: 'Betsol',
       duration: 'Jan 2022 - May 2022',
+      icon: '⚙️',
       description: 'Developed production-ready data migration solutions and multi-tenant applications. Focused on secure data transfer, backup optimization, and scalable client-server architecture implementation.',
       achievements: [
         'Developed a production-ready data migration POC using Robotic, Rclone, and Go, improving security and efficiency by 40% and reducing backup cost by 25% through optimized local-to-cloud transfer.',
