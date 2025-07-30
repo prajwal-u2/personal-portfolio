@@ -13,7 +13,7 @@ function Navbar() {
     'About': 'black', 
     'Education': 'blue',
     'Experience': 'white',
-    'Projects': 'blue',
+    'Projects': 'white',
     'Skills': 'black'
   };
 

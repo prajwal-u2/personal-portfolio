@@ -164,6 +164,89 @@ function App() {
               that solve real-world problems.
             </p>
           </header>
+          
+          <div className="projects-container">
+            {/* First Row - 3 cards */}
+            <div className="projects-row">
+              <div className="project-card">
+                <div className="project-icon">
+                  <span>🤖</span>
+                </div>
+                <h3 className="project-title">AI-Powered Analytics Platform</h3>
+                <p className="project-description">A comprehensive data analytics platform built with Python, React, and AWS that processes real-time data streams.</p>
+                <div className="project-technologies">
+                  <span className="tech-tag">Python</span>
+                  <span className="tech-tag">React</span>
+                  <span className="tech-tag">AWS</span>
+                  <span className="tech-tag">Machine Learning</span>
+                </div>
+                <button className="project-button">View Project</button>
+              </div>
+              
+              <div className="project-card">
+                <div className="project-icon">
+                  <span>☁️</span>
+                </div>
+                <h3 className="project-title">Cloud Infrastructure Automation</h3>
+                <p className="project-description">Terraform-based infrastructure automation tool that deploys scalable microservices across multiple cloud providers.</p>
+                <div className="project-technologies">
+                  <span className="tech-tag">Terraform</span>
+                  <span className="tech-tag">Docker</span>
+                  <span className="tech-tag">Kubernetes</span>
+                  <span className="tech-tag">CI/CD</span>
+                </div>
+                <button className="project-button">View Project</button>
+              </div>
+              
+              <div className="project-card">
+                <div className="project-icon">
+                  <span>⚡</span>
+                </div>
+                <h3 className="project-title">Real-time Data Pipeline</h3>
+                <p className="project-description">High-throughput data pipeline using Apache Kafka and Spark that processes millions of events per second.</p>
+                <div className="project-technologies">
+                  <span className="tech-tag">Apache Kafka</span>
+                  <span className="tech-tag">Spark</span>
+                  <span className="tech-tag">Python</span>
+                  <span className="tech-tag">Databricks</span>
+                </div>
+                <button className="project-button">View Project</button>
+              </div>
+            </div>
+            
+            {/* Second Row - 2 cards */}
+            <div className="projects-row">
+              <div className="project-card">
+                <div className="project-icon">
+                  <span>🌐</span>
+                </div>
+                <h3 className="project-title">Full-Stack Web Application</h3>
+                <p className="project-description">Modern web application built with React frontend, Node.js backend, and MongoDB database featuring real-time updates.</p>
+                <div className="project-technologies">
+                  <span className="tech-tag">React</span>
+                  <span className="tech-tag">Node.js</span>
+                  <span className="tech-tag">MongoDB</span>
+                  <span className="tech-tag">WebSockets</span>
+                </div>
+                <button className="project-button">View Project</button>
+              </div>
+              
+              <div className="project-card">
+                <div className="project-icon">
+                  <span>🔒</span>
+                </div>
+                <h3 className="project-title">Blockchain Security System</h3>
+                <p className="project-description">Decentralized security system using blockchain technology for secure data storage and authentication.</p>
+                <div className="project-technologies">
+                  <span className="tech-tag">Blockchain</span>
+                  <span className="tech-tag">Solidity</span>
+                  <span className="tech-tag">Web3</span>
+                  <span className="tech-tag">Ethereum</span>
+                </div>
+                <button className="project-button">View Project</button>
+              </div>
+            </div>
+          </div>
         </section>
 
         {/* Skills - Black */}

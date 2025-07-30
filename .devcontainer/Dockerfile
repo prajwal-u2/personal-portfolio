@@ -10,6 +10,7 @@ WORKDIR /workspaces/personal-portfolio
 RUN npm install --save-dev vite @vitejs/plugin-react tailwindcss postcss autoprefixer prettier
 RUN npm install animate.css gsap aos web-vitals
 RUN npm install react react-dom
+RUN npm install react-router-dom
 
 # Install all dependencies listed in package.json (if any)
 RUN npm install
