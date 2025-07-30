@@ -169,9 +169,6 @@ function App() {
             {/* First Row - 3 cards */}
             <div className="projects-row">
               <div className="project-card">
-                <div className="project-icon">
-                  <span>🤖</span>
-                </div>
                 <h3 className="project-title">AI-Powered Analytics Platform</h3>
                 <p className="project-description">A comprehensive data analytics platform built with Python, React, and AWS that processes real-time data streams.</p>
                 <div className="project-technologies">
@@ -184,9 +181,6 @@ function App() {
               </div>
               
               <div className="project-card">
-                <div className="project-icon">
-                  <span>☁️</span>
-                </div>
                 <h3 className="project-title">Cloud Infrastructure Automation</h3>
                 <p className="project-description">Terraform-based infrastructure automation tool that deploys scalable microservices across multiple cloud providers.</p>
                 <div className="project-technologies">
@@ -199,9 +193,6 @@ function App() {
               </div>
               
               <div className="project-card">
-                <div className="project-icon">
-                  <span>⚡</span>
-                </div>
                 <h3 className="project-title">Real-time Data Pipeline</h3>
                 <p className="project-description">High-throughput data pipeline using Apache Kafka and Spark that processes millions of events per second.</p>
                 <div className="project-technologies">
@@ -217,9 +208,6 @@ function App() {
             {/* Second Row - 2 cards */}
             <div className="projects-row">
               <div className="project-card">
-                <div className="project-icon">
-                  <span>🌐</span>
-                </div>
                 <h3 className="project-title">Full-Stack Web Application</h3>
                 <p className="project-description">Modern web application built with React frontend, Node.js backend, and MongoDB database featuring real-time updates.</p>
                 <div className="project-technologies">
@@ -232,9 +220,6 @@ function App() {
               </div>
               
               <div className="project-card">
-                <div className="project-icon">
-                  <span>🔒</span>
-                </div>
                 <h3 className="project-title">Blockchain Security System</h3>
                 <p className="project-description">Decentralized security system using blockchain technology for secure data storage and authentication.</p>
                 <div className="project-technologies">

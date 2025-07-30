@@ -921,14 +921,17 @@
   margin: 2rem auto 0;
   padding: 0 2rem;
   box-sizing: border-box;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 2rem;
+  grid-template-areas: 
+    "card1 card2 card3"
+    "card4 card5 .";
 }
 
 .projects-row {
-  display: flex;
-  gap: 2rem;
-  margin-bottom: 2rem;
-  justify-content: center;
-  flex-wrap: wrap;
+  display: contents;
 }
 
 .projects-section .project-card {
@@ -940,11 +943,11 @@
   transition: all 0.3s ease;
   display: flex;
   flex-direction: column;
-  min-height: 400px;
-  max-width: 350px;
-  flex: 1;
+  height: 420px;
+  width: 100%;
   box-shadow: 0 12px 32px rgba(0, 0, 0, 0.1);
   position: relative;
+  box-sizing: border-box;
 }
 
 .projects-section .project-card:hover {
@@ -988,6 +991,8 @@
   line-height: 1.6;
   margin-bottom: 1.5rem;
   flex: 1;
+  display: flex;
+  align-items: flex-start;
 }
 
 .projects-section .project-technologies {
@@ -1026,6 +1031,7 @@
   backdrop-filter: blur(5px);
   align-self: flex-start;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  margin-top: auto;
 }
 
 .projects-section .project-button:hover {
@@ -1037,30 +1043,37 @@
 
 /* Projects responsive styles */
 @media (max-width: 768px) {
-  .projects-row {
-    flex-direction: column;
-    align-items: center;
+  .projects-container {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: 
+      "card1 card2"
+      "card3 card4"
+      "card5 .";
   }
   
   .projects-section .project-card {
-    max-width: 100%;
-    min-height: 350px;
+    height: 380px;
   }
 }
 
 @media (max-width: 600px) {
   .projects-container {
     padding: 0 1rem;
-  }
-  
-  .projects-row {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-areas: 
+      "card1"
+      "card2"
+      "card3"
+      "card4"
+      "card5";
     gap: 1.5rem;
-    margin-bottom: 1.5rem;
   }
   
   .projects-section .project-card {
     padding: 1.5rem;
-    min-height: 320px;
+    height: 350px;
   }
   
   .projects-section .project-title {
