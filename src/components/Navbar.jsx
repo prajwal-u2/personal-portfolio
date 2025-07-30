@@ -3,7 +3,7 @@ import myPhoto from '../assets/images/my_photo.png';
 import './Navbar.css';
 
 function Navbar() {
-  const navItems = ['Home', 'About', 'Education', 'Experience', 'Skills', 'Projects'];
+  const navItems = ['Home', 'About', 'Education', 'Experience', 'Projects', 'Skills'];
   const [activeSection, setActiveSection] = useState('Home');
   const [navbarTheme, setNavbarTheme] = useState('white');
 
@@ -13,8 +13,8 @@ function Navbar() {
     'About': 'black', 
     'Education': 'blue',
     'Experience': 'white',
-    'Skills': 'blue',
-    'Projects': 'black'
+    'Projects': 'blue',
+    'Skills': 'black'
   };
 
   useEffect(() => {

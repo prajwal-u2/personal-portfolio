@@ -8,10 +8,10 @@
   padding-top: 60px; /* Account for fixed navbar */
 }
 
-/* Blue sections - Home, Education & Skills */
+/* Blue sections - Home, Education & Projects */
 .home-section,
 .education-section,
-.skills-section {
+.projects-section {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -175,12 +175,12 @@
   background: rgba(48, 127, 212, 0.1);
   backdrop-filter: blur(10px);
   border: 1px solid rgba(48, 127, 212, 0.2);
+  border-left: 4px solid rgba(48, 127, 212, 0.2);
   border-radius: 12px;
   box-shadow: 0 8px 25px rgba(48, 127, 212, 0.15);
   padding: 1.2rem;
   cursor: pointer;
   transition: all 0.3s ease;
-  border-left: 4px solid transparent;
   display: flex;
   align-items: center;
   min-height: 140px;
@@ -545,9 +545,9 @@
   z-index: 1;
 }
 
-/* Black sections - About & Projects */
+/* Black sections - About & Skills */
 .about-section,
-.projects-section {
+.skills-section {
   min-height: 100vh;
   display: flex;
   flex-direction: column;

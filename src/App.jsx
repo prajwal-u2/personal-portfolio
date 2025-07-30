@@ -154,18 +154,7 @@ function App() {
           </header>
         </section>
 
-        {/* Skills - Blue */}
-        <section id="skills" className="skills-section">
-          <header className="section-header">
-            <h2>Skills</h2>
-            <p>
-              Proficient in modern programming languages and frameworks including JavaScript, React, Node.js, Python, 
-              and various databases. I'm experienced with cloud platforms, DevOps practices, and agile development methodologies.
-            </p>
-          </header>
-        </section>
-
-        {/* Projects - Black */}
+        {/* Projects - Blue */}
         <section id="projects" className="projects-section">
           <header className="section-header">
             <h2>Projects</h2>
@@ -173,6 +162,17 @@ function App() {
               I've worked on diverse projects ranging from web applications to mobile apps and backend systems. 
               Each project has taught me valuable lessons and helped me grow as a developer. I enjoy building solutions 
               that solve real-world problems.
+            </p>
+          </header>
+        </section>
+
+        {/* Skills - Black */}
+        <section id="skills" className="skills-section">
+          <header className="section-header">
+            <h2>Skills</h2>
+            <p>
+              Proficient in modern programming languages and frameworks including JavaScript, React, Node.js, Python, 
+              and various databases. I'm experienced with cloud platforms, DevOps practices, and agile development methodologies.
             </p>
           </header>
         </section>
