@@ -237,12 +237,198 @@ function App() {
         {/* Skills - Black */}
         <section id="skills" className="skills-section">
           <header className="section-header">
-            <h2>Skills</h2>
+            <h2>💻 Tech Stack</h2>
             <p>
               Proficient in modern programming languages and frameworks including JavaScript, React, Node.js, Python, 
               and various databases. I'm experienced with cloud platforms, DevOps practices, and agile development methodologies.
             </p>
           </header>
+          
+          <div className="skills-container">
+            {/* Programming Languages */}
+            <div className="skill-category">
+              <div className="category-header">
+                <span className="category-icon">🔧</span>
+                <h3>Programming Languages</h3>
+              </div>
+              <div className="skills-grid">
+                <div className="skill-item">
+                  <span className="skill-icon js">JS</span>
+                  <span className="skill-name">JavaScript</span>
+                </div>
+                <div className="skill-item">
+                  <span className="skill-icon ts">TS</span>
+                  <span className="skill-name">TypeScript</span>
+                </div>
+                <div className="skill-item">
+                  <span className="skill-icon java">☕</span>
+                  <span className="skill-name">Java</span>
+                </div>
+                <div className="skill-item">
+                  <span className="skill-icon python">🐍</span>
+                  <span className="skill-name">Python</span>
+                </div>
+                <div className="skill-item">
+                  <span className="skill-icon c">C</span>
+                  <span className="skill-name">C</span>
+                </div>
+                <div className="skill-item">
+                  <span className="skill-icon cpp">C++</span>
+                  <span className="skill-name">C++</span>
+                </div>
+              </div>
+            </div>
+
+            {/* Web Development */}
+            <div className="skill-category">
+              <div className="category-header">
+                <span className="category-icon">🌐</span>
+                <h3>Web Development</h3>
+              </div>
+              <div className="skills-grid">
+                <div className="skill-item">
+                  <span className="skill-icon react">⚛️</span>
+                  <span className="skill-name">React</span>
+                </div>
+                <div className="skill-item">
+                  <span className="skill-icon nextjs">N</span>
+                  <span className="skill-name">Next.js</span>
+                </div>
+                <div className="skill-item">
+                  <span className="skill-icon nodejs">🟢</span>
+                  <span className="skill-name">Node.js</span>
+                </div>
+                <div className="skill-item">
+                  <span className="skill-icon express">🚀</span>
+                  <span className="skill-name">Express.js</span>
+                </div>
+                <div className="skill-item">
+                  <span className="skill-icon springboot">🍃</span>
+                  <span className="skill-name">Spring Boot</span>
+                </div>
+                <div className="skill-item">
+                  <span className="skill-icon fastapi">⚡</span>
+                  <span className="skill-name">FastAPI</span>
+                </div>
+                <div className="skill-item">
+                  <span className="skill-icon html">🧱</span>
+                  <span className="skill-name">HTML5</span>
+                </div>
+                <div className="skill-item">
+                  <span className="skill-icon css">🎨</span>
+                  <span className="skill-name">CSS3</span>
+                </div>
+              </div>
+            </div>
+
+            {/* Databases & Storage */}
+            <div className="skill-category">
+              <div className="category-header">
+                <span className="category-icon">🗄️</span>
+                <h3>Databases & Storage</h3>
+              </div>
+              <div className="skills-grid">
+                <div className="skill-item">
+                  <span className="skill-icon postgresql">🐘</span>
+                  <span className="skill-name">PostgreSQL</span>
+                </div>
+                <div className="skill-item">
+                  <span className="skill-icon mongodb">🍃</span>
+                  <span className="skill-name">MongoDB</span>
+                </div>
+                <div className="skill-item">
+                  <span className="skill-icon sqlserver">🗄️</span>
+                  <span className="skill-name">SQL Server</span>
+                </div>
+                <div className="skill-item">
+                  <span className="skill-icon redis">🔴</span>
+                  <span className="skill-name">Redis</span>
+                </div>
+              </div>
+            </div>
+
+            {/* Cloud & DevOps */}
+            <div className="skill-category">
+              <div className="category-header">
+                <span className="category-icon">☁️</span>
+                <h3>Cloud & DevOps</h3>
+              </div>
+              <div className="skills-grid">
+                <div className="skill-item">
+                  <span className="skill-icon aws">☁️</span>
+                  <span className="skill-name">AWS</span>
+                </div>
+                <div className="skill-item">
+                  <span className="skill-icon azure">🔷</span>
+                  <span className="skill-name">Azure</span>
+                </div>
+                <div className="skill-item">
+                  <span className="skill-icon docker">🐳</span>
+                  <span className="skill-name">Docker</span>
+                </div>
+                <div className="skill-item">
+                  <span className="skill-icon kubernetes">⚙️</span>
+                  <span className="skill-name">Kubernetes</span>
+                </div>
+                <div className="skill-item">
+                  <span className="skill-icon jenkins">👨‍🔧</span>
+                  <span className="skill-name">Jenkins</span>
+                </div>
+              </div>
+            </div>
+
+            {/* Data & Analytics */}
+            <div className="skill-category">
+              <div className="category-header">
+                <span className="category-icon">📊</span>
+                <h3>Data & Analytics</h3>
+              </div>
+              <div className="skills-grid">
+                <div className="skill-item">
+                  <span className="skill-icon powerbi">📊</span>
+                  <span className="skill-name">PowerBI</span>
+                </div>
+                <div className="skill-item">
+                  <span className="skill-icon tableau">📈</span>
+                  <span className="skill-name">Tableau</span>
+                </div>
+                <div className="skill-item">
+                  <span className="skill-icon grafana">📉</span>
+                  <span className="skill-name">Grafana</span>
+                </div>
+                <div className="skill-item">
+                  <span className="skill-icon prometheus">📏</span>
+                  <span className="skill-name">Prometheus</span>
+                </div>
+                <div className="skill-item">
+                  <span className="skill-icon ssis">🔄</span>
+                  <span className="skill-name">SSIS</span>
+                </div>
+              </div>
+            </div>
+
+            {/* Machine Learning */}
+            <div className="skill-category">
+              <div className="category-header">
+                <span className="category-icon">🤖</span>
+                <h3>Machine Learning</h3>
+              </div>
+              <div className="skills-grid">
+                <div className="skill-item">
+                  <span className="skill-icon tensorflow">🧠</span>
+                  <span className="skill-name">TensorFlow</span>
+                </div>
+                <div className="skill-item">
+                  <span className="skill-icon scikit">🔬</span>
+                  <span className="skill-name">Scikit-learn</span>
+                </div>
+                <div className="skill-item">
+                  <span className="skill-icon huggingface">🤗</span>
+                  <span className="skill-name">Hugging Face</span>
+                </div>
+              </div>
+            </div>
+          </div>
         </section>
       </main>
     </div>
