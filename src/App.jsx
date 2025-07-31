@@ -302,8 +302,8 @@ function App() {
                   <span className="skill-name">Spring Boot</span>
                 </div>
                 <div className="skill-item">
-                  <img src="https://img.icons8.com/color/48/000000/api-settings.png" alt="FastAPI" className="skill-icon" />
-                  <span className="skill-name">FastAPI</span>
+                  <img src="https://img.icons8.com/color/48/000000/api-settings.png" alt="REST APIs" className="skill-icon" />
+                  <span className="skill-name">REST APIs</span>
                 </div>
 
 

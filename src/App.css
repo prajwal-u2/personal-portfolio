@@ -1143,7 +1143,7 @@
   align-items: center;
   gap: 0.4rem;
   padding: 0.75rem;
-  background: rgba(241, 241, 241, 0.25);
+  background: rgba(255, 255, 255, 0.0);
   border: 1px solid rgba(70, 130, 180, 0.2);
   border-radius: 8px;
   transition: all 0.3s ease;
@@ -1151,7 +1151,7 @@
 }
 
 .skill-item:hover {
-  background: rgba(86, 86, 86, 0.35);
+  background: rgba(255, 255, 255, 0.4);
   transform: translateY(-1px);
   box-shadow: 0 4px 12px rgba(70, 130, 180, 0.15);
 }
