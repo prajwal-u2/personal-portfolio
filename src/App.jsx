@@ -244,27 +244,27 @@ function App() {
               </div>
               <div className="skills-grid">
                 <div className="skill-item">
-                  <span className="skill-icon js">JS</span>
+                  <img src="https://img.icons8.com/color/48/000000/javascript--v1.png" alt="JavaScript" className="skill-icon" />
                   <span className="skill-name">JavaScript</span>
                 </div>
                 <div className="skill-item">
-                  <span className="skill-icon ts">TS</span>
+                  <img src="https://img.icons8.com/color/48/000000/typescript.png" alt="TypeScript" className="skill-icon" />
                   <span className="skill-name">TypeScript</span>
                 </div>
                 <div className="skill-item">
-                  <span className="skill-icon java">☕</span>
+                  <img src="https://img.icons8.com/color/48/000000/java-coffee-cup-logo--v1.png" alt="Java" className="skill-icon" />
                   <span className="skill-name">Java</span>
                 </div>
                 <div className="skill-item">
-                  <span className="skill-icon python">🐍</span>
+                  <img src="https://img.icons8.com/color/48/000000/python.png" alt="Python" className="skill-icon" />
                   <span className="skill-name">Python</span>
                 </div>
                 <div className="skill-item">
-                  <span className="skill-icon c">C</span>
+                  <img src="https://img.icons8.com/color/48/000000/c-programming.png" alt="C" className="skill-icon" />
                   <span className="skill-name">C</span>
                 </div>
                 <div className="skill-item">
-                  <span className="skill-icon cpp">C++</span>
+                  <img src="https://img.icons8.com/color/48/000000/c-plus-plus-logo.png" alt="C++" className="skill-icon" />
                   <span className="skill-name">C++</span>
                 </div>
               </div>
@@ -278,35 +278,35 @@ function App() {
               </div>
               <div className="skills-grid">
                 <div className="skill-item">
-                  <span className="skill-icon react">⚛️</span>
+                  <img src="https://img.icons8.com/color/48/000000/react-native.png" alt="React" className="skill-icon" />
                   <span className="skill-name">React</span>
                 </div>
                 <div className="skill-item">
-                  <span className="skill-icon nextjs">N</span>
+                  <img src="https://img.icons8.com/color/48/000000/nextjs.png" alt="Next.js" className="skill-icon" />
                   <span className="skill-name">Next.js</span>
                 </div>
                 <div className="skill-item">
-                  <span className="skill-icon nodejs">🟢</span>
+                  <img src="https://img.icons8.com/color/48/000000/nodejs.png" alt="Node.js" className="skill-icon" />
                   <span className="skill-name">Node.js</span>
                 </div>
                 <div className="skill-item">
-                  <span className="skill-icon express">🚀</span>
+                  <img src="https://img.icons8.com/office/48/000000/express-js.png" alt="Express.js" className="skill-icon" />
                   <span className="skill-name">Express.js</span>
                 </div>
                 <div className="skill-item">
-                  <span className="skill-icon springboot">🍃</span>
+                  <img src="https://img.icons8.com/color/48/000000/spring-logo.png" alt="Spring Boot" className="skill-icon" />
                   <span className="skill-name">Spring Boot</span>
                 </div>
                 <div className="skill-item">
-                  <span className="skill-icon fastapi">⚡</span>
+                  <img src="https://img.icons8.com/color/48/000000/api-settings.png" alt="FastAPI" className="skill-icon" />
                   <span className="skill-name">FastAPI</span>
                 </div>
                 <div className="skill-item">
-                  <span className="skill-icon html">🧱</span>
+                  <img src="https://img.icons8.com/color/48/000000/html-5--v1.png" alt="HTML5" className="skill-icon" />
                   <span className="skill-name">HTML5</span>
                 </div>
                 <div className="skill-item">
-                  <span className="skill-icon css">🎨</span>
+                  <img src="https://img.icons8.com/color/48/000000/css3.png" alt="CSS3" className="skill-icon" />
                   <span className="skill-name">CSS3</span>
                 </div>
               </div>
@@ -320,19 +320,19 @@ function App() {
               </div>
               <div className="skills-grid">
                 <div className="skill-item">
-                  <span className="skill-icon postgresql">🐘</span>
+                  <img src="https://img.icons8.com/color/48/000000/postgreesql.png" alt="PostgreSQL" className="skill-icon" />
                   <span className="skill-name">PostgreSQL</span>
                 </div>
                 <div className="skill-item">
-                  <span className="skill-icon mongodb">🍃</span>
+                  <img src="https://img.icons8.com/color/48/000000/mongodb.png" alt="MongoDB" className="skill-icon" />
                   <span className="skill-name">MongoDB</span>
                 </div>
                 <div className="skill-item">
-                  <span className="skill-icon sqlserver">🗄️</span>
+                  <img src="https://img.icons8.com/color/48/000000/microsoft-sql-server.png" alt="SQL Server" className="skill-icon" />
                   <span className="skill-name">SQL Server</span>
                 </div>
                 <div className="skill-item">
-                  <span className="skill-icon redis">🔴</span>
+                  <img src="https://img.icons8.com/color/48/000000/redis.png" alt="Redis" className="skill-icon" />
                   <span className="skill-name">Redis</span>
                 </div>
               </div>
@@ -346,23 +346,23 @@ function App() {
               </div>
               <div className="skills-grid">
                 <div className="skill-item">
-                  <span className="skill-icon aws">☁️</span>
+                  <img src="https://img.icons8.com/color/48/000000/amazon-web-services.png" alt="AWS" className="skill-icon" />
                   <span className="skill-name">AWS</span>
                 </div>
                 <div className="skill-item">
-                  <span className="skill-icon azure">🔷</span>
+                  <img src="https://img.icons8.com/color/48/000000/azure-1.png" alt="Azure" className="skill-icon" />
                   <span className="skill-name">Azure</span>
                 </div>
                 <div className="skill-item">
-                  <span className="skill-icon docker">🐳</span>
+                  <img src="https://img.icons8.com/color/48/000000/docker.png" alt="Docker" className="skill-icon" />
                   <span className="skill-name">Docker</span>
                 </div>
                 <div className="skill-item">
-                  <span className="skill-icon kubernetes">⚙️</span>
+                  <img src="https://img.icons8.com/color/48/000000/kubernetes.png" alt="Kubernetes" className="skill-icon" />
                   <span className="skill-name">Kubernetes</span>
                 </div>
                 <div className="skill-item">
-                  <span className="skill-icon jenkins">👨‍🔧</span>
+                  <img src="https://img.icons8.com/color/48/000000/jenkins.png" alt="Jenkins" className="skill-icon" />
                   <span className="skill-name">Jenkins</span>
                 </div>
               </div>
@@ -376,23 +376,23 @@ function App() {
               </div>
               <div className="skills-grid">
                 <div className="skill-item">
-                  <span className="skill-icon powerbi">📊</span>
+                  <img src="https://img.icons8.com/color/48/000000/power-bi.png" alt="PowerBI" className="skill-icon" />
                   <span className="skill-name">PowerBI</span>
                 </div>
                 <div className="skill-item">
-                  <span className="skill-icon tableau">📈</span>
+                  <img src="https://img.icons8.com/color/48/000000/tableau-software.png" alt="Tableau" className="skill-icon" />
                   <span className="skill-name">Tableau</span>
                 </div>
                 <div className="skill-item">
-                  <span className="skill-icon grafana">📉</span>
+                  <img src="https://img.icons8.com/color/48/000000/grafana.png" alt="Grafana" className="skill-icon" />
                   <span className="skill-name">Grafana</span>
                 </div>
                 <div className="skill-item">
-                  <span className="skill-icon prometheus">📏</span>
+                  <img src="https://img.icons8.com/color/48/000000/prometheus-app.png" alt="Prometheus" className="skill-icon" />
                   <span className="skill-name">Prometheus</span>
                 </div>
                 <div className="skill-item">
-                  <span className="skill-icon ssis">🔄</span>
+                  <img src="https://img.icons8.com/color/48/000000/sql.png" alt="SSIS" className="skill-icon" />
                   <span className="skill-name">SSIS</span>
                 </div>
               </div>
@@ -406,15 +406,15 @@ function App() {
               </div>
               <div className="skills-grid">
                 <div className="skill-item">
-                  <span className="skill-icon tensorflow">🧠</span>
+                  <img src="https://img.icons8.com/color/48/000000/tensorflow.png" alt="TensorFlow" className="skill-icon" />
                   <span className="skill-name">TensorFlow</span>
                 </div>
                 <div className="skill-item">
-                  <span className="skill-icon scikit">🔬</span>
+                  <img src="https://img.icons8.com/color/48/000000/python.png" alt="Scikit-learn" className="skill-icon" />
                   <span className="skill-name">Scikit-learn</span>
                 </div>
                 <div className="skill-item">
-                  <span className="skill-icon huggingface">🤗</span>
+                  <img src="https://img.icons8.com/color/48/000000/artificial-intelligence.png" alt="Hugging Face" className="skill-icon" />
                   <span className="skill-name">Hugging Face</span>
                 </div>
               </div>

@@ -1143,63 +1143,27 @@
   align-items: center;
   gap: 0.4rem;
   padding: 0.75rem;
-  background: rgba(255, 255, 255, 0.05);
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(241, 241, 241, 0.25);
+  border: 1px solid rgba(70, 130, 180, 0.2);
   border-radius: 8px;
   transition: all 0.3s ease;
   cursor: pointer;
 }
 
 .skill-item:hover {
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(86, 86, 86, 0.35);
   transform: translateY(-1px);
-  box-shadow: 0 4px 12px rgba(255, 255, 255, 0.1);
+  box-shadow: 0 4px 12px rgba(70, 130, 180, 0.15);
 }
 
 .skill-icon {
   width: 32px;
   height: 32px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  object-fit: contain;
   border-radius: 6px;
-  font-size: 1rem;
-  font-weight: bold;
-  color: white;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
 }
 
-.skill-icon.js { background: linear-gradient(135deg, #f7df1e 0%, #ffeb3b 100%); color: #333; }
-.skill-icon.ts { background: linear-gradient(135deg, #3178c6 0%, #2196f3 100%); }
-.skill-icon.java { background: linear-gradient(135deg, #ed8b00 0%, #ff9800 100%); }
-.skill-icon.python { background: linear-gradient(135deg, #3776ab 0%, #4caf50 100%); }
-.skill-icon.c { background: linear-gradient(135deg, #00599c 0%, #2196f3 100%); }
-.skill-icon.cpp { background: linear-gradient(135deg, #00599c 0%, #0277bd 100%); }
-.skill-icon.react { background: linear-gradient(135deg, #61dafb 0%, #21cbf3 100%); color: #333; }
-.skill-icon.nextjs { background: linear-gradient(135deg, #000000 0%, #333333 100%); }
-.skill-icon.nodejs { background: linear-gradient(135deg, #68a063 0%, #4caf50 100%); }
-.skill-icon.express { background: linear-gradient(135deg, #000000 0%, #404040 100%); }
-.skill-icon.springboot { background: linear-gradient(135deg, #6db33f 0%, #4caf50 100%); }
-.skill-icon.fastapi { background: linear-gradient(135deg, #009688 0%, #00bcd4 100%); }
-.skill-icon.html { background: linear-gradient(135deg, #e34f26 0%, #ff5722 100%); }
-.skill-icon.css { background: linear-gradient(135deg, #1572b6 0%, #2196f3 100%); }
-.skill-icon.postgresql { background: linear-gradient(135deg, #336791 0%, #607d8b 100%); }
-.skill-icon.mongodb { background: linear-gradient(135deg, #47a248 0%, #4caf50 100%); }
-.skill-icon.sqlserver { background: linear-gradient(135deg, #cc2927 0%, #f44336 100%); }
-.skill-icon.redis { background: linear-gradient(135deg, #dc382d 0%, #f44336 100%); }
-.skill-icon.aws { background: linear-gradient(135deg, #ff9900 0%, #ffb74d 100%); }
-.skill-icon.azure { background: linear-gradient(135deg, #0078d4 0%, #2196f3 100%); }
-.skill-icon.docker { background: linear-gradient(135deg, #2496ed 0%, #03a9f4 100%); }
-.skill-icon.kubernetes { background: linear-gradient(135deg, #326ce5 0%, #3f51b5 100%); }
-.skill-icon.jenkins { background: linear-gradient(135deg, #d33833 0%, #f44336 100%); }
-.skill-icon.powerbi { background: linear-gradient(135deg, #f2c811 0%, #ffeb3b 100%); color: #333; }
-.skill-icon.tableau { background: linear-gradient(135deg, #e97627 0%, #ff9800 100%); }
-.skill-icon.grafana { background: linear-gradient(135deg, #f46800 0%, #ff9800 100%); }
-.skill-icon.prometheus { background: linear-gradient(135deg, #e6522c 0%, #ff5722 100%); }
-.skill-icon.ssis { background: linear-gradient(135deg, #0078d4 0%, #2196f3 100%); }
-.skill-icon.tensorflow { background: linear-gradient(135deg, #ff6f00 0%, #ff9800 100%); }
-.skill-icon.scikit { background: linear-gradient(135deg, #f7931e 0%, #ff9800 100%); }
-.skill-icon.huggingface { background: linear-gradient(135deg, #ffcc02 0%, #ffeb3b 100%); color: #333; }
+/* Removed background colors since we're using actual logo images now */
 
 .skill-name {
   font-size: 0.7rem;
@@ -1253,7 +1217,7 @@
   .skill-icon {
     width: 28px;
     height: 28px;
-    font-size: 0.9rem;
+    object-fit: contain;
   }
   
   .skill-name {
