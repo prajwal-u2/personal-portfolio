@@ -3,7 +3,16 @@ import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import AnimatedText from './components/AnimatedText';
 import ExperienceSection from './components/ExperienceSection';
-import ProjectPage from './components/ProjectPage';
+import { 
+  ProjectPage, 
+  DHTFederatedMLPage, 
+  DistributedMLPage, 
+  UtopiaKafkaPage, 
+  TextSummarizationPage, 
+  SoftwareRequirementPage, 
+  FiveGNetworkPage, 
+  MininetSDNPage 
+} from './components/ProjectPages';
 import homePageIllustration from './assets/images/home_page_illustration.png';
 import umnLogo from './assets/images/umn_logo.png';
 import revaLogo from './assets/images/reva_logo.png';
@@ -187,7 +196,7 @@ function HomePage() {
                   <span className="tech-tag">DHT Chord</span>
                   <span className="tech-tag">P2P Networks</span>
                 </div>
-                <button className="project-button">View Project</button>
+                <Link to="/project/dht-federated-ml-system" className="project-button">View Project</Link>
               </div>
               
               <div className="project-card">
@@ -199,7 +208,7 @@ function HomePage() {
                   <span className="tech-tag">Distributed Computing</span>
                   <span className="tech-tag">Parallel Processing</span>
                 </div>
-                <button className="project-button">View Project</button>
+                <Link to="/project/distributed-ml-system" className="project-button">View Project</Link>
               </div>
             </div>
             
@@ -214,7 +223,7 @@ function HomePage() {
                   <span className="tech-tag">Real-Time Analytics</span>
                   <span className="tech-tag">Data Pipeline</span>
                 </div>
-                <button className="project-button">View Project</button>
+                <Link to="/project/utopia-kafka-project" className="project-button">View Project</Link>
               </div>
               
               <div className="project-card">
@@ -227,7 +236,7 @@ function HomePage() {
                   <span className="tech-tag">T5</span>
                   <span className="tech-tag">TextRank</span>
                 </div>
-                <button className="project-button">View Project</button>
+                <Link to="/project/text-summarization" className="project-button">View Project</Link>
               </div>
 
               <div className="project-card">
@@ -239,7 +248,7 @@ function HomePage() {
                   <span className="tech-tag">SRS Document</span>
                   <span className="tech-tag">Agile Development</span>
                 </div>
-                <button className="project-button">View Project</button>
+                <Link to="/project/software-requirement-specification" className="project-button">View Project</Link>
               </div>
             </div>
 
@@ -254,7 +263,7 @@ function HomePage() {
                   <span className="tech-tag">Network Analysis</span>
                   <span className="tech-tag">Field Testing</span>
                 </div>
-                <button className="project-button">View Project</button>
+                <Link to="/project/5g-network-field-test-evaluation" className="project-button">View Project</Link>
               </div>
               
               <div className="project-card">
@@ -266,7 +275,7 @@ function HomePage() {
                   <span className="tech-tag">Computer Networks</span>
                   <span className="tech-tag">Mininet</span>
                 </div>
-                <button className="project-button">View Project</button>
+                <Link to="/project/mininet-sdn-implementation" className="project-button">View Project</Link>
               </div>
             </div>
           </div>
@@ -563,6 +572,13 @@ function App() {
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/project/distributed-file-system" element={<ProjectPage />} />
+        <Route path="/project/dht-federated-ml-system" element={<DHTFederatedMLPage />} />
+        <Route path="/project/distributed-ml-system" element={<DistributedMLPage />} />
+        <Route path="/project/utopia-kafka-project" element={<UtopiaKafkaPage />} />
+        <Route path="/project/text-summarization" element={<TextSummarizationPage />} />
+        <Route path="/project/software-requirement-specification" element={<SoftwareRequirementPage />} />
+        <Route path="/project/5g-network-field-test-evaluation" element={<FiveGNetworkPage />} />
+        <Route path="/project/mininet-sdn-implementation" element={<MininetSDNPage />} />
       </Routes>
     </Router>
   );
