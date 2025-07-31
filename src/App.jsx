@@ -1,13 +1,15 @@
 import React from 'react';
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import AnimatedText from './components/AnimatedText';
 import ExperienceSection from './components/ExperienceSection';
+import ProjectPage from './components/ProjectPage';
 import homePageIllustration from './assets/images/home_page_illustration.png';
 import umnLogo from './assets/images/umn_logo.png';
 import revaLogo from './assets/images/reva_logo.png';
 import './App.css';
 
-function App() {
+function HomePage() {
   return (
     <div className="App">
       <Navbar />
@@ -172,7 +174,7 @@ function App() {
                   <span className="tech-tag">Gifford Algorithm</span>
                   <span className="tech-tag">File Systems</span>
                 </div>
-                <button className="project-button">View Project</button>
+                <Link to="/project/distributed-file-system" className="project-button">View Project</Link>
               </div>
               
               <div className="project-card">
@@ -184,7 +186,7 @@ function App() {
                   <span className="tech-tag">DHT Chord</span>
                   <span className="tech-tag">P2P Networks</span>
                 </div>
-                <button className="project-button">View Project</button>
+                <Link to="/project/dht-federated-ml-system" className="project-button">View Project</Link>
               </div>
               
               <div className="project-card">
@@ -196,7 +198,7 @@ function App() {
                   <span className="tech-tag">Distributed Computing</span>
                   <span className="tech-tag">Parallel Processing</span>
                 </div>
-                <button className="project-button">View Project</button>
+                <Link to="/project/distributed-ml-system" className="project-button">View Project</Link>
               </div>
             </div>
             
@@ -211,7 +213,7 @@ function App() {
                   <span className="tech-tag">Real-Time Analytics</span>
                   <span className="tech-tag">Data Pipeline</span>
                 </div>
-                <button className="project-button">View Project</button>
+                <Link to="/project/utopia-kafka-project" className="project-button">View Project</Link>
               </div>
               
               <div className="project-card">
@@ -224,7 +226,7 @@ function App() {
                   <span className="tech-tag">T5</span>
                   <span className="tech-tag">TextRank</span>
                 </div>
-                <button className="project-button">View Project</button>
+                <Link to="/project/text-summarization" className="project-button">View Project</Link>
               </div>
 
               <div className="project-card">
@@ -236,7 +238,7 @@ function App() {
                   <span className="tech-tag">SRS Document</span>
                   <span className="tech-tag">Agile Development</span>
                 </div>
-                <button className="project-button">View Project</button>
+                <Link to="/project/software-requirement-specification" className="project-button">View Project</Link>
               </div>
             </div>
 
@@ -251,7 +253,7 @@ function App() {
                   <span className="tech-tag">Network Analysis</span>
                   <span className="tech-tag">Field Testing</span>
                 </div>
-                <button className="project-button">View Project</button>
+                <Link to="/project/5g-network-field-test-evaluation" className="project-button">View Project</Link>
               </div>
               
               <div className="project-card">
@@ -263,7 +265,7 @@ function App() {
                   <span className="tech-tag">Computer Networks</span>
                   <span className="tech-tag">Mininet</span>
                 </div>
-                <button className="project-button">View Project</button>
+                <Link to="/project/mininet-sdn-implementation" className="project-button">View Project</Link>
               </div>
             </div>
           </div>
@@ -551,6 +553,17 @@ function App() {
         </div>
       </footer>
     </div>
+  );
+}
+
+function App() {
+  return (
+    <Router>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/project/:projectId" element={<ProjectPage />} />
+      </Routes>
+    </Router>
   );
 }
 

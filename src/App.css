@@ -1033,6 +1033,7 @@
   align-self: flex-start;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
   margin-top: auto;
+  text-decoration: none;
 }
 
 .projects-section .project-button:hover {
