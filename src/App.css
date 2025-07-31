@@ -923,11 +923,12 @@
   box-sizing: border-box;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
   gap: 2rem;
   grid-template-areas: 
     "card1 card2 card3"
-    "card4 card5 .";
+    "card4 card5 card6"
+    "card7 card8 .";
 }
 
 .projects-row {

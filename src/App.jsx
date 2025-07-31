@@ -164,64 +164,104 @@ function App() {
             {/* First Row - 3 cards */}
             <div className="projects-row">
               <div className="project-card">
-                <h3 className="project-title">AI-Powered Analytics Platform</h3>
-                <p className="project-description">A comprehensive data analytics platform built with Python, React, and AWS that processes real-time data streams.</p>
+                <h3 className="project-title">Distributed File System</h3>
+                <p className="project-description">Distributed file system capable of hosting multiple clients that can share files together seamlessly using Gifford algorithm for consistency and fault tolerance.</p>
                 <div className="project-technologies">
                   <span className="tech-tag">Python</span>
-                  <span className="tech-tag">React</span>
-                  <span className="tech-tag">AWS</span>
+                  <span className="tech-tag">Distributed Systems</span>
+                  <span className="tech-tag">Gifford Algorithm</span>
+                  <span className="tech-tag">File Systems</span>
+                </div>
+                <button className="project-button">View Project</button>
+              </div>
+              
+              <div className="project-card">
+                <h3 className="project-title">DHT Federated ML System</h3>
+                <p className="project-description">Federated machine learning system with a network of nodes capable of performing ML tasks using a decentralized peer-to-peer DHT Chord network.</p>
+                <div className="project-technologies">
+                  <span className="tech-tag">Python</span>
+                  <span className="tech-tag">Federated Learning</span>
+                  <span className="tech-tag">DHT Chord</span>
+                  <span className="tech-tag">P2P Networks</span>
+                </div>
+                <button className="project-button">View Project</button>
+              </div>
+              
+              <div className="project-card">
+                <h3 className="project-title">Distributed ML System</h3>
+                <p className="project-description">Distributed system of compute nodes managed by a coordinator to train and validate data for machine learning models with high performance and scalability.</p>
+                <div className="project-technologies">
+                  <span className="tech-tag">C++</span>
                   <span className="tech-tag">Machine Learning</span>
-                </div>
-                <button className="project-button">View Project</button>
-              </div>
-              
-              <div className="project-card">
-                <h3 className="project-title">Cloud Infrastructure Automation</h3>
-                <p className="project-description">Terraform-based infrastructure automation tool that deploys scalable microservices across multiple cloud providers.</p>
-                <div className="project-technologies">
-                  <span className="tech-tag">Terraform</span>
-                  <span className="tech-tag">Docker</span>
-                  <span className="tech-tag">Kubernetes</span>
-                  <span className="tech-tag">CI/CD</span>
-                </div>
-                <button className="project-button">View Project</button>
-              </div>
-              
-              <div className="project-card">
-                <h3 className="project-title">Real-time Data Pipeline</h3>
-                <p className="project-description">High-throughput data pipeline using Apache Kafka and Spark that processes millions of events per second.</p>
-                <div className="project-technologies">
-                  <span className="tech-tag">Apache Kafka</span>
-                  <span className="tech-tag">Spark</span>
-                  <span className="tech-tag">Python</span>
-                  <span className="tech-tag">Databricks</span>
+                  <span className="tech-tag">Distributed Computing</span>
+                  <span className="tech-tag">Parallel Processing</span>
                 </div>
                 <button className="project-button">View Project</button>
               </div>
             </div>
             
-            {/* Second Row - 2 cards */}
+            {/* Second Row - 3 cards */}
             <div className="projects-row">
               <div className="project-card">
-                <h3 className="project-title">Full-Stack Web Application</h3>
-                <p className="project-description">Modern web application built with React frontend, Node.js backend, and MongoDB database featuring real-time updates.</p>
+                <h3 className="project-title">Utopia - Real-Time Analytics Pipeline</h3>
+                <p className="project-description">Real-time analytics pipeline using Apache Kafka for data ingestion and Apache Pinot for low-latency analytical queries on streaming data.</p>
                 <div className="project-technologies">
-                  <span className="tech-tag">React</span>
-                  <span className="tech-tag">Node.js</span>
-                  <span className="tech-tag">MongoDB</span>
-                  <span className="tech-tag">WebSockets</span>
+                  <span className="tech-tag">Apache Kafka</span>
+                  <span className="tech-tag">Apache Pinot</span>
+                  <span className="tech-tag">Real-Time Analytics</span>
+                  <span className="tech-tag">Data Pipeline</span>
                 </div>
                 <button className="project-button">View Project</button>
               </div>
               
               <div className="project-card">
-                <h3 className="project-title">Blockchain Security System</h3>
-                <p className="project-description">Decentralized security system using blockchain technology for secure data storage and authentication.</p>
+                <h3 className="project-title">Text Summarization Analysis</h3>
+                <p className="project-description">Comparative analysis of text summarization algorithms—T5, BERT, and TextRank—evaluating performance across diverse datasets for both long and short summaries.</p>
                 <div className="project-technologies">
-                  <span className="tech-tag">Blockchain</span>
-                  <span className="tech-tag">Solidity</span>
-                  <span className="tech-tag">Web3</span>
-                  <span className="tech-tag">Ethereum</span>
+                  <span className="tech-tag">Python</span>
+                  <span className="tech-tag">NLP</span>
+                  <span className="tech-tag">BERT</span>
+                  <span className="tech-tag">T5</span>
+                  <span className="tech-tag">TextRank</span>
+                </div>
+                <button className="project-button">View Project</button>
+              </div>
+
+              <div className="project-card">
+                <h3 className="project-title">Software Requirement Specification</h3>
+                <p className="project-description">Software engineering academic project to prepare SRS document and delivery of code using agile development methodologies and best practices.</p>
+                <div className="project-technologies">
+                  <span className="tech-tag">Python</span>
+                  <span className="tech-tag">Software Engineering</span>
+                  <span className="tech-tag">SRS Document</span>
+                  <span className="tech-tag">Agile Development</span>
+                </div>
+                <button className="project-button">View Project</button>
+              </div>
+            </div>
+
+            {/* Third Row - 2 cards */}
+            <div className="projects-row">
+              <div className="project-card">
+                <h3 className="project-title">5G Network Field Test Evaluation</h3>
+                <p className="project-description">Field testing for 5G network in Minneapolis and its evaluation, analyzing network performance, latency, and coverage patterns in real-world scenarios.</p>
+                <div className="project-technologies">
+                  <span className="tech-tag">5G</span>
+                  <span className="tech-tag">Computer Networks</span>
+                  <span className="tech-tag">Network Analysis</span>
+                  <span className="tech-tag">Field Testing</span>
+                </div>
+                <button className="project-button">View Project</button>
+              </div>
+              
+              <div className="project-card">
+                <h3 className="project-title">Mininet SDN Implementation</h3>
+                <p className="project-description">Implementation of Software Defined Networks using Mininet and Python. Emulated the behavior of Layer 2 and Layer 3 protocols in network topology.</p>
+                <div className="project-technologies">
+                  <span className="tech-tag">Python</span>
+                  <span className="tech-tag">SDN</span>
+                  <span className="tech-tag">Computer Networks</span>
+                  <span className="tech-tag">Mininet</span>
                 </div>
                 <button className="project-button">View Project</button>
               </div>
