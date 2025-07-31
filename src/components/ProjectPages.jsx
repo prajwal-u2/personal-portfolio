@@ -1,13 +1,16 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { useScrollToTop } from '../hooks/useScrollToTop';
 import './ProjectPages.css';
 
 // Distributed File System Project Page
 export function ProjectPage() {
+  useScrollToTop();
+  
   return (
     <div className="project-page">
       <div className="project-page-container">
-        <Link to="/" className="project-page-back-button">
+        <Link to="/#projects" className="project-page-back-button">
           ← Back to Portfolio
         </Link>
         
@@ -63,10 +66,12 @@ export function ProjectPage() {
 
 // DHT Federated ML System Project Page
 export function DHTFederatedMLPage() {
+  useScrollToTop();
+  
   return (
     <div className="project-page">
       <div className="project-page-container">
-        <Link to="/" className="project-page-back-button">
+        <Link to="/#projects" className="project-page-back-button">
           ← Back to Portfolio
         </Link>
         
@@ -122,10 +127,12 @@ export function DHTFederatedMLPage() {
 
 // Distributed ML System Project Page
 export function DistributedMLPage() {
+  useScrollToTop();
+  
   return (
     <div className="project-page">
       <div className="project-page-container">
-        <Link to="/" className="project-page-back-button">
+        <Link to="/#projects" className="project-page-back-button">
           ← Back to Portfolio
         </Link>
         
@@ -181,10 +188,12 @@ export function DistributedMLPage() {
 
 // Utopia Kafka Project Page
 export function UtopiaKafkaPage() {
+  useScrollToTop();
+  
   return (
     <div className="project-page">
       <div className="project-page-container">
-        <Link to="/" className="project-page-back-button">
+        <Link to="/#projects" className="project-page-back-button">
           ← Back to Portfolio
         </Link>
         
@@ -240,10 +249,12 @@ export function UtopiaKafkaPage() {
 
 // Text Summarization Project Page
 export function TextSummarizationPage() {
+  useScrollToTop();
+  
   return (
     <div className="project-page">
       <div className="project-page-container">
-        <Link to="/" className="project-page-back-button">
+        <Link to="/#projects" className="project-page-back-button">
           ← Back to Portfolio
         </Link>
         
@@ -299,10 +310,12 @@ export function TextSummarizationPage() {
 
 // Software Requirement Specification Project Page
 export function SoftwareRequirementPage() {
+  useScrollToTop();
+  
   return (
     <div className="project-page">
       <div className="project-page-container">
-        <Link to="/" className="project-page-back-button">
+        <Link to="/#projects" className="project-page-back-button">
           ← Back to Portfolio
         </Link>
         
@@ -358,10 +371,12 @@ export function SoftwareRequirementPage() {
 
 // 5G Network Field Test Evaluation Project Page
 export function FiveGNetworkPage() {
+  useScrollToTop();
+  
   return (
     <div className="project-page">
       <div className="project-page-container">
-        <Link to="/" className="project-page-back-button">
+        <Link to="/#projects" className="project-page-back-button">
           ← Back to Portfolio
         </Link>
         
@@ -417,10 +432,12 @@ export function FiveGNetworkPage() {
 
 // Mininet SDN Implementation Project Page
 export function MininetSDNPage() {
+  useScrollToTop();
+  
   return (
     <div className="project-page">
       <div className="project-page-container">
-        <Link to="/" className="project-page-back-button">
+        <Link to="/#projects" className="project-page-back-button">
           ← Back to Portfolio
         </Link>
         
