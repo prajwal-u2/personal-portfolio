@@ -1,13 +1,16 @@
 import React from 'react';
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import AnimatedText from './components/AnimatedText';
 import ExperienceSection from './components/ExperienceSection';
+import ProjectPage from './components/ProjectPage';
 import homePageIllustration from './assets/images/home_page_illustration.png';
 import umnLogo from './assets/images/umn_logo.png';
 import revaLogo from './assets/images/reva_logo.png';
 import './App.css';
 
-function App() {
+function HomePage() {
+// function App() {
   return (
     <div className="App">
       <Navbar />
@@ -172,7 +175,7 @@ function App() {
                   <span className="tech-tag">Gifford Algorithm</span>
                   <span className="tech-tag">File Systems</span>
                 </div>
-                <button className="project-button">View Project</button>
+                <Link to="/project/distributed-file-system" className="project-button">View Project</Link>
               </div>
               
               <div className="project-card">
@@ -551,6 +554,17 @@ function App() {
         </div>
       </footer>
     </div>
+  );
+}
+
+function App() {
+  return (
+    <Router>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/project/distributed-file-system" element={<ProjectPage />} />
+      </Routes>
+    </Router>
   );
 }
 
