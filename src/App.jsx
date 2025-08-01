@@ -177,7 +177,7 @@ function HomePage() {
             <div className="projects-row">
               <div className="project-card">
                 <h3 className="project-title">Distributed File System</h3>
-                <p className="project-description">Distributed file system capable of hosting multiple clients that can share files together seamlessly using Gifford algorithm for consistency and fault tolerance.</p>
+                <p className="project-description">A distributed file storage system that enables multiple clients to seamlessly share, read, and write files with guaranteed consistency and fault tolerance using quorum-based coordination.</p>
                 <div className="project-technologies">
                   <span className="tech-tag">Python</span>
                   <span className="tech-tag">Distributed Systems</span>

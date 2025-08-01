@@ -12,22 +12,31 @@ function ExperienceSection() {
       duration: 'May 2025 - Aug 2025',
       icon: '☁️',
       achievements: [
-        'Standardized Dev Containers using Docker and Shell scripts to embed reusable tools, tripling setup speed and amplifying automation with production.',
-        'Orchestrated YAML-based CI/CD pipelines using GitHub Actions to automate Docker builds, semantic versioning, and release workflows, and auto-publish docs to Confluence, cutting manual overhead by 80%.',
-        'Designed an AI Agent in Python that integrated GitHub Copilot with internal Terraform modules using GitHub API to generate Terraform boilerplate code tailored to team workflows, cutting manual coding time by 90%.',
-        'Deployed the MCP server on AWS using ECS, API Gateway, Load Balancer, IAM policies and Redis to build a robust, cloud-native solution, enabling secure, low-latency code assistance and handling over 100 AI-driven automation requests daily.'
+        'Built an AI Agent in Python that connected GitHub Copilot with internal Terraform modules, auto-generating custom Terraform code via GitHub API.',
+        'Reduced repetitive infra code-writing by 90%, accelerating IaC adoption and improving engineering velocity.',
+        'Deployed a production-grade MCP server on AWS using ECS, API Gateway, Route 53, and IAM roles, enabling secure, scalable AI-powered code assistance.',
+        'Integrated Redis caching and load balancing to support over 100 real-time automation requests daily with low latency.',
+        'Standardized Dev Containers using Docker and Shell scripts to embed reusable internal tools, improving developer onboarding speed by 7x.',
+        'Automated environment setup through containerized workflows, significantly reducing setup errors and improving consistency across teams.',
+        'Orchestrated CI/CD pipelines using GitHub Actions and YAML to automate Docker builds and semantic versioning, reducing manual effort by 80%.',
+        'Implemented release automation and documentation deployment to Confluence, streamlining release cycles and improving visibility.'
       ]
     },
     {
       id: 'umn',
-      title: 'Research Assistant',
+      title: 'Research Assistant - Databases and AI',
       company: 'University of Minnesota',
       location: 'Minneapolis, MN',
       duration: 'Jan 2025 - May 2025',
       icon: '🎓',
       achievements: [
-        'Created FASTER, an LLM-powered system using Python, OpenAI APIs, and NLP to identify column semantics and generate reusable metadata Semantic Types (RSTs), cutting deployment by 40% and boosting column consistency by 35%.',
-        'Architected a multi-stage semantic pipeline to extract cross-table meaning and build a real-world ontology, enabling automated data normalization, validation, and transformation, improving interoperability by 30% and boosting data prep by 60%.'
+        'Engineered FASTER, an LLM-based system in Python using OpenAI GPT-4o and NLP techniques, improving schema consistency by 35% and cutting metadata deployment time by 40% across 9 benchmark datasets.',
+        'Aggregated column semantics from 180+ tables and 50+ data products using Pandas, NumPy, and Ray for parallel preprocessing, eliminating 90%+ FST duplication through multi-stage semantic refinement.',
+        'Designed a semantic forest ontology with 1,500+ hierarchical nodes, applying Scikit-learn clustering on embedding models (FastText, MiniLM, OpenAI) to reduce ontology size by 52% and search latency by 63%.',
+        'Achieved 98.3% casting and 91.8% cross-type validation success with Python-defined FST class templates, implementing functional methods like cast(), validate(), and cross_type_cast().',
+        'Boosted data ingestion quality by 45% using Ray-parallelized semantic modeling, reducing schema ambiguity and automating validation/transformation for JSON-based column metadata.',
+        'Delivered 10% higher joinability recall and 4.5% better concatenation accuracy by constructing semantic similarity search pipelines for downstream ML and BI workflows.',
+        'Surpassed prior systems in name accuracy with 0.88 cosine similarity (via Scikit-learn and embedding models), and raised expert-rated scope fitness from 73% to 87%.'
       ]
     },
     {
@@ -38,7 +47,6 @@ function ExperienceSection() {
       duration: 'Aug 2022 - Aug 2024',
       icon: '🚗',
       softwareEngineering: [
-        'Developed production-ready data migration solutions and multi-tenant applications. Focused on secure data transfer, backup optimization, and scalable client-server architecture implementation.',
         'Pioneered a scalable Big Data Analytics platform by designing microservices for Azure and AWS infrastructure deployment using Python, Terraform, and Azure DevOps, reducing deployment time from 2 days to half a day.',
         'Created backend microservices using Python Azure SDK, FastAPI, and Docker to programmatically build and provision data pipelines, enabling self-service deployment and reducing turnaround time by 70%.',
         'Engineered and launched full-stack application with a C# and .NET backend, Vue.js frontend, and Azure SQL database, streamlining business workflows and improving efficiency by 40% through clean API design and modular architecture.',
@@ -59,8 +67,11 @@ function ExperienceSection() {
       duration: 'Jan 2022 - May 2022',
       icon: '⚙️',
       achievements: [
-        'Developed a production-ready data migration POC using Robotic, Rclone, and Go, improving security and efficiency by 40% and reducing backup cost by 25% through optimized local-to-cloud transfer.',
-        'Investigated and coded secure, fault-tolerant client-server apps using Python socket programming with TCP helps enabling, enabling geo-typical features.'
+        'Engineered a secure, production-grade data migration plan using Rclone and Go, improving transfer efficiency by 40% and cutting backup costs by 25%.',
+        'Built a machine snapshot and restoration system with Restic, enabling seamless recovery of developer laptops and reducing onboarding/setup time.',
+        'Integrated Rclone-based automated backup workflows into the existing product, enabling enterprise-scale backups to Wasabi cloud as a validated PoC.',
+        'Developed Peer-to-Peer, fault-tolerant applications using Python TCP sockets, leveraging TCP hole punching mechanism.',
+        'Reduced the dependency on centralized servers by 80% through peer-to-peer data transfer and communication.'
       ]
     }
   ];
@@ -99,7 +110,7 @@ function ExperienceSection() {
             
             {activeExp.achievements && activeExp.achievements.length > 0 && (
               <>
-                <h4 className="detail-achievements">🚀 Key Achievements</h4>
+                <h4 className="detail-achievements">Key Achievements</h4>
                 <ul className="detail-list">
                   {activeExp.achievements.map((achievement, index) => (
                     <li key={index}>{achievement}</li>
@@ -110,7 +121,7 @@ function ExperienceSection() {
             
             {activeExp.softwareEngineering && activeExp.softwareEngineering.length > 0 && (
               <>
-                <h4 className="detail-achievements">💻 Software Engineering</h4>
+                <h4 className="detail-achievements">Software Engineering Achievements</h4>
                 <ul className="detail-list">
                   {activeExp.softwareEngineering.map((achievement, index) => (
                     <li key={index}>{achievement}</li>
@@ -121,7 +132,7 @@ function ExperienceSection() {
             
             {activeExp.dataEngineering && activeExp.dataEngineering.length > 0 && (
               <>
-                <h4 className="detail-achievements">📊 Data Engineering</h4>
+                <h4 className="detail-achievements">Data Engineering Achievements</h4>
                 <ul className="detail-list">
                   {activeExp.dataEngineering.map((achievement, index) => (
                     <li key={index}>{achievement}</li>

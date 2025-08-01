@@ -85,6 +85,21 @@
   padding-bottom: 0.75rem;
 }
 
+.project-page-image-container {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.project-page-main-image {
+  width: 100%;
+  max-width: 800px;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+  display: block;
+  margin: 0 auto;
+}
+
 .project-page-description-text {
   line-height: 1.6;
   font-size: 1.1rem;

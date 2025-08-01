@@ -1,7 +1,17 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { useScrollToTop } from '../hooks/useScrollToTop';
+import dfsImage from '../assets/images/dfs.png';
 import './ProjectPages.css';
+
+// Helper function to navigate back to projects section
+function BackToProjectsButton() {
+  return (
+    <a href="/#projects" className="project-page-back-button">
+      ← Back to Portfolio
+    </a>
+  );
+}
 
 // Distributed File System Project Page
 export function ProjectPage() {
@@ -10,9 +20,7 @@ export function ProjectPage() {
   return (
     <div className="project-page">
       <div className="project-page-container">
-        <Link to="/#projects" className="project-page-back-button">
-          ← Back to Portfolio
-        </Link>
+        <BackToProjectsButton />
         
         <header className="project-page-header">
           <h1 className="project-page-title">Distributed File System</h1>
@@ -23,15 +31,24 @@ export function ProjectPage() {
             <h2>Description</h2>
             <div className="project-page-description-text">
               <p>
-                A robust distributed file system that enables multiple clients to seamlessly share and access files across a network. 
-                This system is designed with fault tolerance and consistency as core principles, implementing the Gifford algorithm 
-                for maintaining data consistency across distributed nodes.
+              Developed a scalable and fault-tolerant distributed file system that enables seamless file sharing among multiple clients using the Gifford quorum-based consistency protocol. 
+              Each replica server functions as both a local file store and an RPC endpoint, implemented using Apache Thrift for cross-node communication. The system supports tunable quorum parameters (NR for reads, NW for writes), ensuring that NR + NW &gt; N to guarantee strong consistency through quorum intersection.
               </p>
               <p>
-                The system supports concurrent file operations from multiple clients with proper synchronization, provides fault 
-                tolerance through data replication and node recovery mechanisms, and ensures data integrity even during network 
-                partitions and node failures.
+              The coordinator node manages concurrency using a thread-safe FIFO queue to serialize client operations, preventing race conditions and maintaining strict version ordering. 
+              Each file is chunked into 500B segments for efficient network transfer, and every replica maintains persistent version metadata for all local files. The system supports real-time collaboration and has been validated across 17 functional and performance test cases involving .txt, .csv, and .png files.
               </p>
+              <p>
+              Clients can connect to any replica, and requests are internally routed to the coordinator as needed. The system supports both read-heavy and write-heavy workloads by dynamically tuning quorum parameters. 
+              Under concurrent load with 7 replicas and 4 clients, the system consistently maintained data integrity and demonstrated robust performance, including queue-based coordination, fast reads, and resilient writes.
+              </p>
+            </div>
+            <div className="project-page-image-container">
+              <img 
+                src={dfsImage} 
+                alt="Distributed File System Architecture" 
+                className="project-page-main-image"
+              />
             </div>
           </section>
 
@@ -44,6 +61,13 @@ export function ProjectPage() {
               <span className="project-page-tech-badge">File Systems</span>
               <span className="project-page-tech-badge">Socket Programming</span>
               <span className="project-page-tech-badge">Network Communication</span>
+              <span className="project-page-tech-badge">Apache Thrift</span>
+              <span className="project-page-tech-badge">Quorum-based Consistency</span>
+              <span className="project-page-tech-badge">Fault Tolerance</span>
+              <span className="project-page-tech-badge">Multithreading</span>
+              <span className="project-page-tech-badge">Consistency</span>
+              <span className="project-page-tech-badge">Client-Server Architecture</span>
+              <span className="project-page-tech-badge">Concurrency Control</span>
             </div>
           </section>
 
@@ -71,9 +95,7 @@ export function DHTFederatedMLPage() {
   return (
     <div className="project-page">
       <div className="project-page-container">
-        <Link to="/#projects" className="project-page-back-button">
-          ← Back to Portfolio
-        </Link>
+        <BackToProjectsButton />
         
         <header className="project-page-header">
           <h1 className="project-page-title">DHT Federated ML System</h1>
@@ -132,9 +154,7 @@ export function DistributedMLPage() {
   return (
     <div className="project-page">
       <div className="project-page-container">
-        <Link to="/#projects" className="project-page-back-button">
-          ← Back to Portfolio
-        </Link>
+        <BackToProjectsButton />
         
         <header className="project-page-header">
           <h1 className="project-page-title">Distributed ML System</h1>
@@ -193,9 +213,7 @@ export function UtopiaKafkaPage() {
   return (
     <div className="project-page">
       <div className="project-page-container">
-        <Link to="/#projects" className="project-page-back-button">
-          ← Back to Portfolio
-        </Link>
+        <BackToProjectsButton />
         
         <header className="project-page-header">
           <h1 className="project-page-title">Utopia - Real-Time Analytics Pipeline</h1>
@@ -254,9 +272,7 @@ export function TextSummarizationPage() {
   return (
     <div className="project-page">
       <div className="project-page-container">
-        <Link to="/#projects" className="project-page-back-button">
-          ← Back to Portfolio
-        </Link>
+        <BackToProjectsButton />
         
         <header className="project-page-header">
           <h1 className="project-page-title">Text Summarization Analysis</h1>
@@ -315,9 +331,7 @@ export function SoftwareRequirementPage() {
   return (
     <div className="project-page">
       <div className="project-page-container">
-        <Link to="/#projects" className="project-page-back-button">
-          ← Back to Portfolio
-        </Link>
+        <BackToProjectsButton />
         
         <header className="project-page-header">
           <h1 className="project-page-title">Software Requirement Specification</h1>
@@ -376,9 +390,7 @@ export function FiveGNetworkPage() {
   return (
     <div className="project-page">
       <div className="project-page-container">
-        <Link to="/#projects" className="project-page-back-button">
-          ← Back to Portfolio
-        </Link>
+        <BackToProjectsButton />
         
         <header className="project-page-header">
           <h1 className="project-page-title">5G Network Field Test Evaluation</h1>
@@ -437,9 +449,7 @@ export function MininetSDNPage() {
   return (
     <div className="project-page">
       <div className="project-page-container">
-        <Link to="/#projects" className="project-page-back-button">
-          ← Back to Portfolio
-        </Link>
+        <BackToProjectsButton />
         
         <header className="project-page-header">
           <h1 className="project-page-title">Mininet SDN Implementation</h1>
