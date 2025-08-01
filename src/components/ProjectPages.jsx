@@ -29,6 +29,14 @@ export function ProjectPage() {
         <div className="project-page-content">
           <section className="project-page-description">
             <h2>Description</h2>
+            <div className="project-page-image-container">
+              <img 
+                src={dfsImage} 
+                alt="Distributed File System Architecture" 
+                className="project-page-main-image"
+              />
+            </div>
+            <br/>
             <div className="project-page-description-text">
               <p>
               Developed a scalable and fault-tolerant distributed file system that enables seamless file sharing among multiple clients using the Gifford quorum-based consistency protocol. 
@@ -42,13 +50,6 @@ export function ProjectPage() {
               Clients can connect to any replica, and requests are internally routed to the coordinator as needed. The system supports both read-heavy and write-heavy workloads by dynamically tuning quorum parameters. 
               Under concurrent load with 7 replicas and 4 clients, the system consistently maintained data integrity and demonstrated robust performance, including queue-based coordination, fast reads, and resilient writes.
               </p>
-            </div>
-            <div className="project-page-image-container">
-              <img 
-                src={dfsImage} 
-                alt="Distributed File System Architecture" 
-                className="project-page-main-image"
-              />
             </div>
           </section>
 
