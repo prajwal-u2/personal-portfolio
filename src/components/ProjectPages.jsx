@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { useScrollToTop } from '../hooks/useScrollToTop';
 import dfsImage from '../assets/images/dfs.png';
+import dhtMlImage from '../assets/images/dht_ml.png';
 import './ProjectPages.css';
 
 // Helper function to navigate back to projects section
@@ -105,16 +106,28 @@ export function DHTFederatedMLPage() {
         <div className="project-page-content">
           <section className="project-page-description">
             <h2>Description</h2>
+            <div className="project-page-image-container">
+              <img 
+                src={dhtMlImage} 
+                alt="DHT Federated ML System Architecture" 
+                className="project-page-main-image"
+              />
+            </div>
+            <br/>
             <div className="project-page-description-text">
               <p>
-                A cutting-edge federated machine learning system that leverages a Distributed Hash Table (DHT) Chord network 
-                for decentralized model training. This system enables collaborative machine learning without centralized coordination, 
-                ensuring privacy preservation by keeping data localized to individual nodes.
+              Developed a distributed machine learning training system based on a Chord-inspired DHT (Distributed Hash Table) architecture. 
+              The system features a central Supernode responsible for managing node membership and assigning unique identifiers using SHA1 hashing over a 6-bit address space. 
+              Compute nodes join dynamically and construct their own finger tables for efficient file routing and network traversal. The Supernode ensures consistent and conflict-free network formation by coordinating node joins and maintaining global node metadata.
               </p>
               <p>
-                The system implements a peer-to-peer network using the Chord protocol for node discovery and communication, 
-                supports various ML algorithms including neural networks and decision trees, and provides fault tolerance 
-                through DHT ring maintenance and data replication.
+              Each Compute Node is capable of receiving training files, determining responsibility via consistent hashing, and performing localized training using gradient-based machine learning. 
+              Once training completes, the node caches the resulting model and exposes it through a Thrift RPC interface. The client distributes training data, collects trained gradients from responsible nodes, and performs federated aggregation to construct a global model. 
+              Routing logic is enforced through finger tables and successor-predecessor relationships, ensuring scalability and efficient file delivery across the ring.
+              </p>
+              <p>
+              This system was validated across a suite of test cases involving node join logic, finger table accuracy, model training across nodes, and hash-based file routing. 
+              The architecture supports fault-tolerant, distributed learning while simulating real-world federated training setups with seamless model collection, convergence validation, and decentralized coordination.
               </p>
             </div>
           </section>
@@ -123,11 +136,16 @@ export function DHTFederatedMLPage() {
             <h2>Technologies Used</h2>
             <div className="project-page-tech-grid">
               <span className="project-page-tech-badge">Python</span>
-              <span className="project-page-tech-badge">Federated Learning</span>
-              <span className="project-page-tech-badge">DHT Chord</span>
+              <span className="project-page-tech-badge">Federated MachineLearning</span>
+              <span className="project-page-tech-badge">Multilayer Perceptron</span>
+              <span className="project-page-tech-badge">Distributed Hash Table</span>
+              <span className="project-page-tech-badge">Chord Protocol</span>
               <span className="project-page-tech-badge">P2P Networks</span>
-              <span className="project-page-tech-badge">Machine Learning</span>
-              <span className="project-page-tech-badge">Distributed Systems</span>
+              <span className="project-page-tech-badge">RPC</span>
+              <span className="project-page-tech-badge">Apache Thrift</span>
+              <span className="project-page-tech-badge">SHA1 Hashing</span>
+              <span className="project-page-tech-badge">Socket Programming</span>
+
             </div>
           </section>
 

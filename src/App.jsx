@@ -192,8 +192,8 @@ function HomePage() {
                 <p className="project-description">Federated machine learning system with a network of nodes capable of performing ML tasks using a decentralized peer-to-peer DHT Chord network.</p>
                 <div className="project-technologies">
                   <span className="tech-tag">Python</span>
-                  <span className="tech-tag">Federated Learning</span>
-                  <span className="tech-tag">DHT Chord</span>
+                  <span className="tech-tag">Federated Machine Learning</span>
+                  <span className="tech-tag">ML Infrastructure</span>
                   <span className="tech-tag">P2P Networks</span>
                 </div>
                 <Link to="/project/dht-federated-ml-system" className="project-button">View Project</Link>
@@ -203,10 +203,10 @@ function HomePage() {
                 <h3 className="project-title">Distributed ML System</h3>
                 <p className="project-description">Distributed system of compute nodes managed by a coordinator to train and validate data for machine learning models with high performance and scalability.</p>
                 <div className="project-technologies">
-                  <span className="tech-tag">C++</span>
                   <span className="tech-tag">Machine Learning</span>
-                  <span className="tech-tag">Distributed Computing</span>
                   <span className="tech-tag">Parallel Processing</span>
+                  <span className="tech-tag">Distributed Computing</span>
+                  <span className="tech-tag">RPC</span>
                 </div>
                 <Link to="/project/distributed-ml-system" className="project-button">View Project</Link>
               </div>
@@ -218,10 +218,10 @@ function HomePage() {
                 <h3 className="project-title">Utopia - Real-Time Analytics Pipeline</h3>
                 <p className="project-description">Real-time analytics pipeline using Apache Kafka for data ingestion and Apache Pinot for low-latency analytical queries on streaming data.</p>
                 <div className="project-technologies">
+                  <span className="tech-tag">Data Streaming</span>
                   <span className="tech-tag">Apache Kafka</span>
                   <span className="tech-tag">Apache Pinot</span>
                   <span className="tech-tag">Real-Time Analytics</span>
-                  <span className="tech-tag">Data Pipeline</span>
                 </div>
                 <Link to="/project/utopia-kafka-project" className="project-button">View Project</Link>
               </div>
@@ -234,6 +234,7 @@ function HomePage() {
                   <span className="tech-tag">NLP</span>
                   <span className="tech-tag">BERT</span>
                   <span className="tech-tag">T5</span>
+                  <span className="tech-tag">Artificial Intelligence</span>
                   <span className="tech-tag">TextRank</span>
                 </div>
                 <Link to="/project/text-summarization" className="project-button">View Project</Link>
