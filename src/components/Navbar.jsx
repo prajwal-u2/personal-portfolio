@@ -3,7 +3,7 @@ import myPhoto from '../assets/images/my_photo.png';
 import './Navbar.css';
 
 function Navbar() {
-  const navItems = ['Home', 'About', 'Education', 'Experience', 'Projects', 'Skills'];
+  const navItems = ['Home', 'About', 'Education', 'Experience', 'Projects', 'Certifications', 'Skills'];
   const [activeSection, setActiveSection] = useState('Home');
   const [navbarTheme, setNavbarTheme] = useState('white');
 
@@ -14,6 +14,7 @@ function Navbar() {
     'Education': 'blue',
     'Experience': 'white',
     'Projects': 'white',
+    'Certifications': 'black',
     'Skills': 'black'
   };
 
