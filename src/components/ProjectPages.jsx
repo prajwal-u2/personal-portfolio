@@ -1,6 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { useScrollToTop } from '../hooks/useScrollToTop';
+import { Footer } from './Footer';
+import Navbar from './Navbar';
 import dfsImage from '../assets/images/dfs.png';
 import dhtMlImage from '../assets/images/dht_ml.png';
 import distributedMlImage from '../assets/images/dist_ml.png';
@@ -27,6 +29,7 @@ export function ProjectPage() {
   
   return (
     <div className="project-page">
+      <Navbar />
       <div className="project-page-container">
         <BackToProjectsButton />
         
@@ -93,6 +96,7 @@ export function ProjectPage() {
           </section>
         </div>
       </div>
+      <Footer />
     </div>
   );
 }
@@ -103,6 +107,7 @@ export function DHTFederatedMLPage() {
   
   return (
     <div className="project-page">
+      <Navbar />
       <div className="project-page-container">
         <BackToProjectsButton />
         
@@ -169,6 +174,7 @@ export function DHTFederatedMLPage() {
           </section>
         </div>
       </div>
+      <Footer />
     </div>
   );
 }
@@ -179,6 +185,7 @@ export function DistributedMLPage() {
   
   return (
     <div className="project-page">
+      <Navbar />
       <div className="project-page-container">
         <BackToProjectsButton />
         
@@ -244,6 +251,7 @@ export function DistributedMLPage() {
           </section>
         </div>
       </div>
+      <Footer />
     </div>
   );
 }
@@ -254,6 +262,7 @@ export function UtopiaKafkaPage() {
   
   return (
     <div className="project-page">
+      <Navbar />
       <div className="project-page-container">
         <BackToProjectsButton />
         
@@ -319,6 +328,7 @@ export function UtopiaKafkaPage() {
           </section>
         </div>
       </div>
+      <Footer />
     </div>
   );
 }
@@ -329,6 +339,7 @@ export function TextSummarizationPage() {
   
   return (
     <div className="project-page">
+      <Navbar />
       <div className="project-page-container">
         <BackToProjectsButton />
         
@@ -399,6 +410,7 @@ export function TextSummarizationPage() {
           </section>
         </div>
       </div>
+      <Footer />
     </div>
   );
 }
@@ -409,6 +421,7 @@ export function SoftwareRequirementPage() {
   
   return (
     <div className="project-page">
+      <Navbar />
       <div className="project-page-container">
         <BackToProjectsButton />
         
@@ -481,6 +494,7 @@ export function SoftwareRequirementPage() {
           </section>
         </div>
       </div>
+      <Footer />
     </div>
   );
 }
@@ -491,6 +505,7 @@ export function FiveGNetworkPage() {
   
   return (
     <div className="project-page">
+      <Navbar />
       <div className="project-page-container">
         <BackToProjectsButton />
         
@@ -566,6 +581,7 @@ export function FiveGNetworkPage() {
           </section>
         </div>
       </div>
+      <Footer />
     </div>
   );
 }
@@ -576,6 +592,7 @@ export function MininetSDNPage() {
   
   return (
     <div className="project-page">
+      <Navbar />
       <div className="project-page-container">
         <BackToProjectsButton />
         
@@ -642,6 +659,7 @@ export function MininetSDNPage() {
           </section>
         </div>
       </div>
+      <Footer />
     </div>
   );
 } 

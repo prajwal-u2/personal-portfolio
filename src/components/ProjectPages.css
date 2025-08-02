@@ -3,15 +3,20 @@
   min-height: 100vh;
   background: linear-gradient(135deg, hsl(204, 85%, 64%) 0%, #307fd4 100%);
   color: white;
-  padding: 2rem 0;
+  padding: 2rem 0 0 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  display: flex;
+  flex-direction: column;
 }
 
 .project-page-container {
+  flex: 1;
   max-width: 900px;
   margin: 0 auto;
-  padding: 0 2rem;
+  padding: 0 2rem 2rem 2rem;
 }
+
+
 
 .project-page-back-button {
   display: inline-flex;
@@ -240,5 +245,80 @@
   .project-page-github-button {
     padding: 0.75rem 1.5rem;
     font-size: 1rem;
+  }
+}
+
+/* Project Page Footer Styles - Slightly Bigger Version */
+.project-page .footer {
+  padding: 1.5rem 0;
+  margin-top: 0;
+}
+
+.project-page .footer-content {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.project-page .footer-section h3 {
+  font-size: 1.4rem;
+  margin-bottom: 0.4rem;
+}
+
+.project-page .footer-section p {
+  font-size: 0.95rem;
+  margin-bottom: 0.3rem;
+}
+
+.project-page .footer-section h4 {
+  font-size: 1.1rem;
+  margin-bottom: 0.6rem;
+}
+
+.project-page .contact-info {
+  display: flex;
+  gap: 0.7rem;
+}
+
+.project-page .social-icon {
+  width: 36px;
+  height: 36px;
+  font-size: 1rem;
+}
+
+.project-page .footer-bottom {
+  padding: 0.7rem 0;
+  margin-top: 0.7rem;
+}
+
+.project-page .footer-bottom p {
+  font-size: 0.85rem;
+  margin: 0.3rem 0;
+}
+
+/* Adjust project page content to account for fixed navbar */
+.project-page-container {
+  padding-top: 80px;
+}
+
+/* Responsive footer for project pages */
+@media (max-width: 768px) {
+  .project-page .footer-content {
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+  }
+  
+  .project-page .footer-section h3 {
+    font-size: 1.1rem;
+  }
+  
+  .project-page .footer-section p {
+    font-size: 0.8rem;
   }
 } 
