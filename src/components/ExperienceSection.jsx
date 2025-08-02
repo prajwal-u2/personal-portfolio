@@ -12,14 +12,13 @@ function ExperienceSection() {
       duration: 'May 2025 - Aug 2025',
       icon: '☁️',
       achievements: [
-        'Built an AI Agent in Python that connected GitHub Copilot with internal Terraform modules, auto-generating custom Terraform code via GitHub API.',
-        'Reduced repetitive infra code-writing by 90%, accelerating IaC adoption and improving engineering velocity.',
-        'Deployed a production-grade MCP server on AWS using ECS, API Gateway, Route 53, and IAM roles, enabling secure, scalable AI-powered code assistance.',
-        'Integrated Redis caching and load balancing to support over 100 real-time automation requests daily with low latency.',
+        'Built an AI agent in Python that integrated GitHub Copilot with internal Terraform modules via the GitHub API, auto-generating custom infrastructure code and reducing manual IaC effort by 90%, significantly accelerating adoption and engineering velocity.',
+        'Deployed a production-grade custom AI agent based on MCP server on AWS using ECS, API Gateway, Route 53, and IAM roles, using Terraform, enabling secure, scalable AI-powered code assistance.',
+        'Integrated Redis caching and load balancing to support over 100 real-time code generation requests daily for MCP server with low latency.',
+        'Extended Datadog connector to support MCP servers metrics, increasing observability by 80%.',
         'Standardized Dev Containers using Docker and Shell scripts to embed reusable internal tools, improving developer onboarding speed by 7x.',
-        'Automated environment setup through containerized workflows, significantly reducing setup errors and improving consistency across teams.',
-        'Orchestrated CI/CD pipelines using GitHub Actions and YAML to automate Docker builds and semantic versioning, reducing manual effort by 80%.',
-        'Implemented release automation and documentation deployment to Confluence, streamlining release cycles and improving visibility.'
+        'Automated environment setup through containerized workflows, significantly reducing setup errors and improving consistency across deployments.',
+        'Orchestrated CI/CD pipelines using GitHub Actions and YAML to automate Docker builds and semantic versioning, reducing manual effort by 80%.'
       ]
     },
     {
@@ -30,13 +29,12 @@ function ExperienceSection() {
       duration: 'Jan 2025 - May 2025',
       icon: '🎓',
       achievements: [
-        'Engineered FASTER, an LLM-based system in Python using OpenAI GPT-4o and NLP techniques, improving schema consistency by 35% and cutting metadata deployment time by 40% across 9 benchmark datasets.',
-        'Aggregated column semantics from 180+ tables and 50+ data products using Pandas, NumPy, and Ray for parallel preprocessing, eliminating 90%+ FST duplication through multi-stage semantic refinement.',
-        'Designed a semantic forest ontology with 1,500+ hierarchical nodes, applying Scikit-learn clustering on embedding models (FastText, MiniLM, OpenAI) to reduce ontology size by 52% and search latency by 63%.',
-        'Achieved 98.3% casting and 91.8% cross-type validation success with Python-defined FST class templates, implementing functional methods like cast(), validate(), and cross_type_cast().',
-        'Boosted data ingestion quality by 45% using Ray-parallelized semantic modeling, reducing schema ambiguity and automating validation/transformation for JSON-based column metadata.',
-        'Delivered 10% higher joinability recall and 4.5% better concatenation accuracy by constructing semantic similarity search pipelines for downstream ML and BI workflows.',
-        'Surpassed prior systems in name accuracy with 0.88 cosine similarity (via Scikit-learn and embedding models), and raised expert-rated scope fitness from 73% to 87%.'
+        'Developed FASTER, an LLM-powered metadata engine in Python using OpenAI GPT-4o, improving schema consistency by 35% across 9 datasets.',
+        'Inferred semantic meaning from raw tabular data using LLMs and word embeddings, enabling automated type classification across products.',
+        'Auto-generated Functional Semantic Type (FST) class templates and validation logic using LLMs, achieving 90%+ cross-type casting accuracy across diverse data products.',
+        'Clustered semantic types with DBSCAN, KMeans clustering on word embedding models (FastText, MiniLM, and OpenAI), to create a semantic forest ontology with 1,500+ nodes, reducing query latency by 50%.',
+        'Aggregated semantics from 200+ tables using Ray, Pandas, and NumPy, eliminating 90%+ duplicated FSTs via multi-stage refinement.',
+        'Boosted column joinability and standardization by 4 folds using Python-based casting (e.g., UTC conversion), and improved type name accuracy to 0.88 cosine similarity.'
       ]
     },
     {

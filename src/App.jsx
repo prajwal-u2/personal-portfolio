@@ -184,7 +184,7 @@ function HomePage() {
                   <span className="tech-tag">Gifford Algorithm</span>
                   <span className="tech-tag">File Systems</span>
                 </div>
-                <Link to="/project/distributed-file-system" className="project-button">View Project</Link>
+                <Link to="/projects/distributed-file-system" className="project-button">View Project</Link>
               </div>
               
               <div className="project-card">
@@ -196,7 +196,7 @@ function HomePage() {
                   <span className="tech-tag">ML Infrastructure</span>
                   <span className="tech-tag">P2P Networks</span>
                 </div>
-                <Link to="/project/dht-federated-ml-system" className="project-button">View Project</Link>
+                <Link to="/projects/dht-federated-ml-system" className="project-button">View Project</Link>
               </div>
               
               <div className="project-card">
@@ -208,7 +208,7 @@ function HomePage() {
                   <span className="tech-tag">Distributed Computing</span>
                   <span className="tech-tag">RPC</span>
                 </div>
-                <Link to="/project/distributed-ml-system" className="project-button">View Project</Link>
+                <Link to="/projects/distributed-ml-system" className="project-button">View Project</Link>
               </div>
             </div>
             
@@ -223,7 +223,7 @@ function HomePage() {
                   <span className="tech-tag">Apache Pinot</span>
                   <span className="tech-tag">Real-Time Analytics</span>
                 </div>
-                <Link to="/project/utopia-kafka-project" className="project-button">View Project</Link>
+                <Link to="/projects/utopia-kafka-project" className="project-button">View Project</Link>
               </div>
               
               <div className="project-card">
@@ -237,7 +237,7 @@ function HomePage() {
                   <span className="tech-tag">Artificial Intelligence</span>
                   <span className="tech-tag">TextRank</span>
                 </div>
-                <Link to="/project/text-summarization" className="project-button">View Project</Link>
+                <Link to="/projects/text-summarization" className="project-button">View Project</Link>
               </div>
 
               <div className="project-card">
@@ -249,7 +249,7 @@ function HomePage() {
                   <span className="tech-tag">SRS Document</span>
                   <span className="tech-tag">Agile Development</span>
                 </div>
-                <Link to="/project/software-requirement-specification" className="project-button">View Project</Link>
+                <Link to="/projects/software-requirement-specification" className="project-button">View Project</Link>
               </div>
             </div>
 
@@ -264,7 +264,7 @@ function HomePage() {
                   <span className="tech-tag">Network Analysis</span>
                   <span className="tech-tag">Field Testing</span>
                 </div>
-                <Link to="/project/5g-network-field-test-evaluation" className="project-button">View Project</Link>
+                <Link to="/projects/5g-network-field-test-evaluation" className="project-button">View Project</Link>
               </div>
               
               <div className="project-card">
@@ -276,7 +276,7 @@ function HomePage() {
                   <span className="tech-tag">Computer Networks</span>
                   <span className="tech-tag">Mininet</span>
                 </div>
-                <Link to="/project/mininet-sdn-implementation" className="project-button">View Project</Link>
+                <Link to="/projects/mininet-sdn-implementation" className="project-button">View Project</Link>
               </div>
             </div>
           </div>
@@ -572,14 +572,14 @@ function App() {
     <Router>
       <Routes>
         <Route path="/" element={<HomePage />} />
-        <Route path="/project/distributed-file-system" element={<ProjectPage />} />
-        <Route path="/project/dht-federated-ml-system" element={<DHTFederatedMLPage />} />
-        <Route path="/project/distributed-ml-system" element={<DistributedMLPage />} />
-        <Route path="/project/utopia-kafka-project" element={<UtopiaKafkaPage />} />
-        <Route path="/project/text-summarization" element={<TextSummarizationPage />} />
-        <Route path="/project/software-requirement-specification" element={<SoftwareRequirementPage />} />
-        <Route path="/project/5g-network-field-test-evaluation" element={<FiveGNetworkPage />} />
-        <Route path="/project/mininet-sdn-implementation" element={<MininetSDNPage />} />
+        <Route path="/projects/distributed-file-system" element={<ProjectPage />} />
+        <Route path="/projects/dht-federated-ml-system" element={<DHTFederatedMLPage />} />
+        <Route path="/projects/distributed-ml-system" element={<DistributedMLPage />} />
+        <Route path="/projects/utopia-kafka-project" element={<UtopiaKafkaPage />} />
+        <Route path="/projects/text-summarization" element={<TextSummarizationPage />} />
+        <Route path="/projects/software-requirement-specification" element={<SoftwareRequirementPage />} />
+        <Route path="/projects/5g-network-field-test-evaluation" element={<FiveGNetworkPage />} />
+        <Route path="/projects/mininet-sdn-implementation" element={<MininetSDNPage />} />
       </Routes>
     </Router>
   );

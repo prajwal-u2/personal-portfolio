@@ -100,6 +100,23 @@
   margin: 0 auto;
 }
 
+.project-page-main-image.utopia-image {
+  max-width: 400px;
+}
+
+.project-page-main-image.text-summarization-image {
+  max-width: 400px;
+}
+
+.project-page-main-image.fiveg-image {
+  max-width: 400px;
+}
+
+.project-page-main-image.mininet-image {
+  max-width: 400px;
+  max-height: 500px;
+}
+
 .project-page-description-text {
   line-height: 1.6;
   font-size: 1.1rem;

@@ -3,6 +3,13 @@ import { Link } from 'react-router-dom';
 import { useScrollToTop } from '../hooks/useScrollToTop';
 import dfsImage from '../assets/images/dfs.png';
 import dhtMlImage from '../assets/images/dht_ml.png';
+import distributedMlImage from '../assets/images/dist_ml.png';
+import utopiaImage from '../assets/images/utopia.png';
+import textSummarizationImage from '../assets/images/text_summarization.png';
+import softwareRequirementImage from '../assets/images/agile.jpeg';
+import fiveGImage from '../assets/images/5g.png';
+import mininetImage from '../assets/images/mininet.png';
+
 import './ProjectPages.css';
 
 // Helper function to navigate back to projects section
@@ -182,16 +189,28 @@ export function DistributedMLPage() {
         <div className="project-page-content">
           <section className="project-page-description">
             <h2>Description</h2>
+            <div className="project-page-image-container">
+              <img 
+                src={distributedMlImage} 
+                alt="Distributed ML System Architecture" 
+                className="project-page-main-image"
+              />
+            </div>
+            <br/>
             <div className="project-page-description-text">
               <p>
-                A high-performance distributed machine learning system implemented in C++ that coordinates multiple compute nodes 
-                for parallel model training and validation. This system is designed for large-scale ML workloads requiring 
-                significant computational resources with master-worker architecture.
+              In this project, we set out to build a distributed training system for neural networks that could mimic real-world computing environments—where machines aren’t always reliable, and workloads must be shared intelligently.
+               Using Python and Apache Thrift, we created a three-part system: a client to kick off the training, a coordinator to manage the process, and multiple compute nodes to do the heavy lifting.
               </p>
               <p>
-                Features dynamic load balancing based on node capabilities, supports both synchronous and asynchronous parameter 
-                updates, implements efficient memory management and vectorized operations, and provides auto-scaling capabilities 
-                to add/remove nodes based on workload.
+              When training begins, the coordinator reads the data and splits it into tasks, placing them in a queue. It then assigns those tasks to compute nodes using a smart scheduling strategy—round-robin or load balancing, depending on the situation. 
+              If one node is overloaded and rejects a task, the system doesn’t fail. Instead, the coordinator forwards that task to the next available node, ensuring that no task is ever dropped. 
+              Each compute node trains an MLP model, computes gradients, and sends them back to the coordinator. These gradients are then averaged to update the global model. The process repeats over several rounds, improving the model each time.
+              </p>
+              <p>
+              We tested the system under different configurations—varying node counts, random vs. load-aware scheduling, and even simulated failures. 
+              Despite rejections and retries, the system consistently achieved robust model convergence, with final validation errors as low as 0.27, proving the strength of our load-balancing logic and distributed design. 
+              The system supports dynamic node addition and removal, and can scale to handle large-scale ML workloads with varying compute resources.
               </p>
             </div>
           </section>
@@ -199,12 +218,16 @@ export function DistributedMLPage() {
           <section className="project-page-technologies">
             <h2>Technologies Used</h2>
             <div className="project-page-tech-grid">
-              <span className="project-page-tech-badge">C++</span>
-              <span className="project-page-tech-badge">Machine Learning</span>
-              <span className="project-page-tech-badge">Distributed Computing</span>
-              <span className="project-page-tech-badge">Parallel Processing</span>
-              <span className="project-page-tech-badge">GPU Computing</span>
-              <span className="project-page-tech-badge">High Performance Computing</span>
+              <span className="project-page-tech-badge">Python</span>
+              <span className="project-page-tech-badge">Apache Thrift</span>
+              <span className="project-page-tech-badge">Multi-Layer Perceptron</span>
+              <span className="project-page-tech-badge">Multithreading</span>
+              <span className="project-page-tech-badge">Load Balancing</span>
+              <span className="project-page-tech-badge">Fault Tolerance</span>
+              <span className="project-page-tech-badge">Socket Programming</span>
+              <span className="project-page-tech-badge">Gradient Aggregation</span>
+              <span className="project-page-tech-badge">Model Validation</span>
+              <span className="project-page-tech-badge">Distributed Systems Design</span>
             </div>
           </section>
 
@@ -241,16 +264,29 @@ export function UtopiaKafkaPage() {
         <div className="project-page-content">
           <section className="project-page-description">
             <h2>Description</h2>
+              <div className="project-page-image-container">
+               <img 
+                 src={utopiaImage} 
+                 alt="Utopia Kafka System Architecture" 
+                 className="project-page-main-image utopia-image"
+               />
+             </div>
+            <br/>
             <div className="project-page-description-text">
               <p>
-                Utopia is a comprehensive real-time analytics pipeline designed to handle high-throughput data streams and 
-                provide instant insights through low-latency queries. The system combines the power of Apache Kafka for 
-                data ingestion with Apache Pinot for real-time analytics and sub-second query response times.
+              In this project, we joined Utopia, a fast-growing music startup aiming to revolutionize its platform with real-time analytics. 
+              Initially built on PostgreSQL, Utopia needed a shift toward event-driven architecture to power features like artist trends, concert alerts, and personalized recommendations. 
+              We were brought in to assess the right streaming infrastructure and design a scalable, low-latency data pipeline to serve millions of music fans.
               </p>
               <p>
-                Features multi-stage data ingestion using Kafka producers and consumers, real-time data transformation and 
-                enrichment pipelines, horizontal scaling capabilities for both Kafka and Pinot clusters, and comprehensive 
-                metrics collection using Prometheus and Grafana for monitoring.
+              We began with a technical evaluation, comparing Apache Kafka with other messaging systems like RedPanda and RabbitMQ, and delivered a live working demo that produced and consumed events locally. 
+              After choosing Kafka as our backbone, we moved to the design phase, identifying key business questions such as detecting top streamed artists, sold-out concerts, and high-capacity event alerts. 
+              We mapped these to stream processing topologies, detailing data sources, transformation logic, stateful joins, and sinks.
+              </p>
+              <p>
+              The core of the project was the Stream Processing POC, where we used Kafka Streams to implement fully working pipelines for each business insight. 
+              With test cases and a simulated data-demo environment, we validated the system end-to-end. Finally, we extended the project by ingesting enriched streaming outputs into Apache Pinot, enabling fast OLAP queries and dashboards. 
+              The system now supports both real-time triggers and historical analytics—bridging streaming and batch insights into a unified platform.
               </p>
             </div>
           </section>
@@ -258,12 +294,15 @@ export function UtopiaKafkaPage() {
           <section className="project-page-technologies">
             <h2>Technologies Used</h2>
             <div className="project-page-tech-grid">
+              <span className="project-page-tech-badge">Java</span> 
               <span className="project-page-tech-badge">Apache Kafka</span>
+              <span className="project-page-tech-badge">Kafka Streams</span>
               <span className="project-page-tech-badge">Apache Pinot</span>
+              <span className="project-page-tech-badge">RabbitMQ</span>
+              <span className="project-page-tech-badge">Event-Driven Architecture</span>
+              <span className="project-page-tech-badge">Stream Topology Design</span>
+              <span className="project-page-tech-badge">Stateful Processing</span>
               <span className="project-page-tech-badge">Real-Time Analytics</span>
-              <span className="project-page-tech-badge">Data Pipeline</span>
-              <span className="project-page-tech-badge">Prometheus</span>
-              <span className="project-page-tech-badge">Grafana</span>
             </div>
           </section>
 
@@ -300,16 +339,31 @@ export function TextSummarizationPage() {
         <div className="project-page-content">
           <section className="project-page-description">
             <h2>Description</h2>
+                         <div className="project-page-image-container">
+               <img 
+                 src={textSummarizationImage} 
+                 alt="Text Summarization Analysis" 
+                 className="project-page-main-image text-summarization-image"
+               />
+             </div>
+            <br/>
             <div className="project-page-description-text">
               <p>
-                A comprehensive research project that conducts an in-depth comparative analysis of state-of-the-art text 
-                summarization algorithms. This study evaluates the performance, efficiency, and applicability of T5, BERT, 
-                and TextRank approaches across various text types and domains.
+                In an age where digital information is abundant but attention is limited, I set out with my teammate to explore the capabilities of modern NLP models in condensing information without losing meaning. 
+                Our goal was to evaluate how different summarization techniques — abstractive and extractive — perform across real-world datasets of varying length and complexity.
+                We chose three prominent algorithms: T5, representing deep abstractive generation, BERT, optimized for contextual extractive summarization, and TextRank, a graph-based baseline method.
               </p>
               <p>
-                The project includes ROUGE metrics evaluation for automatic assessment, human evaluation studies for summary 
-                quality, performance analysis across different text lengths and domains, and novel evaluation metrics 
-                considering semantic similarity and coherence with open-source implementation.
+                I led the BERT pipeline implementation, fine-tuning it for both medium-length summarization and headline generation. 
+                I also curated and pre-processed datasets from Indian Express and CNN/DailyMail, ensuring variety across input lengths and formats.
+                Throughout, I co-authored and analyzed model outputs using ROUGE and BLEU metrics, diving into both their quantitative performance and qualitative fluency.
+              </p>
+              <p>
+                Our findings revealed fascinating trade-offs: BERT excelled at concise content extraction but struggled with ultra-short outputs like headlines. 
+                T5 shined in fluency and abstraction, especially for long-form inputs. Meanwhile, TextRank offered computational efficiency but limited linguistic richness.
+              </p>
+              <p>
+                The project deepened my practical experience in transformer architectures, evaluation metric interpretation, and benchmarking real-world AI applications — all while sharpening my technical communication and research writing skills.
               </p>
             </div>
           </section>
@@ -318,11 +372,17 @@ export function TextSummarizationPage() {
             <h2>Technologies Used</h2>
             <div className="project-page-tech-grid">
               <span className="project-page-tech-badge">Python</span>
-              <span className="project-page-tech-badge">NLP</span>
-              <span className="project-page-tech-badge">BERT</span>
-              <span className="project-page-tech-badge">T5</span>
-              <span className="project-page-tech-badge">TextRank</span>
               <span className="project-page-tech-badge">Transformers</span>
+              <span className="project-page-tech-badge">Natural Language Processing</span>
+              <span className="project-page-tech-badge">Artificial Intelligence</span>
+              <span className="project-page-tech-badge">T5</span>
+              <span className="project-page-tech-badge">BERT</span>
+              <span className="project-page-tech-badge">TextRank</span>
+              <span className="project-page-tech-badge">ROUGE</span>
+              <span className="project-page-tech-badge">BLEU</span>
+              <span className="project-page-tech-badge">Pandas</span>
+              <span className="project-page-tech-badge">NumPy</span>
+              <span className="project-page-tech-badge">Jupyter Notebooks</span>
             </div>
           </section>
 
@@ -359,16 +419,33 @@ export function SoftwareRequirementPage() {
         <div className="project-page-content">
           <section className="project-page-description">
             <h2>Description</h2>
+            <div className="project-page-image-container">
+              <img 
+                src={softwareRequirementImage} 
+                alt="Software Requirement Specification" 
+                className="project-page-main-image software-requirement-image"
+              />
+            </div>
+            <br/>
             <div className="project-page-description-text">
               <p>
-                A comprehensive software engineering project that demonstrates the complete software development lifecycle 
-                from requirements gathering to final delivery. This project emphasizes best practices in software engineering 
-                and agile development methodologies with comprehensive SRS documentation.
+                Over a semester-long software engineering capstone, our team built SPORTS, a modular sports league scheduling system designed for city Parks & Recreation departments. 
+                The project followed a full software development lifecycle, from requirements elicitation to implementation and testing, grounded in Agile methodologies.
               </p>
               <p>
-                Features development of a complete web application following industry standards, implementation using agile 
-                development practices with iterative releases, detailed SRS document following IEEE 830 standards, and 
-                quality assurance through automated testing and code reviews with CI/CD pipeline implementation.
+                We began with detailed requirements analysis, using checklists to evaluate for consistency, testability, and feasibility. 
+                These insights were translated into structured documents including EARS-based system specifications, UML class diagrams for structural design, and sequence diagrams for core usage flows like team registration and scheduling.
+              </p>
+              <p>
+                The second half focused on object-oriented design and implementation. We created a comprehensive design document capturing architecture, system interfaces, and detailed traceability mappings to requirements. 
+                Following Agile practices, we managed the project using SCRUM ceremonies—sprint planning, daily standups, sprint review, and retrospective—while maintaining a live product and sprint backlog.
+              </p>
+              <p>
+                In our final sprint, we implemented and tested Version 0.1, which supports balanced, fair team scheduling across venues and time slots, even under constraints like odd team counts or late sign-ups. 
+                The system was unit tested, documented, and validated via an end-to-end demonstration simulating real-world league scheduling.
+              </p>
+              <p>
+                This project emphasized not just coding, but collaborative engineering, traceability, and iterative delivery—skills critical in real-world software development.
               </p>
             </div>
           </section>
@@ -377,11 +454,17 @@ export function SoftwareRequirementPage() {
             <h2>Technologies Used</h2>
             <div className="project-page-tech-grid">
               <span className="project-page-tech-badge">Python</span>
+              <span className="project-page-tech-badge">Pytest</span>
+              <span className="project-page-tech-badge">FastAPI</span>
+              <span className="project-page-tech-badge">UML</span>
+              <span className="project-page-tech-badge">EARS</span>
+              <span className="project-page-tech-badge">Agile</span>
+              <span className="project-page-tech-badge">SCRUM</span>
+              <span className="project-page-tech-badge">Object-Oriented Design</span>
+              <span className="project-page-tech-badge">Sequence Diagrams</span>
+              <span className="project-page-tech-badge">Class Diagrams</span>
               <span className="project-page-tech-badge">Software Engineering</span>
-              <span className="project-page-tech-badge">SRS Document</span>
-              <span className="project-page-tech-badge">Agile Development</span>
-              <span className="project-page-tech-badge">Scrum</span>
-              <span className="project-page-tech-badge">CI/CD</span>
+              <span className="project-page-tech-badge">Requirements Specification</span>
             </div>
           </section>
 
@@ -418,16 +501,33 @@ export function FiveGNetworkPage() {
         <div className="project-page-content">
           <section className="project-page-description">
             <h2>Description</h2>
-            <div className="project-page-description-text">
+                         <div className="project-page-image-container">
+               <img 
+                 src={fiveGImage} 
+                 alt="5G Network Performance Analysis" 
+                 className="project-page-main-image fiveg-image"
+               />
+             </div>
+            <br/>
+              <div className="project-page-description-text">
               <p>
-                A comprehensive field study analyzing 5G network performance in Minneapolis, providing valuable insights 
-                into real-world 5G deployment effectiveness. This research contributes to understanding 5G network behavior 
-                in urban environments through systematic measurement campaigns across different areas.
+                Tasked with evaluating real-world 5G network performance under varying conditions, the team set out to analyze latency, throughput, and streaming quality across multiple network configurations. 
+                The project lead took ownership of infrastructure setup and data engineering throughout all three phases of the project.
               </p>
               <p>
-                The study includes multiple testing scenarios covering indoor, outdoor, and mobile environments, performance 
-                metrics analysis including download/upload throughput and latency, signal strength and quality indicators 
-                (RSRP, RSRQ, SINR), and comprehensive coverage analysis with heat map generation for signal strength.
+                In Phase 1, an AWS EC2 instance was provisioned and configured as the backend server, Apache was implemented, and HTTP and ICMP protocols were enabled through security groups. 
+                Extensive connectivity tests were run using ping, traceroute, and iperf, both in direct and reverse modes, while automated log parsers were scripted to extract key metrics like mean, standard deviation, and packet loss from raw outputs.
+              </p>
+              <p>
+                In Phase 2, large file downloads via HTTP were analyzed using Wireshark, dissecting packet flows, identifying TCP retransmissions, and quantifying gzip compression gains. 
+                The impact of file size on response latency was evaluated and protocol behavior across multiple layers was highlighted.
+              </p>
+              <p>
+                In Phase 3, Video-on-Demand tests were conducted across four ABR algorithms (Bola, Dynamic, Fixed, Throughput), both in stationary and mobile conditions. 
+                Python notebooks were built to calculate average bitrate, stall counts, and buffer stability, generating comparative visualizations.
+              </p>
+              <p>
+                The outcome was a comprehensive, field-tested evaluation of 5G, demonstrating Dynamic ABR as the most reliable under mobility—with zero stalls and superior adaptive behavior.
               </p>
             </div>
           </section>
@@ -436,11 +536,20 @@ export function FiveGNetworkPage() {
             <h2>Technologies Used</h2>
             <div className="project-page-tech-grid">
               <span className="project-page-tech-badge">5G</span>
+              <span className="project-page-tech-badge">Apache HTTP Server</span>
+              <span className="project-page-tech-badge">Ping</span>
+              <span className="project-page-tech-badge">Traceroute</span>
+              <span className="project-page-tech-badge">Iperf</span>
+              <span className="project-page-tech-badge">Wireshark</span>
+              <span className="project-page-tech-badge">Adaptive Bitrate</span>
+              <span className="project-page-tech-badge">Python</span>
+              <span className="project-page-tech-badge">Pandas</span>
+              <span className="project-page-tech-badge">NumPy</span>
+              <span className="project-page-tech-badge">AWS</span>
               <span className="project-page-tech-badge">Computer Networks</span>
               <span className="project-page-tech-badge">Network Analysis</span>
               <span className="project-page-tech-badge">Field Testing</span>
               <span className="project-page-tech-badge">Data Analytics</span>
-              <span className="project-page-tech-badge">Performance Monitoring</span>
             </div>
           </section>
 
@@ -477,16 +586,23 @@ export function MininetSDNPage() {
         <div className="project-page-content">
           <section className="project-page-description">
             <h2>Description</h2>
+            <div className="project-page-image-container">
+              <img 
+                src={mininetImage} 
+                alt="Mininet SDN Implementation" 
+                className="project-page-main-image mininet-image"
+              />
+            </div>
+            <br/>
             <div className="project-page-description-text">
               <p>
-                A comprehensive Software Defined Networking (SDN) implementation using Mininet for network emulation and 
-                Python for controller development. This project demonstrates advanced networking concepts and programmable 
-                network control with OpenFlow-based controller implementation for centralized network control.
+                As part of an advanced networking project, I designed and implemented a software-defined network (SDN) using Mininet, a POX controller, and Open vSwitch. The goal was to simulate a real-world enterprise-like topology and gain hands-on experience with network behavior at both Layer 2 and Layer 3. I engineered the network with multiple hosts, Layer 2 switches for frame forwarding, and Layer 3 routers to handle inter-subnet routing.
               </p>
               <p>
-                Features custom network topologies designed for different testing scenarios, Layer 2 switching with MAC 
-                address learning and forwarding, Layer 3 routing with custom routing algorithms, VLAN implementation for 
-                network segmentation, and comprehensive documentation for learning SDN concepts.
+                I began by building diverse topologies and tuning link parameters to study their impact on latency and bandwidth. Using tools like ping, iperf, and Wireshark, I benchmarked traffic flow, observed congestion points, and analyzed routing decisions. I ensured that the Layer 3 routers handled gateway-level responsibilities, while Layer 2 switches enabled efficient broadcast domain segmentation.
+              </p>
+              <p>
+                The core of the project involved writing a custom Python-based POX controller that could intelligently manage traffic. I implemented dynamic ARP resolution, ICMP echo handling, and automatic FlowMod rule generation to offload the controller after initial learning. This minimized packet-in messages and improved scalability. By the end, I had built a fully functional SDN that achieved stable, high-throughput communication and demonstrated robust, rule-based routing across the simulated network.
               </p>
             </div>
           </section>
@@ -495,10 +611,20 @@ export function MininetSDNPage() {
             <h2>Technologies Used</h2>
             <div className="project-page-tech-grid">
               <span className="project-page-tech-badge">Python</span>
+              <span className="project-page-tech-badge">Mininet</span>
+              <span className="project-page-tech-badge">Open vSwitch</span>
+              <span className="project-page-tech-badge">POX Controller</span>
+              <span className="project-page-tech-badge">Wireshark</span>
+              <span className="project-page-tech-badge">Iperf</span>
+              <span className="project-page-tech-badge">Ping</span>
+              <span className="project-page-tech-badge">ARP</span>
+              <span className="project-page-tech-badge">ICMP</span>
+              <span className="project-page-tech-badge">IP</span>
+              <span className="project-page-tech-badge">TCP/UDP</span>
+              <span className="project-page-tech-badge">Ubuntu VM</span>
+              <span className="project-page-tech-badge">OpenFlow 1.3</span>
               <span className="project-page-tech-badge">SDN</span>
               <span className="project-page-tech-badge">Computer Networks</span>
-              <span className="project-page-tech-badge">Mininet</span>
-              <span className="project-page-tech-badge">OpenFlow</span>
               <span className="project-page-tech-badge">Network Emulation</span>
             </div>
           </section>
