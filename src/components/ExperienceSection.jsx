@@ -53,7 +53,7 @@ function ExperienceSection() {
       dataEngineering: [
         'Orchestrated 200+ automated ETL pipelines using 20+ connectors including APIs in Azure Data Factory to ingest, clean, and transform SQL and NoSQL data, increasing data availability by 90% using PySpark, Pandas, and NumPy.',
         'Optimized batch and streaming data pipelines using Azure Event Hubs, Kafka, Spark, and Databricks, increasing ingestion speed by 35% and enabling real-time data processing.',
-        'Diverged analytics driven Data Observability solution aligned with Gartner\'s principles (Content, Infrastructure, Flow, Usage, Cost), standardizing data platforms and reducing MTTR with projected savings of 61.5M annually.',
+        'Delivered analytics driven Data Observability solution aligned with Gartner\'s principles (Content, Infrastructure, Flow, Usage, Cost), standardizing data platforms and reducing MTTR with projected savings of 1.5M Euros annually.',
         'Rearchitected on premise SSIS package and Airflow DAGs using Azure Data Factory and Databricks during cloud migration.'
       ]
     },
