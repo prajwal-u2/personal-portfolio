@@ -1163,6 +1163,7 @@
   height: 32px;
   object-fit: contain;
   border-radius: 6px;
+  transition: transform 0.3s ease;
 }
 
 /* Removed background colors since we're using actual logo images now */

@@ -355,11 +355,9 @@ function HomePage() {
                   <span className="skill-name">Spring Boot</span>
                 </div>
                 <div className="skill-item">
-                  <img src="https://img.icons8.com/color/48/000000/api-settings.png" alt="REST APIs" className="skill-icon" />
-                  <span className="skill-name">REST APIs</span>
+                  <img src="/icons/fastapi.png" alt="FastAPI" className="skill-icon" />
+                  <span className="skill-name">FastAPI</span>
                 </div>
-
-
                 <div className="skill-item">
                   <img src="https://img.icons8.com/color/48/000000/figma--v1.png" alt="Figma" className="skill-icon" />
                   <span className="skill-name">Figma</span>
@@ -395,11 +393,11 @@ function HomePage() {
                   <span className="skill-name">Redis</span>
                 </div>
                 <div className="skill-item">
-                  <img src="https://img.icons8.com/color/48/000000/amazon-s3.png" alt="S3" className="skill-icon" />
+                  <img src="/icons/s3.png" alt="S3" className="skill-icon" />
                   <span className="skill-name">S3</span>
                 </div>
                 <div className="skill-item">
-                  <img src="https://img.icons8.com/color/48/000000/cloud-storage.png" alt="Azure Blob Storage" className="skill-icon" />
+                  <img src="/icons/az_blob.png" alt="Azure Blob Storage" className="skill-icon" />
                   <span className="skill-name">Azure Blob Storage</span>
                 </div>
               </div>
@@ -417,7 +415,7 @@ function HomePage() {
                   <span className="skill-name">Azure</span>
                 </div>
                 <div className="skill-item">
-                  <img src="https://img.icons8.com/color/48/000000/amazon-web-services.png" alt="AWS" className="skill-icon" />
+                  <img src="/icons/aws.png" alt="AWS" className="skill-icon" />
                   <span className="skill-name">AWS</span>
                 </div>
                 <div className="skill-item">
@@ -429,7 +427,7 @@ function HomePage() {
                   <span className="skill-name">GitHub Actions</span>
                 </div>
                 <div className="skill-item">
-                  <img src="https://img.icons8.com/color/48/000000/file.png" alt="YAML" className="skill-icon" />
+                  <img src="/icons/yaml.png" alt="YAML" className="skill-icon" />
                   <span className="skill-name">YAML</span>
                 </div>
                 <div className="skill-item">
@@ -459,15 +457,15 @@ function HomePage() {
                   <span className="skill-name">Kafka</span>
                 </div>
                 <div className="skill-item">
-                  <img src="https://img.icons8.com/color/48/000000/data-configuration.png" alt="Azure Data Factory" className="skill-icon" />
+                  <img src="/icons/adf.png" alt="Azure Data Factory" className="skill-icon" />
                   <span className="skill-name">Azure Data Factory</span>
                 </div>
                 <div className="skill-item">
-                  <img src="https://img.icons8.com/color/48/000000/data-backup.png" alt="Databricks" className="skill-icon" />
+                  <img src="/icons/databricks.png" alt="Databricks" className="skill-icon" />
                   <span className="skill-name">Databricks</span>
                 </div>
                 <div className="skill-item">
-                  <img src="https://img.icons8.com/color/48/000000/workflow.png" alt="Airflow" className="skill-icon" />
+                  <img src="/icons/airflow.png" alt="Airflow" className="skill-icon" />
                   <span className="skill-name">Airflow</span>
                 </div>
                 <div className="skill-item">
@@ -505,20 +503,20 @@ function HomePage() {
                   <span className="skill-name">OpenAI API</span>
                 </div>
                 <div className="skill-item">
-                  <img src="https://img.icons8.com/color/48/000000/code.png" alt="GitHub Copilot" className="skill-icon" />
+                  <img src="/icons/copilot.png" alt="GitHub Copilot" className="skill-icon" />
                   <span className="skill-name">GitHub Copilot</span>
                 </div>
                 <div className="skill-item">
-                  <img src="https://img.icons8.com/color/48/000000/speech-bubble.png" alt="NLP" className="skill-icon" />
-                  <span className="skill-name">NLP</span>
+                  <img src="/icons/huggingface.png" alt="Hugging Face" className="skill-icon" />
+                  <span className="skill-name">Hugging Face</span>
                 </div>
                 <div className="skill-item">
-                  <img src="https://img.icons8.com/color/48/000000/artificial-intelligence.png" alt="LLMs" className="skill-icon" />
-                  <span className="skill-name">LLMs</span>
+                  <img src="/icons/scikit_learn.png" alt="Scikit-learn" className="skill-icon" />
+                  <span className="skill-name">Scikit-learn</span>
                 </div>
                 <div className="skill-item">
-                  <img src="https://img.icons8.com/color/48/000000/brain.png" alt="Gen AI" className="skill-icon" />
-                  <span className="skill-name">Gen AI</span>
+                  <img src="/icons/tensorflow.png" alt="TensorFlow" className="skill-icon" />
+                  <span className="skill-name">TensorFlow</span>
                 </div>
               </div>
             </div>
