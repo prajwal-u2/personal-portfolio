@@ -81,7 +81,27 @@ function Navbar() {
       <div className="navbar-container">
         <div className="navbar-brand">
           <img src={myPhoto} alt="Prajwal" className="navbar-photo" />
-          <span>Portfolio</span>
+          <a 
+            href="/#home" 
+            className="navbar-brand-link"
+            onClick={(e) => {
+              e.preventDefault();
+              if (isProjectPage) {
+                window.location.href = '/#home';
+              } else {
+                const element = document.getElementById('home');
+                if (element) {
+                  const offsetTop = element.offsetTop - 60;
+                  window.scrollTo({
+                    top: offsetTop,
+                    behavior: 'smooth'
+                  });
+                }
+              }
+            }}
+          >
+            Portfolio
+          </a>
         </div>
         <ul className="navbar-menu">
           {navItems.map((item, index) => (

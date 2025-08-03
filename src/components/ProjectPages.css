@@ -18,30 +18,7 @@
 
 
 
-.project-page-back-button {
-  display: inline-flex;
-  align-items: center;
-  color: rgba(255, 255, 255, 0.9);
-  background: rgba(255, 255, 255, 0.1);
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  border-radius: 8px;
-  font-size: 1.1rem;
-  font-weight: 500;
-  margin-bottom: 3rem;
-  padding: 0.75rem 1.5rem;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  backdrop-filter: blur(10px);
-  text-decoration: none;
-}
 
-.project-page-back-button:hover {
-  background: rgba(255, 255, 255, 0.2);
-  border-color: rgba(255, 255, 255, 0.4);
-  transform: translateY(-2px);
-  color: white;
-  text-decoration: none;
-}
 
 .project-page-header {
   text-align: center;
@@ -162,6 +139,7 @@
 .project-page-actions {
   text-align: center;
   background: rgba(255, 255, 255, 0.05);
+  margin-bottom: 2rem;
 }
 
 .project-page-github-button {
@@ -221,11 +199,7 @@
     font-size: 1rem;
   }
 
-  .project-page-back-button {
-    font-size: 1rem;
-    padding: 0.5rem 1rem;
-    margin-bottom: 2rem;
-  }
+
 }
 
 @media (max-width: 480px) {
@@ -252,6 +226,7 @@
 .project-page .footer {
   padding: 1.5rem 0;
   margin-top: 0;
+  background: rgba(255, 255, 255, 0.8) !important;
 }
 
 .project-page .footer-content {

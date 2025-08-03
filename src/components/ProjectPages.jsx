@@ -14,14 +14,7 @@ import mininetImage from '../assets/images/mininet.png';
 
 import './ProjectPages.css';
 
-// Helper function to navigate back to projects section
-function BackToProjectsButton() {
-  return (
-    <a href="/#projects" className="project-page-back-button">
-      ← Back to Portfolio
-    </a>
-  );
-}
+
 
 // Distributed File System Project Page
 export function ProjectPage() {
@@ -31,7 +24,6 @@ export function ProjectPage() {
     <div className="project-page">
       <Navbar />
       <div className="project-page-container">
-        <BackToProjectsButton />
         
         <header className="project-page-header">
           <h1 className="project-page-title">Distributed File System</h1>
@@ -109,7 +101,6 @@ export function DHTFederatedMLPage() {
     <div className="project-page">
       <Navbar />
       <div className="project-page-container">
-        <BackToProjectsButton />
         
         <header className="project-page-header">
           <h1 className="project-page-title">DHT Federated ML System</h1>
@@ -187,7 +178,6 @@ export function DistributedMLPage() {
     <div className="project-page">
       <Navbar />
       <div className="project-page-container">
-        <BackToProjectsButton />
         
         <header className="project-page-header">
           <h1 className="project-page-title">Distributed ML System</h1>
@@ -264,7 +254,6 @@ export function UtopiaKafkaPage() {
     <div className="project-page">
       <Navbar />
       <div className="project-page-container">
-        <BackToProjectsButton />
         
         <header className="project-page-header">
           <h1 className="project-page-title">Utopia - Real-Time Analytics Pipeline</h1>
@@ -341,7 +330,6 @@ export function TextSummarizationPage() {
     <div className="project-page">
       <Navbar />
       <div className="project-page-container">
-        <BackToProjectsButton />
         
         <header className="project-page-header">
           <h1 className="project-page-title">Text Summarization Analysis</h1>
@@ -423,7 +411,6 @@ export function SoftwareRequirementPage() {
     <div className="project-page">
       <Navbar />
       <div className="project-page-container">
-        <BackToProjectsButton />
         
         <header className="project-page-header">
           <h1 className="project-page-title">Software Requirement Specification</h1>
@@ -507,7 +494,6 @@ export function FiveGNetworkPage() {
     <div className="project-page">
       <Navbar />
       <div className="project-page-container">
-        <BackToProjectsButton />
         
         <header className="project-page-header">
           <h1 className="project-page-title">5G Network Field Test Evaluation</h1>
@@ -594,7 +580,6 @@ export function MininetSDNPage() {
     <div className="project-page">
       <Navbar />
       <div className="project-page-container">
-        <BackToProjectsButton />
         
         <header className="project-page-header">
           <h1 className="project-page-title">Mininet SDN Implementation</h1>

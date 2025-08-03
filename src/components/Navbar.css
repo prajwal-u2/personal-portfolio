@@ -18,6 +18,7 @@
 }
 
 .navbar-blue .navbar-brand span,
+.navbar-blue .navbar-brand-link,
 .navbar-blue .navbar-link {
   color: rgba(255, 255, 255, 0.9);
   text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
@@ -40,6 +41,7 @@
 }
 
 .navbar-black .navbar-brand span,
+.navbar-black .navbar-brand-link,
 .navbar-black .navbar-link {
   color: rgba(255, 255, 255, 0.9);
   text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
@@ -62,6 +64,7 @@
 }
 
 .navbar-white .navbar-brand span,
+.navbar-white .navbar-brand-link,
 .navbar-white .navbar-link {
   color: rgba(0, 0, 0, 0.8);
   text-shadow: 0 1px 3px rgba(255, 255, 255, 0.5);
@@ -100,11 +103,21 @@
   object-fit: cover;
 }
 
-.navbar-brand span {
+.navbar-brand span,
+.navbar-brand-link {
   font-size: 1.25rem;
   font-weight: 600;
   letter-spacing: -0.01em;
   transition: all 0.3s ease;
+}
+
+.navbar-brand-link {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.navbar-brand-link:hover {
+  opacity: 0.8;
 }
 
 .navbar-menu {
@@ -157,7 +170,8 @@
     padding: 0.4rem 0;
   }
   
-  .navbar-brand span {
+  .navbar-brand span,
+  .navbar-brand-link {
     font-size: 1.15rem;
   }
 }
@@ -178,7 +192,8 @@
     padding: 0.3rem 0;
   }
   
-  .navbar-brand span {
+  .navbar-brand span,
+  .navbar-brand-link {
     font-size: 1.1rem;
   }
 }
@@ -198,7 +213,8 @@
     padding: 0.25rem 0;
   }
   
-  .navbar-brand span {
+  .navbar-brand span,
+  .navbar-brand-link {
     font-size: 1rem;
   }
 }
@@ -217,7 +233,8 @@
     font-size: 0.75rem;
   }
   
-  .navbar-brand span {
+  .navbar-brand span,
+  .navbar-brand-link {
     font-size: 0.95rem;
   }
 } 

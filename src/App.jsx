@@ -291,64 +291,70 @@ function HomePage() {
           <div className="certifications-container">
             <div className="certification-card">
               <div className="certification-icon">
-                <img src="https://img.icons8.com/color/48/000000/amazon-web-services.png" alt="AWS" className="certification-logo" />
+                <img src="https://img.icons8.com/color/48/000000/microsoft.png" alt="Microsoft" className="certification-logo" />
               </div>
               <div className="certification-content">
-                <h3 className="certification-title">AWS Certified Solutions Architect - Associate</h3>
-                <p className="certification-issuer">Amazon Web Services</p>
-                <p className="certification-date">Issued: December 2023</p>
-                <p className="certification-description">
-                  Demonstrated expertise in designing distributed systems, implementing security best practices, 
-                  and deploying scalable applications on AWS infrastructure.
-                </p>
-                <div className="certification-skills">
-                  <span className="cert-skill-tag">Cloud Architecture</span>
-                  <span className="cert-skill-tag">AWS Services</span>
-                  <span className="cert-skill-tag">Security</span>
-                  <span className="cert-skill-tag">Scalability</span>
-                </div>
+                <h3 className="certification-title">Azure Fundamentals</h3>
+                <p className="certification-issuer">Microsoft</p>
+                <p className="certification-date">Issued: June 2021</p>
+                
+                <a 
+                  href="#" 
+                  className="certification-button"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    // Add certificate URL or action here
+                    alert('Certificate verification link will be added here');
+                  }}
+                >
+                  View Certificate
+                </a>
               </div>
             </div>
 
             <div className="certification-card">
               <div className="certification-icon">
-                <img src="/icons/kafka.png" alt="Kafka" className="certification-logo" />
+                <img src="https://img.icons8.com/color/48/000000/microsoft.png" alt="Microsoft" className="certification-logo" />
               </div>
               <div className="certification-content">
-                <h3 className="certification-title">Apache Kafka Developer</h3>
-                <p className="certification-issuer">Confluent</p>
-                <p className="certification-date">Issued: November 2023</p>
-                <p className="certification-description">
-                  Proficient in building real-time streaming applications, managing Kafka clusters, 
-                  and implementing event-driven architectures for data processing pipelines.
-                </p>
-                <div className="certification-skills">
-                  <span className="cert-skill-tag">Stream Processing</span>
-                  <span className="cert-skill-tag">Event-Driven Architecture</span>
-                  <span className="cert-skill-tag">Data Pipelines</span>
-                  <span className="cert-skill-tag">Real-time Analytics</span>
-                </div>
+                <h3 className="certification-title">Azure AI Fundamentals</h3>
+                <p className="certification-issuer">Microsoft</p>
+                <p className="certification-date">Issued: June 2021</p>
+                
+                <a 
+                  href="#" 
+                  className="certification-button"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    // Add certificate URL or action here
+                    alert('Certificate verification link will be added here');
+                  }}
+                >
+                  View Certificate
+                </a>
               </div>
             </div>
 
             <div className="certification-card">
               <div className="certification-icon">
-                <img src="https://img.icons8.com/color/48/000000/docker.png" alt="Docker" className="certification-logo" />
+                <img src="https://img.icons8.com/color/48/000000/microsoft.png" alt="Microsoft" className="certification-logo" />
               </div>
               <div className="certification-content">
-                <h3 className="certification-title">Docker Certified Associate</h3>
-                <p className="certification-issuer">Docker Inc.</p>
-                <p className="certification-date">Issued: October 2023</p>
-                <p className="certification-description">
-                  Expertise in containerization, Docker orchestration, and building scalable 
-                  microservices architectures for modern application deployment.
-                </p>
-                <div className="certification-skills">
-                  <span className="cert-skill-tag">Containerization</span>
-                  <span className="cert-skill-tag">Microservices</span>
-                  <span className="cert-skill-tag">DevOps</span>
-                  <span className="cert-skill-tag">Deployment</span>
-                </div>
+                <h3 className="certification-title">Azure Data Fundamentals</h3>
+                <p className="certification-issuer">Microsoft</p>
+                <p className="certification-date">Issued: October 2022</p>
+                
+                <a 
+                  href="#" 
+                  className="certification-button"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    // Add certificate URL or action here
+                    alert('Certificate verification link will be added here');
+                  }}
+                >
+                  View Certificate
+                </a>
               </div>
             </div>
           </div>
