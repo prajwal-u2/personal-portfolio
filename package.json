@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "type": "module",
   "description": "This project is currently under development and is intended for personal website development.",
+  "homepage": "https://yourusername.github.io/personal-portfolio",
   "main": "index.js",
   "scripts": {
     "dev": "vite",
