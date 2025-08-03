@@ -290,72 +290,72 @@ function HomePage() {
           
           <div className="certifications-container">
             <div className="certification-card">
-              <div className="certification-icon">
-                <img src="https://img.icons8.com/color/48/000000/microsoft.png" alt="Microsoft" className="certification-logo" />
+              <div className="certification-info">
+                <div className="certification-icon">
+                  <img src="https://img.icons8.com/color/48/000000/microsoft.png" alt="Microsoft" className="certification-logo" />
+                </div>
+                <div className="certification-details">
+                  <h3 className="certification-title">Azure Fundamentals</h3>
+                  <p className="certification-date">Issued: June 2021</p>
+                </div>
               </div>
-              <div className="certification-content">
-                <h3 className="certification-title">Azure Fundamentals</h3>
-                <p className="certification-issuer">Microsoft</p>
-                <p className="certification-date">Issued: June 2021</p>
-                
-                <a 
-                  href="#" 
-                  className="certification-button"
-                  onClick={(e) => {
-                    e.preventDefault();
-                    // Add certificate URL or action here
-                    alert('Certificate verification link will be added here');
-                  }}
-                >
-                  View Certificate
-                </a>
-              </div>
+              <a 
+                href="#" 
+                className="certification-button"
+                onClick={(e) => {
+                  e.preventDefault();
+                  // Add certificate URL or action here
+                  alert('Certificate verification link will be added here');
+                }}
+              >
+                View
+              </a>
             </div>
 
             <div className="certification-card">
-              <div className="certification-icon">
-                <img src="https://img.icons8.com/color/48/000000/microsoft.png" alt="Microsoft" className="certification-logo" />
+              <div className="certification-info">
+                <div className="certification-icon">
+                  <img src="https://img.icons8.com/color/48/000000/microsoft.png" alt="Microsoft" className="certification-logo" />
+                </div>
+                <div className="certification-details">
+                  <h3 className="certification-title">Azure AI Fundamentals</h3>
+                  <p className="certification-date">Issued: June 2021</p>
+                </div>
               </div>
-              <div className="certification-content">
-                <h3 className="certification-title">Azure AI Fundamentals</h3>
-                <p className="certification-issuer">Microsoft</p>
-                <p className="certification-date">Issued: June 2021</p>
-                
-                <a 
-                  href="#" 
-                  className="certification-button"
-                  onClick={(e) => {
-                    e.preventDefault();
-                    // Add certificate URL or action here
-                    alert('Certificate verification link will be added here');
-                  }}
-                >
-                  View Certificate
-                </a>
-              </div>
+              <a 
+                href="#" 
+                className="certification-button"
+                onClick={(e) => {
+                  e.preventDefault();
+                  // Add certificate URL or action here
+                  alert('Certificate verification link will be added here');
+                }}
+              >
+                View
+              </a>
             </div>
 
             <div className="certification-card">
-              <div className="certification-icon">
-                <img src="https://img.icons8.com/color/48/000000/microsoft.png" alt="Microsoft" className="certification-logo" />
-              </div>
-              <div className="certification-content">
+              <div className="certification-info">
+                <div className="certification-icon">
+                  <img src="https://img.icons8.com/color/48/000000/microsoft.png" alt="Microsoft" className="certification-logo" />
+                </div>
+                <div className="certification-details">
                 <h3 className="certification-title">Azure Data Fundamentals</h3>
-                <p className="certification-issuer">Microsoft</p>
                 <p className="certification-date">Issued: October 2022</p>
-                
-                <a 
-                  href="#" 
-                  className="certification-button"
-                  onClick={(e) => {
-                    e.preventDefault();
-                    // Add certificate URL or action here
-                    alert('Certificate verification link will be added here');
-                  }}
-                >
-                  View Certificate
-                </a>
+                </div>
               </div>
+              <a 
+                href="#" 
+                className="certification-button"
+                onClick={(e) => {
+                  e.preventDefault();
+                  // Add certificate URL or action here
+                  alert('Certificate verification link will be added here');
+                }}
+              >
+                View
+              </a>
             </div>
           </div>
         </section>
