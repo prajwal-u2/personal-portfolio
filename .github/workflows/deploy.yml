@@ -35,11 +35,18 @@ jobs:
     - name: Build
       run: npm run build
       
-    - name: Clean build directory
+    - name: Clean and prepare build directory
       run: |
         cd dist
+        # Remove any symlinks
         find . -type l -delete
+        # Remove source maps
         find . -name "*.map" -delete
+        # Remove any hidden files
+        find . -name ".*" -delete
+        # List contents to debug
+        ls -la
+        du -sh .
       
     - name: Setup Pages
       uses: actions/configure-pages@v3
