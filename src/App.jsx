@@ -296,19 +296,16 @@ function HomePage() {
                 </div>
                 <div className="certification-details">
                   <h3 className="certification-title">Azure Fundamentals</h3>
-                  <p className="certification-date">Issued: June 2021</p>
+                  <p className="certification-date">Issued: Jun 2021</p>
                 </div>
               </div>
               <a 
-                href="#" 
+                href="https://www.credly.com/badges/7dd69b2a-a368-40bb-a8e2-4125744429d9?source=linked_in_profile" 
                 className="certification-button"
-                onClick={(e) => {
-                  e.preventDefault();
-                  // Add certificate URL or action here
-                  alert('Certificate verification link will be added here');
-                }}
+                target="_blank"
+                rel="noopener noreferrer"
               >
-                View
+                View Credential
               </a>
             </div>
 
@@ -319,19 +316,16 @@ function HomePage() {
                 </div>
                 <div className="certification-details">
                   <h3 className="certification-title">Azure AI Fundamentals</h3>
-                  <p className="certification-date">Issued: June 2021</p>
+                  <p className="certification-date">Issued: Jun 2021</p>
                 </div>
               </div>
               <a 
-                href="#" 
+                href="https://www.credly.com/badges/b75a1f15-7d51-4299-b998-7af1d1c51ca7?source=linked_in_profile" 
                 className="certification-button"
-                onClick={(e) => {
-                  e.preventDefault();
-                  // Add certificate URL or action here
-                  alert('Certificate verification link will be added here');
-                }}
+                target="_blank"
+                rel="noopener noreferrer"
               >
-                View
+                View Credential
               </a>
             </div>
 
@@ -342,7 +336,27 @@ function HomePage() {
                 </div>
                 <div className="certification-details">
                 <h3 className="certification-title">Azure Data Fundamentals</h3>
-                <p className="certification-date">Issued: October 2022</p>
+                <p className="certification-date">Issued: Oct 2022</p>
+                </div>
+              </div>
+              <a 
+                href="https://www.credly.com/badges/45709665-9160-40f7-b78c-a75dc92c53f5" 
+                className="certification-button"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                View Credential
+              </a>
+            </div>
+
+            <div className="certification-card">
+              <div className="certification-info">
+                <div className="certification-icon">
+                  <img src="/icons/SAFe.png" alt="Scaled Agile" className="certification-logo" />
+                </div>
+                <div className="certification-details">
+                <h3 className="certification-title">SAFe for Teams</h3>
+                <p className="certification-date">Issued: Sep 2022</p>
                 </div>
               </div>
               <a 
@@ -350,11 +364,52 @@ function HomePage() {
                 className="certification-button"
                 onClick={(e) => {
                   e.preventDefault();
-                  // Add certificate URL or action here
-                  alert('Certificate verification link will be added here');
+                  alert('SAFe certification verification link will be added here');
                 }}
               >
-                View
+                View Credential
+              </a>
+            </div>
+
+            <div className="certification-card">
+              <div className="certification-info">
+                <div className="certification-icon">
+                  <img src="/icons/nptel.png" alt="NPTEL" className="certification-logo" />
+                </div>
+                <div className="certification-details">
+                  <h3 className="certification-title">Programming in Java</h3>
+                  <p className="certification-date">Issued: Apr 2022</p>
+                </div>
+              </div>
+              <a 
+                href="https://archive.nptel.ac.in/noc/Ecertificate/?q=NPTEL22CS47S3319018602159790" 
+                className="certification-button"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                View Credential
+              </a>
+            </div>
+
+            <div className="certification-card">
+              <div className="certification-info">
+                <div className="certification-icon">
+                  <img src="/icons/coursera.png" alt="Coursera" className="certification-logo" />
+                </div>
+                <div className="certification-details">
+                  <h3 className="certification-title">Web Design for Everybody</h3>
+                  <p className="certification-date">Issued: Sep 2020</p>
+                </div>
+              </div>
+              <a 
+                href="#" 
+                className="certification-button"
+                onClick={(e) => {
+                  e.preventDefault();
+                  alert('Coursera certification verification link will be added here');
+                }}
+              >
+                View Credential
               </a>
             </div>
           </div>
