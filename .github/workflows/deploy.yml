@@ -35,6 +35,12 @@ jobs:
     - name: Build
       run: npm run build
       
+    - name: Clean build directory
+      run: |
+        cd dist
+        find . -type l -delete
+        find . -name "*.map" -delete
+      
     - name: Setup Pages
       uses: actions/configure-pages@v3
       
@@ -43,6 +49,7 @@ jobs:
       with:
         name: github-pages
         path: './dist'
+        retention-days: 1
         
     - name: Deploy to GitHub Pages
       id: deployment
