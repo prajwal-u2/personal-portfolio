@@ -109,7 +109,7 @@ function Navbar() {
               }
             }}
           >
-            Portfolio
+            Prajwal Umesha
           </a>
         </div>
         
