@@ -8,6 +8,7 @@ function Navbar() {
   const navItems = ['Home', 'About', 'Education', 'Experience', 'Projects', 'Certifications', 'Skills'];
   const [activeSection, setActiveSection] = useState('Home');
   const [navbarTheme, setNavbarTheme] = useState('white');
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
   
   // Check if we're on a project page
   const isProjectPage = location.pathname.startsWith('/projects/');
@@ -60,6 +61,9 @@ function Navbar() {
   }, [navItems, isProjectPage]);
 
   const handleNavClick = (item) => {
+    // Close mobile menu when a nav item is clicked
+    setIsMenuOpen(false);
+    
     if (isProjectPage) {
       // On project pages, navigate to home page with the specific section
       window.location.href = `/#${item.toLowerCase()}`;
@@ -76,8 +80,12 @@ function Navbar() {
     }
   };
 
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
   return (
-    <nav className={`navbar navbar-${navbarTheme}`}>
+    <nav className={`navbar navbar-${navbarTheme} ${isMenuOpen ? 'menu-open' : ''}`}>
       <div className="navbar-container">
         <div className="navbar-brand">
           <img src={myPhoto} alt="Prajwal" className="navbar-photo" />
@@ -86,6 +94,7 @@ function Navbar() {
             className="navbar-brand-link"
             onClick={(e) => {
               e.preventDefault();
+              setIsMenuOpen(false);
               if (isProjectPage) {
                 window.location.href = '/#home';
               } else {
@@ -103,7 +112,38 @@ function Navbar() {
             Portfolio
           </a>
         </div>
-        <ul className="navbar-menu">
+        
+        {/* Hamburger menu button */}
+        <button 
+          className={`hamburger ${isMenuOpen ? 'active' : ''}`}
+          onClick={toggleMenu}
+          aria-label="Toggle navigation menu"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        {/* Desktop menu */}
+        <ul className="navbar-menu desktop-menu">
+          {navItems.map((item, index) => (
+            <li key={index} className="navbar-item">
+              <a 
+                href={`#${item.toLowerCase()}`} 
+                className={`navbar-link ${activeSection === item ? 'active' : ''}`}
+                onClick={(e) => {
+                  e.preventDefault();
+                  handleNavClick(item);
+                }}
+              >
+                {item}
+              </a>
+            </li>
+          ))}
+        </ul>
+
+        {/* Mobile menu */}
+        <ul className={`navbar-menu mobile-menu ${isMenuOpen ? 'active' : ''}`}>
           {navItems.map((item, index) => (
             <li key={index} className="navbar-item">
               <a 

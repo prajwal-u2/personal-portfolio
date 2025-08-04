@@ -9,6 +9,11 @@
   z-index: 1000;
   padding: 0;
   transition: all 0.3s ease;
+  height: 60px;
+}
+
+.navbar.menu-open {
+  height: 100vh;
 }
 
 /* Blue theme - for blue sections */
@@ -88,6 +93,7 @@
   justify-content: space-between;
   padding: 0 2rem;
   height: 60px;
+  position: relative;
 }
 
 .navbar-brand {
@@ -118,6 +124,51 @@
 
 .navbar-brand-link:hover {
   opacity: 0.8;
+}
+
+/* Hamburger menu styles */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 30px;
+  height: 25px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  z-index: 1001;
+}
+
+.hamburger span {
+  width: 100%;
+  height: 3px;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+  transform-origin: center;
+}
+
+/* Hamburger colors for different themes */
+.navbar-white .hamburger span {
+  background-color: #000000;
+}
+
+.navbar-black .hamburger span,
+.navbar-blue .hamburger span {
+  background-color: #ffffff;
+}
+
+/* Hamburger animation */
+.hamburger.active span:nth-child(1) {
+  transform: rotate(45deg) translate(6px, 6px);
+}
+
+.hamburger.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+  transform: rotate(-45deg) translate(6px, -6px);
 }
 
 .navbar-menu {
@@ -154,6 +205,108 @@
   transition: all 0.3s ease;
 }
 
+/* Mobile menu styles */
+.mobile-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  flex-direction: column;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 1rem 0;
+  gap: 0;
+  transform: translateY(-100%);
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.mobile-menu.active {
+  transform: translateY(0);
+  opacity: 1;
+  visibility: visible;
+}
+
+.mobile-menu .navbar-item {
+  width: 100%;
+}
+
+.mobile-menu .navbar-link {
+  display: block;
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  text-align: center;
+  color: rgba(0, 0, 0, 0.8);
+  background: transparent;
+  transition: all 0.3s ease;
+}
+
+.mobile-menu .navbar-link:hover {
+  background: rgba(0, 0, 0, 0.05);
+  color: #000000;
+}
+
+.mobile-menu .navbar-link:last-child {
+  border-bottom: none;
+}
+
+.mobile-menu .navbar-link.active {
+  background: rgba(0, 0, 0, 0.1);
+  color: #000000;
+  font-weight: 600;
+}
+
+.mobile-menu .navbar-link.active::after {
+  display: none;
+}
+
+/* Theme-specific mobile menu backgrounds */
+.navbar-blue .mobile-menu {
+  background: rgba(70, 130, 180, 0.95);
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.navbar-blue .mobile-menu .navbar-link {
+  color: rgba(255, 255, 255, 0.9);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.navbar-blue .mobile-menu .navbar-link:hover {
+  background: rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+}
+
+.navbar-blue .mobile-menu .navbar-link.active {
+  background: rgba(255, 255, 255, 0.2);
+  color: #ffffff;
+}
+
+.navbar-black .mobile-menu {
+  background: rgba(40, 40, 40, 0.95);
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.navbar-black .mobile-menu .navbar-link {
+  color: rgba(255, 255, 255, 0.9);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.navbar-black .mobile-menu .navbar-link:hover {
+  background: rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+}
+
+.navbar-black .mobile-menu .navbar-link.active {
+  background: rgba(255, 255, 255, 0.2);
+  color: #ffffff;
+}
+
 /* Tablet (768px and below) */
 @media (max-width: 768px) {
   .navbar-container {
@@ -161,7 +314,7 @@
     height: 55px;
   }
   
-  .navbar-menu {
+  .navbar-menu.desktop-menu {
     gap: 1.5rem;
   }
   
@@ -176,6 +329,21 @@
   }
 }
 
+/* Mobile devices (768px and below) */
+@media (max-width: 768px) {
+  .hamburger {
+    display: flex;
+  }
+  
+  .navbar-menu.desktop-menu {
+    display: none;
+  }
+  
+  .mobile-menu {
+    display: flex;
+  }
+}
+
 /* Small tablet/large phone (600px and below) */
 @media (max-width: 600px) {
   .navbar-container {
@@ -183,7 +351,7 @@
     height: 50px;
   }
   
-  .navbar-menu {
+  .navbar-menu.desktop-menu {
     gap: 1rem;
   }
   
@@ -196,6 +364,11 @@
   .navbar-brand-link {
     font-size: 1.1rem;
   }
+  
+  .mobile-menu .navbar-link {
+    padding: 0.8rem 1rem;
+    font-size: 0.95rem;
+  }
 }
 
 /* Mobile phones (480px and below) */
@@ -204,7 +377,7 @@
     padding: 0 0.75rem;
   }
   
-  .navbar-menu {
+  .navbar-menu.desktop-menu {
     gap: 0.6rem;
   }
   
@@ -217,6 +390,11 @@
   .navbar-brand-link {
     font-size: 1rem;
   }
+  
+  .mobile-menu .navbar-link {
+    padding: 0.7rem 0.75rem;
+    font-size: 0.9rem;
+  }
 }
 
 /* Very small phones (360px and below) */
@@ -225,7 +403,7 @@
     padding: 0 0.5rem;
   }
   
-  .navbar-menu {
+  .navbar-menu.desktop-menu {
     gap: 0.4rem;
   }
   
@@ -236,5 +414,10 @@
   .navbar-brand span,
   .navbar-brand-link {
     font-size: 0.95rem;
+  }
+  
+  .mobile-menu .navbar-link {
+    padding: 0.6rem 0.5rem;
+    font-size: 0.85rem;
   }
 } 
