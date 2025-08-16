@@ -360,7 +360,7 @@ function HomePage() {
                 </div>
               </div>
               <a 
-                href="https://www.credly.com/earner/earned/badge/2aa79d87-3006-4ad9-a97f-7c886dd6ac69" 
+                href="https://www.credly.com/badges/2aa79d87-3006-4ad9-a97f-7c886dd6ac69" 
                 className="certification-button"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -406,6 +406,66 @@ function HomePage() {
                   e.preventDefault();
                   alert('Coursera certification verification link will be added here');
                 }}
+              >
+                View Credential
+              </a>
+            </div>
+
+            <div className="certification-card">
+              <div className="certification-info">
+                <div className="certification-icon">
+                  <img src="/icons/coursera.png" alt="Coursera" className="certification-logo" />
+                </div>
+                <div className="certification-details">
+                  <h3 className="certification-title">Machine Learning for All</h3>
+                  <p className="certification-date">Issued: Apr 2020</p>
+                </div>
+              </div>
+              <a 
+                href="https://www.coursera.org/account/accomplishments/certificate/LN7TZL9TDUCU" 
+                className="certification-button"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                View Credential
+              </a>
+            </div>
+
+            <div className="certification-card">
+              <div className="certification-info">
+                <div className="certification-icon">
+                  <img src="/icons/coursera.png" alt="Coursera" className="certification-logo" />
+                </div>
+                <div className="certification-details">
+                  <h3 className="certification-title">Python Programming</h3>
+                  <p className="certification-date">Issued: Mar 2020</p>
+                </div>
+              </div>
+              <a 
+                href="https://www.coursera.org/account/accomplishments/certificate/XNA3U3U3JHKT" 
+                className="certification-button"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                View Credential
+              </a>
+            </div>
+
+            <div className="certification-card">
+              <div className="certification-info">
+                <div className="certification-icon">
+                  <img src="/icons/coursera.png" alt="Coursera" className="certification-logo" />
+                </div>
+                <div className="certification-details">
+                  <h3 className="certification-title">UI / UX Specialization</h3>
+                  <p className="certification-date">Issued: Jul 2020</p>
+                </div>
+              </div>
+              <a 
+                href="https://www.coursera.org/account/accomplishments/specialization/certificate/D9M26Z2V43WZ" 
+                className="certification-button"
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 View Credential
               </a>
