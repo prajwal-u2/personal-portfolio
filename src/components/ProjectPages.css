@@ -99,6 +99,10 @@
   max-height: 500px;
 }
 
+.project-page-main-image.blr-image {
+  max-width: 440px;
+}
+
 .project-page-description-text {
   line-height: 1.6;
   font-size: 1.1rem;

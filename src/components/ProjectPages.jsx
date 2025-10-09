@@ -11,10 +11,103 @@ import textSummarizationImage from '../assets/images/text_summarization.png';
 import softwareRequirementImage from '../assets/images/agile.jpeg';
 import fiveGImage from '../assets/images/5g.png';
 import mininetImage from '../assets/images/mininet.png';
+import blrImage from '../assets/images/blr.png';
 
 import './ProjectPages.css';
 
+// Bayesian Linear Regression Project Page
+export function BayesianLinearRegressionPage() {
+  useScrollToTop();
+  
+  return (
+    <div className="project-page">
+      <Navbar />
+      <div className="project-page-container">
+        
+        <header className="project-page-header">
+          <h1 className="project-page-title">Bayesian Linear Regression</h1>
+        </header>
 
+        <div className="project-page-content">
+          <section className="project-page-description">
+            <h2>Description</h2>
+            <div className="project-page-image-container">
+              <img 
+                src={blrImage} 
+                alt="Bayesian Linear Regression Implementation" 
+                className="project-page-main-image blr-image"
+              />
+            </div>
+            <br/>
+            <div className="project-page-description-text">
+              <p>
+                This project implements a comprehensive Bayesian Linear Regression framework with conjugate Gaussian priors and likelihood functions. 
+                The implementation focuses on quantifying parameter and prediction uncertainty through posterior and predictive distributions, 
+                providing a probabilistic approach to linear regression that goes beyond traditional frequentist methods.
+              </p>
+              <p>
+                The core implementation defines a Gaussian prior over model weights and assumes Gaussian observation noise, 
+                enabling the derivation of closed-form posterior distributions over weights and predictive distributions for new data points. 
+                This approach provides uncertainty quantification that is crucial for decision-making in real-world applications, 
+                particularly in scenarios where understanding prediction confidence is as important as the predictions themselves.
+              </p>
+              <p>
+                The project includes comprehensive visualization of posterior samples, predictive means, and uncertainty bands, 
+                allowing for intuitive understanding of model behavior. A detailed comparison with Ordinary Least Squares (OLS) regression 
+                highlights the advantages of the Bayesian approach, particularly in uncertainty quantification and model interpretability.
+              </p>
+              <p>
+                As a practical application, the notebook applies Bayesian Linear Regression to predict concrete compressive strength 
+                from mixture composition features. This real-world problem demonstrates the framework's capabilities in materials science, 
+                where understanding prediction uncertainty is crucial for engineering decisions. The implementation includes Bayesian optimization 
+                concepts to identify optimal mixture compositions for future experiments, showcasing the framework's utility in experimental design.
+              </p>
+              <p>
+                The project leverages the concrete strength dataset with 8 input features (Cement, Fly Ash, Slag, Water, HRWR, Fine Aggregate, 
+                Curing Temperature, Time) and implements Expected Improvement (EI) acquisition functions for Bayesian optimization. 
+                This demonstrates how Bayesian methods can guide experimental design by balancing exploration and exploitation in the search space.
+              </p>
+            </div>
+          </section>
+
+          <section className="project-page-technologies">
+            <h2>Technologies Used</h2>
+            <div className="project-page-tech-grid">
+              <span className="project-page-tech-badge">Python</span>
+              <span className="project-page-tech-badge">Jupyter Notebooks</span>
+              <span className="project-page-tech-badge">NumPy</span>
+              <span className="project-page-tech-badge">SciPy</span>
+              <span className="project-page-tech-badge">Matplotlib</span>
+              <span className="project-page-tech-badge">Seaborn</span>
+              <span className="project-page-tech-badge">Bayesian Statistics</span>
+              <span className="project-page-tech-badge">Machine Learning</span>
+              <span className="project-page-tech-badge">Uncertainty Quantification</span>
+              <span className="project-page-tech-badge">Predictive Distributions</span>
+              <span className="project-page-tech-badge">Conjugate Priors</span>
+              <span className="project-page-tech-badge">Bayesian Optimization</span>
+              <span className="project-page-tech-badge">Expected Improvement</span>
+              <span className="project-page-tech-badge">Materials Science</span>
+              <span className="project-page-tech-badge">Experimental Design</span>
+            </div>
+          </section>
+
+          <section className="project-page-actions">
+            <a 
+              href="https://github.com/prajwal-u2/advanced-machine-learning/tree/main" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="project-page-github-button"
+            >
+              <i className="fab fa-github"></i>
+              View on GitHub
+            </a>
+          </section>
+        </div>
+      </div>
+      <Footer />
+    </div>
+  );
+}
 
 // Distributed File System Project Page
 export function ProjectPage() {

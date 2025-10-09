@@ -4,6 +4,7 @@ import Navbar from './components/Navbar';
 import AnimatedText from './components/AnimatedText';
 import ExperienceSection from './components/ExperienceSection';
 import { 
+  BayesianLinearRegressionPage,
   ProjectPage, 
   DHTFederatedMLPage, 
   DistributedMLPage, 
@@ -175,6 +176,19 @@ function HomePage() {
           <div className="projects-container">
             {/* First Row - 3 cards */}
             <div className="projects-row">
+              <div className="project-card">
+                <h3 className="project-title">Bayesian Linear Regression</h3>
+                <p className="project-description">Comprehensive implementation of Bayesian Linear Regression with conjugate Gaussian priors, featuring uncertainty quantification, predictive distributions, and Bayesian optimization for concrete strength prediction.</p>
+                <div className="project-technologies">
+                <span className="tech-tag">Machine Learning</span>
+                <span className="tech-tag">Bayesian Statistics</span>
+                <span className="tech-tag">Matplotlib</span>
+                <span className="tech-tag">Pytorch</span>
+                <span className="tech-tag">SciPy</span>
+                </div>
+                <Link to="/projects/bayesian-linear-regression" className="project-button">View Project</Link>
+              </div>
+              
               <div className="project-card">
                 <h3 className="project-title">Distributed File System</h3>
                 <p className="project-description">A distributed file storage system that enables multiple clients to seamlessly share, read, and write files with guaranteed consistency and fault tolerance using quorum-based coordination.</p>
@@ -709,6 +723,10 @@ function HomePage() {
                   <img src="/icons/tensorflow.png" alt="TensorFlow" className="skill-icon" />
                   <span className="skill-name">TensorFlow</span>
                 </div>
+                <div className="skill-item">
+                  <img src="/icons/pytorch.png" alt="PyTorch" className="skill-icon" />
+                  <span className="skill-name">PyTorch</span>
+                </div>
               </div>
             </div>
           </div>
@@ -763,6 +781,7 @@ function App() {
     <Router>
       <Routes>
         <Route path="/" element={<HomePage />} />
+        <Route path="/projects/bayesian-linear-regression" element={<BayesianLinearRegressionPage />} />
         <Route path="/projects/distributed-file-system" element={<ProjectPage />} />
         <Route path="/projects/dht-federated-ml-system" element={<DHTFederatedMLPage />} />
         <Route path="/projects/distributed-ml-system" element={<DistributedMLPage />} />

@@ -9,7 +9,7 @@ function ExperienceSection() {
       title: 'Cloud Engineer Intern',
       company: 'IDeaS',
       location: 'Minneapolis, MN',
-      duration: 'May 2025 - Aug 2025',
+      duration: 'May 2025 - Dec 2025',
       icon: '☁️',
       achievements: [
         'Built an AI agent in Python that integrated GitHub Copilot with internal Terraform modules via the GitHub API, auto-generating custom infrastructure code and reducing manual IaC effort by 90%, significantly accelerating adoption and engineering velocity.',
