@@ -15,7 +15,10 @@ import {
   FiveGNetworkPage, 
   MininetSDNPage,
   ReinforcementLearningLunarLanderPage,
-  PlantCareTrackerPage
+  PlantCareTrackerPage,
+  TravelJournalAppPage,
+  TodoWebAppPage,
+  TravelSurveyAppPage
 } from './components/ProjectPages';
 import homePageIllustration from './assets/images/home_page_illustration.png';
 import umnLogo from './assets/images/umn_logo.png';
@@ -260,10 +263,55 @@ function HomePage() {
                   <span className="tech-tag">Firebase</span>
                   <span className="tech-tag">Gemini AI</span>
                   <span className="tech-tag">Google Cloud</span>
-                  <span className="tech-tag">VueFire</span>
+                  <span className="tech-tag">NoSQL</span>
                   <span className="tech-tag">PWA</span>
                 </div>
                 <Link to="/projects/plant-care-tracker" className="project-button">View Project</Link>
+              </div>
+              
+              <div className="project-card">
+                <h3 className="project-title">Travel Journal App</h3>
+                <p className="project-description">A full-stack web application for creating and managing travel journals with AI-powered content enhancement, rich text editing, and intelligent search capabilities.</p>
+                <div className="project-technologies">
+                  <span className="tech-tag">Flask</span>
+                  <span className="tech-tag">Python</span>
+                  <span className="tech-tag">Render</span>
+                  <span className="tech-tag">Auth0</span>
+                  <span className="tech-tag">PostgreSQL</span>
+                  <span className="tech-tag">AWS S3</span>
+                  <span className="tech-tag">OpenAI API</span>
+
+
+                </div>
+                <Link to="/projects/travel-journal-app" className="project-button">View Project</Link>
+              </div>
+              
+              <div className="project-card">
+                <h3 className="project-title">Todo Web App</h3>
+                <p className="project-description">A modern, full-stack todo application built with Vue.js 3 and Firebase. Organize tasks with category-based filtering, track completed items, and enjoy real-time synchronization.</p>
+                <div className="project-technologies">
+                  <span className="tech-tag">Vue.js 3</span>
+                  <span className="tech-tag">Firebase Auth</span>
+                  <span className="tech-tag">Firestore</span>
+                  <span className="tech-tag">Tailwind CSS</span>
+                  <span className="tech-tag">Vite</span>
+                  <span className="tech-tag">NoSQL</span>
+                </div>
+                <Link to="/projects/todo-web-app" className="project-button">View Project</Link>
+              </div>
+              
+              <div className="project-card">
+                <h3 className="project-title">Travel Survey Application</h3>
+                <p className="project-description">A Flask-based web application for collecting and analyzing travel preference survey responses with database storage, API endpoints, and an interactive admin dashboard.</p>
+                <div className="project-technologies">
+                  <span className="tech-tag">Flask</span>
+                  <span className="tech-tag">PostgreSQL</span>
+                  <span className="tech-tag">SQLAlchemy</span>
+                  <span className="tech-tag">RESTful API</span>
+                  <span className="tech-tag">Chart.js</span>
+                  <span className="tech-tag">Pure CSS</span>
+                </div>
+                <Link to="/projects/travel-survey-app" className="project-button">View Project</Link>
               </div>
             </div>
             
@@ -834,6 +882,9 @@ function App() {
         <Route path="/projects/mininet-sdn-implementation" element={<MininetSDNPage />} />
         <Route path="/projects/reinforcement-learning-lunar-lander" element={<ReinforcementLearningLunarLanderPage />} />
         <Route path="/projects/plant-care-tracker" element={<PlantCareTrackerPage />} />
+        <Route path="/projects/travel-journal-app" element={<TravelJournalAppPage />} />
+        <Route path="/projects/todo-web-app" element={<TodoWebAppPage />} />
+        <Route path="/projects/travel-survey-app" element={<TravelSurveyAppPage />} />
       </Routes>
     </Router>
   );

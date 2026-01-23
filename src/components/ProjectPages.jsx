@@ -16,6 +16,9 @@ import proteinEngineeringImage from '../assets/images/protein_engineering.png';
 import lunarLanderImage from '../assets/images/lunar_lander.png';
 import ppoLossImage from '../assets/images/ppo_loss.png';
 import plantCareTrackerImage from '../assets/images/plant_care_tracker.png';
+import travelogue1Image from '../assets/images/travelogue-1.png';
+import travelogue2Image from '../assets/images/travelogue-2.png';
+import todoAppImage from '../assets/images/todo-app.png';
 
 import './ProjectPages.css';
 
@@ -1024,6 +1027,315 @@ export function PlantCareTrackerPage() {
             </a>
             <a 
               href="https://github.com/prajwal-u2/plant-care-tracker" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="project-page-github-button"
+            >
+              <i className="fab fa-github"></i>
+              View on GitHub
+            </a>
+          </section>
+        </div>
+      </div>
+      <Footer />
+    </div>
+  );
+}
+
+// Travel Journal App Project Page
+export function TravelJournalAppPage() {
+  useScrollToTop();
+  
+  return (
+    <div className="project-page">
+      <Navbar />
+      <div className="project-page-container">
+        
+        <header className="project-page-header">
+          <h1 className="project-page-title">Travel Journal App</h1>
+        </header>
+
+        <div className="project-page-content">
+          <section className="project-page-description">
+            <h2>Description</h2>
+            <div className="project-page-images-stacked">
+              <div className="project-page-image-container">
+                <img 
+                  src={travelogue1Image} 
+                  alt="Travel Journal App - Home Page" 
+                  className="project-page-main-image travelogue-image"
+                />
+              </div>
+              <div className="project-page-image-container travelogue-2-container">
+                <img 
+                  src={travelogue2Image} 
+                  alt="Travel Journal App - Journal Editor" 
+                  className="project-page-main-image travelogue-image travelogue-2-image"
+                />
+              </div>
+            </div>
+            <br/>
+            <div className="project-page-description-text">
+              <p>
+                Travel Journal App is a full-stack web application designed for creating and managing travel journals with AI-powered content enhancement, 
+                rich text editing, and intelligent search capabilities. Built as a collaborative team project for CSCI 5117 (Fall 2025), the application 
+                provides a comprehensive platform for travelers to document their journeys with rich multimedia content and AI-assisted writing improvements.
+              </p>
+              <p>
+                The application features a custom-built rich text editor that supports up to two images per chapter, offering flexible and visually engaging 
+                journal creation. Users can create multiple chapters for each travel journal, edit, reorder, and delete chapters as needed. The editor provides 
+                a seamless writing experience with support for formatting, images, and structured content organization.
+              </p>
+              <p>
+                One of the standout features is the AI-powered content enhancement system that automatically improves writing quality using OpenAI's language models 
+                via Langchain integration. This feature helps users refine their travel narratives, ensuring engaging and well-written journal entries. The intelligent 
+                search system enables users to find journals based on title, description, and location, making it easy to retrieve specific travel memories.
+              </p>
+              <p>
+                The application integrates AWS S3 for efficient image storage and management, with automatic cleanup on journal deletion to optimize storage costs. 
+                Authentication is handled through Auth0 using OAuth2/OIDC via Authlib Flask integration, providing secure user management. The backend is built with 
+                Flask and PostgreSQL with connection pooling for efficient data management, while the frontend uses custom HTML/CSS/JavaScript with a mobile-first 
+                responsive design approach.
+              </p>
+              <p>
+                The application is fully responsive and optimized for mobile devices, providing a seamless user experience across all screen sizes. The project 
+                demonstrates modern full-stack development practices, combining cloud services, AI integration, and responsive design to create a production-ready 
+                travel journaling platform.
+              </p>
+            </div>
+          </section>
+
+          <section className="project-page-technologies">
+            <h2>Technologies Used</h2>
+            <div className="project-page-tech-grid">
+              <span className="project-page-tech-badge">Flask</span>
+              <span className="project-page-tech-badge">PostgreSQL</span>
+              <span className="project-page-tech-badge">Auth0</span>
+              <span className="project-page-tech-badge">AWS S3</span>
+              <span className="project-page-tech-badge">OpenAI API</span>
+              <span className="project-page-tech-badge">Langchain</span>
+              <span className="project-page-tech-badge">Python</span>
+              <span className="project-page-tech-badge">JavaScript</span>
+              <span className="project-page-tech-badge">HTML/CSS</span>
+              <span className="project-page-tech-badge">boto3</span>
+              <span className="project-page-tech-badge">psycopg2</span>
+              <span className="project-page-tech-badge">Rich Text Editor</span>
+              <span className="project-page-tech-badge">Responsive Design</span>
+              <span className="project-page-tech-badge">Render</span>
+              <span className="project-page-tech-badge">Full-Stack</span>
+            </div>
+          </section>
+
+          <section className="project-page-actions">
+            <a 
+              href="https://project-1-pied-piper.onrender.com/" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="project-page-github-button"
+              style={{ marginRight: '1rem' }}
+            >
+              <i className="fas fa-external-link-alt"></i>
+              Live Demo
+            </a>
+            <a 
+              href="https://github.com/prajwal-u2/travelouge-web-app" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="project-page-github-button"
+            >
+              <i className="fab fa-github"></i>
+              View on GitHub
+            </a>
+          </section>
+        </div>
+      </div>
+      <Footer />
+    </div>
+  );
+}
+
+// Todo Web App Project Page
+export function TodoWebAppPage() {
+  useScrollToTop();
+  
+  return (
+    <div className="project-page">
+      <Navbar />
+      <div className="project-page-container">
+        
+        <header className="project-page-header">
+          <h1 className="project-page-title">Todo Web App</h1>
+        </header>
+
+        <div className="project-page-content">
+          <section className="project-page-description">
+            <h2>Description</h2>
+            <div className="project-page-image-container">
+              <img 
+                src={todoAppImage} 
+                alt="Todo Web App" 
+                className="project-page-main-image todo-app-image"
+              />
+            </div>
+            <br/>
+            <div className="project-page-description-text">
+              <p>
+                Todo Web App is a modern, full-stack todo application built with Vue.js 3 and Firebase. The application enables users to organize 
+                their tasks with category-based filtering, track completed items, and enjoy real-time synchronization across all devices. 
+                Built as part of CSCI 5117 Fall 2025 coursework, it demonstrates proficiency in modern frontend frameworks, Firebase integration, 
+                and responsive web design.
+              </p>
+              <p>
+                The application features secure Google Authentication for user login, providing a seamless and secure authentication experience. 
+                Users can create, edit, and delete todos with an intuitive interface. The category organization system allows users to create custom 
+                categories and organize their todos efficiently. Category filtering is available on both active and completed pages, making it easy 
+                to find specific tasks.
+              </p>
+              <p>
+                The app includes protected routes with authentication guards, ensuring secure access to user data. Real-time synchronization with 
+                Firebase Firestore ensures that todos are automatically updated across all devices when changes are made. The modern UI is built with 
+                Tailwind CSS, providing a clean and responsive interface that works beautifully on all devices, from mobile phones to desktop computers.
+              </p>
+              <p>
+                The navigation system features a left sidebar with links to Todos and Completed Todos pages for consistent navigation, and a right 
+                sidebar that appears on Todos and Done pages for category filtering and management. Users can create custom categories, filter todos 
+                by category on both active and completed pages, and delete categories when no longer needed. The application automatically redirects 
+                to the todos page if a user is already logged in, and includes category validation to ensure only valid categories are accessible.
+              </p>
+              <p>
+                Built with Vue.js 3 using the Composition API, Vue Router 4 for routing, and Vuefire for reactive Firebase bindings, the application 
+                demonstrates modern Vue.js development practices. The project structure is well-organized with reusable components, clear separation 
+                of concerns, and follows best practices for code quality with ESLint and Prettier integration.
+              </p>
+            </div>
+          </section>
+
+          <section className="project-page-technologies">
+            <h2>Technologies Used</h2>
+            <div className="project-page-tech-grid">
+              <span className="project-page-tech-badge">Vue.js 3</span>
+              <span className="project-page-tech-badge">Composition API</span>
+              <span className="project-page-tech-badge">Firebase</span>
+              <span className="project-page-tech-badge">Firestore</span>
+              <span className="project-page-tech-badge">Google Authentication</span>
+              <span className="project-page-tech-badge">Vue Router 4</span>
+              <span className="project-page-tech-badge">Vuefire</span>
+              <span className="project-page-tech-badge">Tailwind CSS</span>
+              <span className="project-page-tech-badge">Vite</span>
+              <span className="project-page-tech-badge">Real-time Sync</span>
+              <span className="project-page-tech-badge">Responsive Design</span>
+              <span className="project-page-tech-badge">ESLint</span>
+              <span className="project-page-tech-badge">Prettier</span>
+            </div>
+          </section>
+
+          <section className="project-page-actions">
+            <a 
+              href="https://todoapp-12a9c.web.app/" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="project-page-github-button"
+              style={{ marginRight: '1rem' }}
+            >
+              <i className="fas fa-external-link-alt"></i>
+              Live Demo
+            </a>
+            <a 
+              href="https://github.com/prajwal-u2/todo-web-app" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="project-page-github-button"
+            >
+              <i className="fab fa-github"></i>
+              View on GitHub
+            </a>
+          </section>
+        </div>
+      </div>
+      <Footer />
+    </div>
+  );
+}
+
+// Travel Survey App Project Page
+export function TravelSurveyAppPage() {
+  useScrollToTop();
+  
+  return (
+    <div className="project-page">
+      <Navbar />
+      <div className="project-page-container">
+        
+        <header className="project-page-header">
+          <h1 className="project-page-title">Travel Survey Application</h1>
+        </header>
+
+        <div className="project-page-content">
+          <section className="project-page-description">
+            <h2>Description</h2>
+            <div className="project-page-description-text">
+              <p>
+                Travel Survey Application is a Flask-based web application designed for collecting and analyzing travel preference survey responses. 
+                The application features a multi-page survey form with consent flow, SQLAlchemy database integration, RESTful API endpoints, and an 
+                interactive admin dashboard with data visualization. Built as part of CSCI 5117 (Web Development) coursework at the University of Minnesota, 
+                it demonstrates proficiency in full-stack web development with Python, Flask, and PostgreSQL.
+              </p>
+              <p>
+                The survey form collects comprehensive travel preferences including demographics (name, age), travel frequency and preferences, 
+                travel companions and destination types, and dream destinations. The application includes a user-friendly consent flow before 
+                survey participation, ensuring users understand the purpose and use of their data. The multi-step survey provides a smooth user 
+                experience with clear navigation and validation.
+              </p>
+              <p>
+                The application uses SQLAlchemy ORM with PostgreSQL for persistent storage of survey responses. The database schema includes 
+                fields for timestamp, name, age, frequency, travel type, travel companions, destination preferences, and dream destination descriptions. 
+                This allows for comprehensive data collection and analysis of travel preferences.
+              </p>
+              <p>
+                The RESTful API provides JSON endpoints for retrieving survey responses, supporting both chronological and reverse chronological 
+                ordering. The admin dashboard features an interactive summary page with a response table, data visualizations using Chart.js 
+                (including charts for frequency, travel types, companions, etc.), and time series analysis. The dashboard enables administrators 
+                to quickly understand survey trends and patterns.
+              </p>
+              <p>
+                The frontend is built with HTML, CSS, and JavaScript using the PureCSS framework for a clean and responsive design. The application 
+                is deployed using Gunicorn as a WSGI server and is accessible via Render. The project demonstrates modern web development practices 
+                including RESTful API design, database integration, and interactive data visualization.
+              </p>
+            </div>
+          </section>
+
+          <section className="project-page-technologies">
+            <h2>Technologies Used</h2>
+            <div className="project-page-tech-grid">
+              <span className="project-page-tech-badge">Flask</span>
+              <span className="project-page-tech-badge">Python</span>
+              <span className="project-page-tech-badge">PostgreSQL</span>
+              <span className="project-page-tech-badge">SQLAlchemy</span>
+              <span className="project-page-tech-badge">RESTful API</span>
+              <span className="project-page-tech-badge">Chart.js</span>
+              <span className="project-page-tech-badge">PureCSS</span>
+              <span className="project-page-tech-badge">JavaScript</span>
+              <span className="project-page-tech-badge">Gunicorn</span>
+              <span className="project-page-tech-badge">Render</span>
+              <span className="project-page-tech-badge">Data Visualization</span>
+              <span className="project-page-tech-badge">Web Development</span>
+            </div>
+          </section>
+
+          <section className="project-page-actions">
+            <a 
+              href="https://homework-1-prajwal-u2.onrender.com/" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="project-page-github-button"
+              style={{ marginRight: '1rem' }}
+            >
+              <i className="fas fa-external-link-alt"></i>
+              Live Demo
+            </a>
+            <a 
+              href="https://github.com/prajwal-u2/travel-survey-app" 
               target="_blank" 
               rel="noopener noreferrer"
               className="project-page-github-button"

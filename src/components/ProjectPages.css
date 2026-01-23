@@ -144,6 +144,38 @@
   overflow: hidden;
 }
 
+.project-page-images-side-by-side .travelogue-image {
+  height: 100%;
+  object-fit: contain;
+}
+
+.project-page-images-stacked {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.project-page-images-stacked .project-page-image-container {
+  width: 100%;
+  max-width: 800px;
+  margin: 0;
+  display: flex;
+  overflow: hidden;
+}
+
+.project-page-images-stacked .travelogue-image {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.project-page-images-stacked .travelogue-2-container {
+  max-width: 1000px;
+}
+
 .project-page-description-text {
   line-height: 1.6;
   font-size: 1.1rem;
