@@ -15,6 +15,7 @@ import blrImage from '../assets/images/blr.png';
 import proteinEngineeringImage from '../assets/images/protein_engineering.png';
 import lunarLanderImage from '../assets/images/lunar_lander.png';
 import ppoLossImage from '../assets/images/ppo_loss.png';
+import plantCareTrackerImage from '../assets/images/plant_care_tracker.png';
 
 import './ProjectPages.css';
 
@@ -914,6 +915,115 @@ export function ReinforcementLearningLunarLanderPage() {
           <section className="project-page-actions">
             <a 
               href="https://github.com/prajwal-u2/advanced-machine-learning/tree/main/Reinforcement_Learning-Lunar_Lander" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="project-page-github-button"
+            >
+              <i className="fab fa-github"></i>
+              View on GitHub
+            </a>
+          </section>
+        </div>
+      </div>
+      <Footer />
+    </div>
+  );
+}
+
+// Plant Care Tracker Project Page
+export function PlantCareTrackerPage() {
+  useScrollToTop();
+  
+  return (
+    <div className="project-page">
+      <Navbar />
+      <div className="project-page-container">
+        
+        <header className="project-page-header">
+          <h1 className="project-page-title">Plant Care Tracker</h1>
+        </header>
+
+        <div className="project-page-content">
+          <section className="project-page-description">
+            <h2>Description</h2>
+            <div className="project-page-image-container">
+              <img 
+                src={plantCareTrackerImage} 
+                alt="Plant Care Tracker PWA" 
+                className="project-page-main-image plant-care-tracker-image"
+              />
+            </div>
+            <br/>
+            <div className="project-page-description-text">
+              <p>
+                Plant Care Tracker is a progressive web application designed to help plant enthusiasts never forget to care for their plants. 
+                The app combines AI technology, real-time weather data, and gamification to create an engaging and intelligent plant care experience. 
+                Built as a collaborative project, it features a comprehensive suite of tools for managing plant collections with modern web technologies.
+              </p>
+              <p>
+                The application leverages Google Gemini Vision API for AI-powered plant identification through camera-based photo capture. 
+                Users can simply take a photo of their plant, and the app automatically detects the species and populates care information. 
+                This feature provides instant care recommendations based on the identified plant type, making it easy for users to understand 
+                their plants' specific needs.
+              </p>
+              <p>
+                The smart notification system uses Firebase Cloud Functions to schedule push notifications at user-specified times, 
+                delivering personalized plant care reminders via Firebase Cloud Messaging. The gamification system rewards users with XP 
+                and leveling progression for completed tasks, with achievement unlocking and animated celebration dialogs to keep users engaged. 
+                The comprehensive achievement system tracks plant care milestones and provides daily task completion bonuses.
+              </p>
+              <p>
+                Intelligent care scheduling supports dynamic intervals including daily, weekly, biweekly, monthly, and custom frequencies. 
+                A calendar visualization shows exact due dates for watering, fertilizing, and maintenance tasks, with a visual calendar widget 
+                for easy date selection. The app integrates real-time weather data from OpenWeatherMap API, providing location-based weather 
+                recommendations, 5-day forecasts for better care planning, and temperature-based watering recommendations.
+              </p>
+              <p>
+                As a Progressive Web App, Plant Care Tracker is installable to home screens with custom app icons and splash screens. 
+                It includes a service worker for offline functionality and asset caching, responsive design optimized for mobile, tablet, and desktop devices, 
+                and dark mode support with theme persistence. The app demonstrates modern web development practices with Vue.js 3, Firebase services, 
+                and AI integration for a complete, production-ready application.
+              </p>
+            </div>
+          </section>
+
+          <section className="project-page-technologies">
+            <h2>Technologies Used</h2>
+            <div className="project-page-tech-grid">
+              <span className="project-page-tech-badge">Vue.js 3</span>
+              <span className="project-page-tech-badge">Vuetify 3</span>
+              <span className="project-page-tech-badge">Firebase</span>
+              <span className="project-page-tech-badge">Google Gemini AI</span>
+              <span className="project-page-tech-badge">Progressive Web App</span>
+              <span className="project-page-tech-badge">Firestore</span>
+              <span className="project-page-tech-badge">Cloud Functions</span>
+              <span className="project-page-tech-badge">Firebase Cloud Messaging</span>
+              <span className="project-page-tech-badge">OpenWeatherMap API</span>
+              <span className="project-page-tech-badge">Vue Router</span>
+              <span className="project-page-tech-badge">Vuefire</span>
+              <span className="project-page-tech-badge">Vite</span>
+              <span className="project-page-tech-badge">Workbox</span>
+              <span className="project-page-tech-badge">Service Worker</span>
+              <span className="project-page-tech-badge">Push Notifications</span>
+              <span className="project-page-tech-badge">Gamification</span>
+              <span className="project-page-tech-badge">AI Vision</span>
+              <span className="project-page-tech-badge">Responsive Design</span>
+            </div>
+          </section>
+
+          <section className="project-page-actions">
+            <a 
+              href="https://planttracker-35804.web.app/" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="project-page-github-button"
+              style={{ marginRight: '1rem' }}
+            >
+              <i className="fas fa-external-link-alt"></i>
+              Live Demo
+            </a>
+            <a 
+              href="https://github.com/prajwal-u2/plant-care-tracker" 
               target="_blank" 
               rel="noopener noreferrer"
               className="project-page-github-button"

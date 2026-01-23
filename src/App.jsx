@@ -14,7 +14,8 @@ import {
   SoftwareRequirementPage, 
   FiveGNetworkPage, 
   MininetSDNPage,
-  ReinforcementLearningLunarLanderPage
+  ReinforcementLearningLunarLanderPage,
+  PlantCareTrackerPage
 } from './components/ProjectPages';
 import homePageIllustration from './assets/images/home_page_illustration.png';
 import umnLogo from './assets/images/umn_logo.png';
@@ -204,6 +205,18 @@ function HomePage() {
               </div>
               
               <div className="project-card">
+                <h3 className="project-title">Reinforcement Learning - Lunar Lander</h3>
+                <p className="project-description">Implementation of Proximal Policy Optimization (PPO) from scratch to train an agent to safely land a spacecraft using actor-critic methods with GAE.</p>
+                <div className="project-technologies">
+                  <span className="tech-tag">Python</span>
+                  <span className="tech-tag">PyTorch</span>
+                  <span className="tech-tag">Reinforcement Learning</span>
+                  <span className="tech-tag">PPO</span>
+                </div>
+                <Link to="/projects/reinforcement-learning-lunar-lander" className="project-button">View Project</Link>
+              </div>
+              
+              <div className="project-card">
                 <h3 className="project-title">Distributed File System</h3>
                 <p className="project-description">A distributed file storage system that enables multiple clients to seamlessly share, read, and write files with guaranteed consistency and fault tolerance using quorum-based coordination.</p>
                 <div className="project-technologies">
@@ -237,6 +250,20 @@ function HomePage() {
                   <span className="tech-tag">RPC</span>
                 </div>
                 <Link to="/projects/distributed-ml-system" className="project-button">View Project</Link>
+              </div>
+              
+              <div className="project-card">
+                <h3 className="project-title">Plant Care Tracker</h3>
+                <p className="project-description">A progressive web app for managing plant collections with AI-powered identification, smart reminders, gamification, and weather-based care recommendations.</p>
+                <div className="project-technologies">
+                  <span className="tech-tag">Vue 3</span>
+                  <span className="tech-tag">Firebase</span>
+                  <span className="tech-tag">Gemini AI</span>
+                  <span className="tech-tag">Google Cloud</span>
+                  <span className="tech-tag">VueFire</span>
+                  <span className="tech-tag">PWA</span>
+                </div>
+                <Link to="/projects/plant-care-tracker" className="project-button">View Project</Link>
               </div>
             </div>
             
@@ -305,18 +332,6 @@ function HomePage() {
                   <span className="tech-tag">Mininet</span>
                 </div>
                 <Link to="/projects/mininet-sdn-implementation" className="project-button">View Project</Link>
-              </div>
-              
-              <div className="project-card">
-                <h3 className="project-title">Reinforcement Learning - Lunar Lander</h3>
-                <p className="project-description">Implementation of Proximal Policy Optimization (PPO) from scratch to train an agent to safely land a spacecraft using actor-critic methods with GAE.</p>
-                <div className="project-technologies">
-                  <span className="tech-tag">Python</span>
-                  <span className="tech-tag">PyTorch</span>
-                  <span className="tech-tag">Reinforcement Learning</span>
-                  <span className="tech-tag">PPO</span>
-                </div>
-                <Link to="/projects/reinforcement-learning-lunar-lander" className="project-button">View Project</Link>
               </div>
             </div>
           </div>
@@ -818,6 +833,7 @@ function App() {
         <Route path="/projects/5g-network-field-test-evaluation" element={<FiveGNetworkPage />} />
         <Route path="/projects/mininet-sdn-implementation" element={<MininetSDNPage />} />
         <Route path="/projects/reinforcement-learning-lunar-lander" element={<ReinforcementLearningLunarLanderPage />} />
+        <Route path="/projects/plant-care-tracker" element={<PlantCareTrackerPage />} />
       </Routes>
     </Router>
   );
