@@ -5,6 +5,7 @@ import AnimatedText from './components/AnimatedText';
 import ExperienceSection from './components/ExperienceSection';
 import { 
   BayesianLinearRegressionPage,
+  NeuralNetworkProteinEngineeringPage,
   ProjectPage, 
   DHTFederatedMLPage, 
   DistributedMLPage, 
@@ -187,6 +188,18 @@ function HomePage() {
                 <span className="tech-tag">SciPy</span>
                 </div>
                 <Link to="/projects/bayesian-linear-regression" className="project-button">View Project</Link>
+              </div>
+              
+              <div className="project-card">
+                <h3 className="project-title">Neural Network Protein Engineering</h3>
+                <p className="project-description">Deep neural networks that learn to predict protein activity from amino acid sequences, helping identify promising protein designs before expensive lab experiments.</p>
+                <div className="project-technologies">
+                  <span className="tech-tag">PyTorch</span>
+                  <span className="tech-tag">Transformers</span>
+                  <span className="tech-tag">Deep Learning</span>
+                  <span className="tech-tag">Machine Learning</span>
+                </div>
+                <Link to="/projects/neural-network-protein-engineering" className="project-button">View Project</Link>
               </div>
               
               <div className="project-card">
@@ -782,6 +795,7 @@ function App() {
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/projects/bayesian-linear-regression" element={<BayesianLinearRegressionPage />} />
+        <Route path="/projects/neural-network-protein-engineering" element={<NeuralNetworkProteinEngineeringPage />} />
         <Route path="/projects/distributed-file-system" element={<ProjectPage />} />
         <Route path="/projects/dht-federated-ml-system" element={<DHTFederatedMLPage />} />
         <Route path="/projects/distributed-ml-system" element={<DistributedMLPage />} />

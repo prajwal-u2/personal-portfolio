@@ -103,6 +103,10 @@
   max-width: 440px;
 }
 
+.project-page-main-image.protein-engineering-image {
+  max-width: 750px;
+}
+
 .project-page-description-text {
   line-height: 1.6;
   font-size: 1.1rem;

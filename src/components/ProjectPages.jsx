@@ -12,6 +12,7 @@ import softwareRequirementImage from '../assets/images/agile.jpeg';
 import fiveGImage from '../assets/images/5g.png';
 import mininetImage from '../assets/images/mininet.png';
 import blrImage from '../assets/images/blr.png';
+import proteinEngineeringImage from '../assets/images/protein_engineering.png';
 
 import './ProjectPages.css';
 
@@ -94,6 +95,92 @@ export function BayesianLinearRegressionPage() {
           <section className="project-page-actions">
             <a 
               href="https://github.com/prajwal-u2/advanced-machine-learning/tree/main" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="project-page-github-button"
+            >
+              <i className="fab fa-github"></i>
+              View on GitHub
+            </a>
+          </section>
+        </div>
+      </div>
+      <Footer />
+    </div>
+  );
+}
+
+// Neural Network Protein Engineering Project Page
+export function NeuralNetworkProteinEngineeringPage() {
+  useScrollToTop();
+  
+  return (
+    <div className="project-page">
+      <Navbar />
+      <div className="project-page-container">
+        
+        <header className="project-page-header">
+          <h1 className="project-page-title">Neural Network Protein Engineering</h1>
+        </header>
+
+        <div className="project-page-content">
+          <section className="project-page-description">
+            <h2>Description</h2>
+            <div className="project-page-image-container">
+              <img 
+                src={proteinEngineeringImage} 
+                alt="Neural Network Protein Engineering" 
+                className="project-page-main-image protein-engineering-image"
+              />
+            </div>
+            <br/>
+            <div className="project-page-description-text">
+              <p>
+                This project builds neural network models to predict how active a protein will be based on its amino acid sequence. 
+                Using deep learning, the neural network learns patterns in protein sequences to classify them into different activity levels, 
+                from non-functional to highly active variants. The goal is to help scientists identify promising protein designs before 
+                conducting expensive laboratory experiments.
+              </p>
+              <p>
+                The neural network architecture uses transformer blocks with multi-head attention mechanisms. I implemented the core 
+                components from scratch, including manual backpropagation through the attention layers to deeply understand how gradients 
+                flow through the network. The model processes protein sequences through embedding layers, learns positional relationships, 
+                and uses multiple transformer layers to extract meaningful features before making predictions.
+              </p>
+              <p>
+                The project uses real experimental data from protein engineering research, where nuclease enzymes were tested for their 
+                ability to break down biofilms. The neural network is trained on thousands of protein variants and their measured activities, 
+                learning to recognize which sequence patterns lead to high activity. This approach accelerates protein discovery by predicting 
+                promising candidates before they're synthesized in the lab.
+              </p>
+            </div>
+          </section>
+
+          <section className="project-page-technologies">
+            <h2>Technologies Used</h2>
+            <div className="project-page-tech-grid">
+              <span className="project-page-tech-badge">Python</span>
+              <span className="project-page-tech-badge">PyTorch</span>
+              <span className="project-page-tech-badge">Transformers</span>
+              <span className="project-page-tech-badge">Machine Learning</span>
+              <span className="project-page-tech-badge">Deep Learning</span>
+              <span className="project-page-tech-badge">Protein Engineering</span>
+              <span className="project-page-tech-badge">Sequence Classification</span>
+              <span className="project-page-tech-badge">Multi-Head Attention</span>
+              <span className="project-page-tech-badge">Jupyter Notebooks</span>
+              <span className="project-page-tech-badge">NumPy</span>
+              <span className="project-page-tech-badge">Pandas</span>
+              <span className="project-page-tech-badge">Matplotlib</span>
+              <span className="project-page-tech-badge">Seaborn</span>
+              <span className="project-page-tech-badge">Scikit-learn</span>
+              <span className="project-page-tech-badge">WandB</span>
+              <span className="project-page-tech-badge">Bioinformatics</span>
+            </div>
+          </section>
+
+          <section className="project-page-actions">
+            <a 
+              href="https://github.com/prajwal-u2/advanced-machine-learning/tree/main/Neural_Network_Protein_Engineering" 
               target="_blank" 
               rel="noopener noreferrer"
               className="project-page-github-button"
