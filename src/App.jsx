@@ -13,7 +13,8 @@ import {
   TextSummarizationPage, 
   SoftwareRequirementPage, 
   FiveGNetworkPage, 
-  MininetSDNPage 
+  MininetSDNPage,
+  ReinforcementLearningLunarLanderPage
 } from './components/ProjectPages';
 import homePageIllustration from './assets/images/home_page_illustration.png';
 import umnLogo from './assets/images/umn_logo.png';
@@ -304,6 +305,18 @@ function HomePage() {
                   <span className="tech-tag">Mininet</span>
                 </div>
                 <Link to="/projects/mininet-sdn-implementation" className="project-button">View Project</Link>
+              </div>
+              
+              <div className="project-card">
+                <h3 className="project-title">Reinforcement Learning - Lunar Lander</h3>
+                <p className="project-description">Implementation of Proximal Policy Optimization (PPO) from scratch to train an agent to safely land a spacecraft using actor-critic methods with GAE.</p>
+                <div className="project-technologies">
+                  <span className="tech-tag">Python</span>
+                  <span className="tech-tag">PyTorch</span>
+                  <span className="tech-tag">Reinforcement Learning</span>
+                  <span className="tech-tag">PPO</span>
+                </div>
+                <Link to="/projects/reinforcement-learning-lunar-lander" className="project-button">View Project</Link>
               </div>
             </div>
           </div>
@@ -804,6 +817,7 @@ function App() {
         <Route path="/projects/software-requirement-specification" element={<SoftwareRequirementPage />} />
         <Route path="/projects/5g-network-field-test-evaluation" element={<FiveGNetworkPage />} />
         <Route path="/projects/mininet-sdn-implementation" element={<MininetSDNPage />} />
+        <Route path="/projects/reinforcement-learning-lunar-lander" element={<ReinforcementLearningLunarLanderPage />} />
       </Routes>
     </Router>
   );

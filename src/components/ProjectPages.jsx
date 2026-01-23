@@ -13,6 +13,8 @@ import fiveGImage from '../assets/images/5g.png';
 import mininetImage from '../assets/images/mininet.png';
 import blrImage from '../assets/images/blr.png';
 import proteinEngineeringImage from '../assets/images/protein_engineering.png';
+import lunarLanderImage from '../assets/images/lunar_lander.png';
+import ppoLossImage from '../assets/images/ppo_loss.png';
 
 import './ProjectPages.css';
 
@@ -814,6 +816,104 @@ export function MininetSDNPage() {
           <section className="project-page-actions">
             <a 
               href="https://github.com/prajwal-u2/Mininet-SDN-Implementation" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="project-page-github-button"
+            >
+              <i className="fab fa-github"></i>
+              View on GitHub
+            </a>
+          </section>
+        </div>
+      </div>
+      <Footer />
+    </div>
+  );
+}
+
+// Reinforcement Learning Lunar Lander Project Page
+export function ReinforcementLearningLunarLanderPage() {
+  useScrollToTop();
+  
+  return (
+    <div className="project-page">
+      <Navbar />
+      <div className="project-page-container">
+        
+        <header className="project-page-header">
+          <h1 className="project-page-title">Reinforcement Learning - Lunar Lander</h1>
+        </header>
+
+        <div className="project-page-content">
+          <section className="project-page-description">
+            <h2>Description</h2>
+            <div className="project-page-images-side-by-side">
+              <div className="project-page-image-container">
+                <img 
+                  src={lunarLanderImage} 
+                  alt="Lunar Lander PPO Training" 
+                  className="project-page-main-image lunar-lander-image"
+                />
+              </div>
+              <div className="project-page-image-container">
+                <img 
+                  src={ppoLossImage} 
+                  alt="PPO Loss Curves" 
+                  className="project-page-main-image ppo-loss-image"
+                />
+              </div>
+            </div>
+            <br/>
+            <div className="project-page-description-text">
+              <p>
+                This project implements Proximal Policy Optimization (PPO) from scratch to train an agent to land a spacecraft safely 
+                on a landing pad in the Lunar Lander 2D environment. The implementation features a complete actor-critic architecture 
+                with separate networks for policy (actor) and value function (critic), using Generalized Advantage Estimation (GAE) 
+                for stable advantage computation.
+              </p>
+              <p>
+                The PPO algorithm is implemented with all core components: rollout collection, GAE computation, clipped surrogate objective, 
+                and value function learning. The actor network outputs action probabilities over the action space, while the critic network 
+                estimates the value function V(s). The implementation uses feedforward neural networks that work well for the LunarLander-v3 
+                environment from Gymnasium.
+              </p>
+              <p>
+                The training process includes comprehensive visualization of training progress, including episode reward plots with moving averages, 
+                episode length analysis, and loss curves for both actor and critic networks. The implementation demonstrates how PPO's clipped 
+                objective prevents large policy updates, ensuring stable learning, while entropy regularization balances exploration vs exploitation.
+              </p>
+              <p>
+                Key features include KL divergence analysis for multivariate Gaussians used in policy updates, proper handling of episode termination 
+                and truncation, and normalization of advantages for stable training. The project showcases how reinforcement learning algorithms 
+                can learn complex control policies through trial and error, with the agent progressively improving from negative rewards to successful 
+                landings with positive rewards.
+              </p>
+            </div>
+          </section>
+
+          <section className="project-page-technologies">
+            <h2>Technologies Used</h2>
+            <div className="project-page-tech-grid">
+              <span className="project-page-tech-badge">Python</span>
+              <span className="project-page-tech-badge">PyTorch</span>
+              <span className="project-page-tech-badge">Gymnasium</span>
+              <span className="project-page-tech-badge">Reinforcement Learning</span>
+              <span className="project-page-tech-badge">PPO</span>
+              <span className="project-page-tech-badge">Actor-Critic</span>
+              <span className="project-page-tech-badge">GAE</span>
+              <span className="project-page-tech-badge">Neural Networks</span>
+              <span className="project-page-tech-badge">Jupyter Notebooks</span>
+              <span className="project-page-tech-badge">Matplotlib</span>
+              <span className="project-page-tech-badge">NumPy</span>
+              <span className="project-page-tech-badge">Box2D</span>
+              <span className="project-page-tech-badge">Policy Gradient Methods</span>
+              <span className="project-page-tech-badge">Deep RL</span>
+            </div>
+          </section>
+
+          <section className="project-page-actions">
+            <a 
+              href="https://github.com/prajwal-u2/advanced-machine-learning/tree/main/Reinforcement_Learning-Lunar_Lander" 
               target="_blank" 
               rel="noopener noreferrer"
               className="project-page-github-button"

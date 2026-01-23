@@ -107,6 +107,43 @@
   max-width: 750px;
 }
 
+.project-page-images-side-by-side {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  align-items: stretch;
+  margin-top: 2rem;
+  flex-wrap: wrap;
+}
+
+.project-page-images-side-by-side .project-page-image-container {
+  flex: 1;
+  min-width: 300px;
+  max-width: 400px;
+  margin: 0;
+  display: flex;
+  overflow: hidden;
+}
+
+.project-page-images-side-by-side .project-page-main-image {
+  width: 100%;
+  margin: 0;
+}
+
+.project-page-images-side-by-side .ppo-loss-image {
+  height: auto;
+  object-fit: contain;
+}
+
+.project-page-images-side-by-side .lunar-lander-image {
+  height: 100%;
+  object-fit: contain;
+  border-radius: 12px;
+  box-shadow: none;
+  background: transparent;
+  overflow: hidden;
+}
+
 .project-page-description-text {
   line-height: 1.6;
   font-size: 1.1rem;
@@ -207,6 +244,15 @@
     font-size: 1rem;
   }
 
+  .project-page-images-side-by-side {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .project-page-images-side-by-side .project-page-image-container {
+    max-width: 100%;
+    min-width: 100%;
+  }
 
 }
 
