@@ -108,17 +108,31 @@ function HomePage() {
                     <div className="semester">
                       <h4 className="semester-title">Fall 2024 Courses:</h4>
                       <ul className="course-list">
-                        <li>CS 5511 - Artificial Intelligence I</li>
-                        <li>CS 5211 - Data Communications and Computer Networks</li>
-                        <li>CS 5801 - Software Engineering I</li>
+                        <li>CSCI 5511 - Artificial Intelligence I</li>
+                        <li>CSCI 5211 - Data Communications and Computer Networks</li>
+                        <li>CSCI 5801 - Software Engineering I</li>
                       </ul>
                     </div>
                     <div className="semester">
                       <h4 className="semester-title">Spring 2025 Courses:</h4>
                       <ul className="course-list">
-                        <li>CS 5105 - Distributed Systems</li>
-                        <li>CS 5521 - Machine Learning Fundamentals</li>
-                        <li>SE 5709 - Event-Driven Architecture & Real-time Data Processing</li>
+                        <li>CSCI 5105 - Distributed Systems</li>
+                        <li>CSCI 5521 - Machine Learning Fundamentals</li>
+                        <li>SENG 5709 - Event-Driven Architecture & Real-time Data Processing</li>
+                      </ul>
+                    </div>
+                    <div className="semester">
+                      <h4 className="semester-title">Fall 2025 Courses:</h4>
+                      <ul className="course-list">
+                        <li>CSCI 5525 - Advanced Machine Learning</li>
+                        <li>CSCI 5117 - Interactive Web Development</li>
+                        <li>IE 5541 - Project Management</li>
+                      </ul>
+                    </div>
+                    <div className="semester">
+                      <h4 className="semester-title">Spring 2026 Courses:</h4>
+                      <ul className="course-list">
+                        <li>CSCI 5123 - Recommender Systems</li>
                       </ul>
                     </div>
                   </div>
