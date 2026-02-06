@@ -8,17 +8,14 @@ function ExperienceSection() {
       id: 'ideas',
       title: 'Cloud Engineer Intern',
       company: 'IDeaS',
-      location: 'Minneapolis, MN',
-      duration: 'May 2025 - Dec 2025',
+      location: 'Minneapolis, United States of America',
+      duration: 'May 2025 – Present',
       icon: '☁️',
       achievements: [
-        'Built an AI agent in Python that integrated GitHub Copilot with internal Terraform modules via the GitHub API, auto-generating custom infrastructure code and reducing manual IaC effort by 90%, significantly accelerating adoption and engineering velocity.',
-        'Deployed a production-grade custom AI agent based on MCP server on AWS using ECS, API Gateway, Route 53, and IAM roles, using Terraform, enabling secure, scalable AI-powered code assistance.',
-        'Integrated Redis caching and load balancing to support over 100 real-time code generation requests daily for MCP server with low latency.',
-        'Extended Datadog connector to support MCP servers metrics, increasing observability by 80%.',
-        'Standardized Dev Containers using Docker and Shell scripts to embed reusable internal tools, improving developer onboarding speed by 7x.',
-        'Automated environment setup through containerized workflows, significantly reducing setup errors and improving consistency across deployments.',
-        'Orchestrated CI/CD pipelines using GitHub Actions and YAML to automate Docker builds and semantic versioning, reducing manual effort by 80%.'
+        'Standardized Dev Containers using Docker, Shell scripts, and GitHub Actions to enable reproducible environments in VS Code, cutting setup time for Java and Spring Boot projects from two days to minutes.',
+        'Built a RAG–based Model Context Protocol (MCP) server in Python and Copilot, integrating GitHub API and Terraform modules to deliver Copilot-style infrastructure recommendations and automate 90% of manual infrastructure coding.',
+        'Deployed an AI agent on AWS (ECS, API Gateway, Redis, IAM, Load Balancer) with SigV4/Entra authentication and GitHub Actions–based CI/CD, serving 100+ low-latency requests (100 ms) daily and enabled full observability through Datadog.',
+        'Architected a self-service Datadog identity and team provisioning using Python on AWS Lambda and Step Functions with SCIM and SAML role mapping centralized in Azure Entra ID, deployed via Terraform reducing manual IAM effort by 85%.'
       ]
     },
     {
@@ -39,22 +36,33 @@ function ExperienceSection() {
     },
     {
       id: 'mercedes',
-      title: 'Data and Software Engineer',
+      title: 'Software and Data Engineer',
       company: 'Mercedes-Benz Research and Development India',
-      location: 'Bangalore, India',
-      duration: 'Aug 2022 - Aug 2024',
+      location: 'Bengaluru, Karnataka, India',
+      duration: 'Aug 2022 - Aug 2024 · 2 yrs 1 mo',
       icon: '🚗',
       softwareEngineering: [
-        'Pioneered a scalable Big Data Analytics platform by designing microservices for Azure and AWS infrastructure deployment using Python, Terraform, and Azure DevOps, reducing deployment time from 2 days to half a day.',
-        'Created backend microservices using Python Azure SDK, FastAPI, and Docker to programmatically build and provision data pipelines, enabling self-service deployment and reducing turnaround time by 70%.',
-        'Engineered and launched full-stack application with a C# and .NET backend, Vue.js frontend, and Azure SQL database, streamlining business workflows and improving efficiency by 40% through clean API design and modular architecture.',
-        'Collaborated using software engineering best practices including Git-based version control, peer code reviews, CI/CD, and delivery via SAFe, contributing to 35+ sprint cycles, improving team velocity by 25%.'
+        'Led development of a customer-facing full-stack app (C#, .NET, Vue.js, Azure SQL) that automated pipeline deployment, cutting turnaround time by 40%.',
+        'Built a React-Python-PostgreSQL app consolidating Tableau and Power BI dashboards across 5+ business units, improving decision-making speed by 30%.',
+        'Delivered 20+ RESTful APIs in FastAPI and C# with Swagger and Postman, accelerating system integration and reducing developer onboarding time.',
+        'Championed automated testing with PyTest, MSTest, achieving 100% coverage, cutting production defects and strengthening release reliability.',
+        'Drove delivery across 40+ Agile SAFe sprints as a team lead, ensuring on-time releases and promoting software engineering best practices.'
+      ],
+      cloudDevOps: [
+        'Automated infrastructure provisioning with Pulumi, Terraform, Python IaC, and Azure DevOps CI/CD, reducing deployment effort by half.',
+        'Implemented APIs to trigger Azure DevOps pipelines, enabling end-to-end infrastructure automation and minimizing manual effort.',
+        'Designed cloud-native data solutions across AWS S3, Azure Blob, and SQL warehouses, strengthening data governance and improving query performance for regulated datasets.'
       ],
       dataEngineering: [
-        'Orchestrated 200+ automated ETL pipelines using 20+ connectors including APIs in Azure Data Factory to ingest, clean, and transform SQL and NoSQL data, increasing data availability by 90% using PySpark, Pandas, and NumPy.',
-        'Optimized batch and streaming data pipelines using Azure Event Hubs, Kafka, Spark, and Databricks, increasing ingestion speed by 35% and enabling real-time data processing.',
-        'Delivered analytics driven Data Observability solution aligned with Gartner\'s principles (Content, Infrastructure, Flow, Usage, Cost), standardizing data platforms and reducing MTTR with projected savings of 1.5M Euros annually.',
-        'Rearchitected on premise SSIS package and Airflow DAGs using Azure Data Factory and Databricks during cloud migration.'
+        'Built and orchestrated 200+ batch & streaming pipelines in Azure Data Factory, Databricks, and Event Hubs with 20+ connectors (APIs, SQL, NoSQL, Kafka), integrating on-prem and cloud sources into the company\'s largest data lake and boosting data availability to 100%.',
+        'Optimized large-scale transformations with PySpark, SparkSQL, and Pandas, reducing latency by 40% and improving analytics throughput by two folds, while applying Snowflake schema modeling to enhance Power BI performance.',
+        'Modernized legacy ETL by re-architecting SSIS & Airflow DAGs into Azure-native pipelines, cutting maintenance overhead and accelerating cloud migration timelines.',
+        'Developed Power BI dashboard to derive and visualize meaningful KPIs for the management based on gathered Business data.'
+      ],
+      dataQualityGovernance: [
+        'Pioneered a FinOps tagging framework across AWS + Azure, cutting cloud costs and streamlining resource governance across multiple teams.',
+        'Delivered a Gartner-aligned Data Observability platform (content, infra, flow, usage, cost), enabling proactive issue detection, reducing MTTF, and saving €1.5M annually.',
+        'Developed a Python-based duplication detection tool scanning AWS + Azure data lakes, eliminating 10,000+ redundant records and improving data reliability while reducing storage costs.'
       ]
     },
     {
@@ -119,7 +127,7 @@ function ExperienceSection() {
             
             {activeExp.softwareEngineering && activeExp.softwareEngineering.length > 0 && (
               <>
-                <h4 className="detail-achievements">Software Engineering Achievements</h4>
+                <h4 className="detail-achievements">Software Engineering</h4>
                 <ul className="detail-list">
                   {activeExp.softwareEngineering.map((achievement, index) => (
                     <li key={index}>{achievement}</li>
@@ -130,9 +138,31 @@ function ExperienceSection() {
             
             {activeExp.dataEngineering && activeExp.dataEngineering.length > 0 && (
               <>
-                <h4 className="detail-achievements">Data Engineering Achievements</h4>
+                <h4 className="detail-achievements">Data Engineering</h4>
                 <ul className="detail-list">
                   {activeExp.dataEngineering.map((achievement, index) => (
+                    <li key={index}>{achievement}</li>
+                  ))}
+                </ul>
+              </>
+            )}
+            
+            {activeExp.cloudDevOps && activeExp.cloudDevOps.length > 0 && (
+              <>
+                <h4 className="detail-achievements">Cloud & DevOps</h4>
+                <ul className="detail-list">
+                  {activeExp.cloudDevOps.map((achievement, index) => (
+                    <li key={index}>{achievement}</li>
+                  ))}
+                </ul>
+              </>
+            )}
+            
+            {activeExp.dataQualityGovernance && activeExp.dataQualityGovernance.length > 0 && (
+              <>
+                <h4 className="detail-achievements">Data Quality, Governance & Cost Optimization</h4>
+                <ul className="detail-list">
+                  {activeExp.dataQualityGovernance.map((achievement, index) => (
                     <li key={index}>{achievement}</li>
                   ))}
                 </ul>
